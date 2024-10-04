@@ -24,7 +24,7 @@ let timeLeft = 7200; // 120 minutes in seconds for the quiz timer
 let timerInterval; // Variable for the timer interval
 let quizEnded = false; // Flag to check if the quiz has ended
 
-// Store a subset of 40 random questions
+// Store a subset of 60 random questions
 let selectedQuestions = [];
 
 // Start the quiz by resetting the question index, score, and showing the first question
@@ -37,7 +37,7 @@ function startQuiz() {
   nextButton.innerHTML = "Next"; // Update next button text
   backButton.innerHTML = "Back"; // Update back button text
 
-  // Select 40 random questions from the questions pool
+  // Select 60 random questions from the questions pool
   selectedQuestions = getRandomQuestions(questions, 60);
 
   updateProgressBar(); // Initialize progress bar
