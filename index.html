@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>OCFA - Oracle Certified Foundations Associate</title>
+    <!-- Linking CSS for styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="bg-gray-900 p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Title -->
+            <div class="text-xl font-bold">OCFA™ Exam Simulator</div>
+            <!-- Responsive menu button -->
+            <button id="menu-toggle" class="md:hidden" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Navigation menu -->
+            <ul id="menu" class="hidden md:flex md:space-x-4">
+                <li><a href="index.html" class="flex items-center hover:text-blue-400 transition-colors">
+                    <i class="fas fa-home mr-1"></i> Home</a></li>                
+                <li><a href="https://education.oracle.com/java-foundations/pexam_1Z0-811" target="_blank" class="flex items-center hover:text-blue-400 transition-colors" rel="noopener noreferrer" title="Certifications">
+                    <i class="fas fa-award mr-1"></i> Certification Info</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Main application container -->
+    <div class="app">
+        <!-- Timer and question counter -->
+        <div class="header-controls">
+            <div id="timer"><i class="fas fa-hourglass-half"></i> <span id="time-display">120:00</span></div>
+            <div id="question-counter">Question 1 of 60</div>
+            <div id="score-counter">
+                <span class="label"></span><span id="correct-count" class="count-number">0</span><!-- placeholder --></span> |
+                <span id="incorrect-count" class="count-number">0</span> <span class="label"><!-- placeholder --></span>
+            </div>
+        </div>
+        <!-- Progress bar for quiz -->
+        <div id="progress-bar">
+            <div id="progress"></div>
+        </div>
+        
+        <!-- Quiz content container -->
+        <div class="quiz">
+            <h2 id="question">Question goes here</h2> <!-- Question display -->
+            <div id="image"></div> <!-- Optional image display -->
+            <!-- Answer buttons -->
+            <div id="answer-buttons" class="btn-group">
+                <!-- Dynamically generated answer buttons will appear here -->
+            </div>
+            <div id="explanation" class="explanation"></div> <!-- Explanation area -->
+            <div id="link" class="link"></div> <!-- Additional links area -->
+            <!-- Navigation buttons -->
+            <div class="button-container">
+                <button id="back-btn">Back</button> <!-- Navigate back -->
+                <button id="next-btn">Next</button> <!-- Navigate forward -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio elements for correct and incorrect answers -->
+    <audio id="correct-sound" src="audio/correct_answer.mp3"></audio>
+    <audio id="incorrect-sound" src="audio/inco rrect_answer.mp3"></audio>
+
+    <!-- JavaScript for interactive elements -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>

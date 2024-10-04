@@ -1,0 +1,477 @@
+/* Navigation Bar styles */
+nav {
+  background-color: #1a222a49; /* Semi-transparent background */
+  padding: 1rem; /* Padding inside the nav */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between; /* Distributes space evenly */
+  align-items: center; /* Vertically centers the items */
+  max-width: 1200px; /* Maximum width */
+  margin: 0 auto; /* Centers the container horizontally */
+  flex-wrap: wrap; /* Wraps the content on small screens */
+}
+
+/* Navigation Menu toggle button */
+#menu-toggle {
+  display: none; /* Hides the button by default */
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem; /* Font size for the button */
+  cursor: pointer; /* Shows a pointer cursor on hover */
+}
+
+/* Menu toggle button hover effect */
+#menu-toggle:hover {
+  color: #60a5fa; /* Changes color on hover */
+}
+
+/* Text styles for large screens */
+nav .text-xl {
+  font-size: 1.25rem; /* Font size */
+  font-weight: bold; /* Bold text */
+  color: #ffffff; /* Text color */
+}
+
+/* Navigation list styles */
+nav ul {
+  display: flex;
+  gap: 1rem; /* Space between list items */
+  list-style-type: none; /* Removes bullet points */
+  padding: 0; /* No padding */
+  margin: 0; /* No margin */
+}
+
+/* Navigation link styles */
+nav a {
+  color: #ffffff; /* Text color */
+  text-decoration: none; /* No underline */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+  color: #60a5fa; /* Color on hover */
+}
+
+/* Responsive styles for tablets and small screens */
+@media (max-width: 768px) {
+  /* Show menu toggle button */
+  #menu-toggle {
+    display: block; /* Shows the menu toggle button on small screens */
+  }
+
+  /* Hide navigation list by default */
+  nav ul {
+    display: none; /* Hides the list by default */
+    flex-direction: column; /* Arranges list items in a column */
+    width: 100%; /* Full width */
+    margin-top: 1rem; /* Margin on top */
+  }
+
+  /* Show navigation list when toggle is active */
+  nav ul.show {
+    display: flex; /* Shows the list when the toggle button is active */
+  }
+
+  /* Adjust list item margin */
+  nav li {
+    margin-bottom: 0.5rem; /* Margin at the bottom */
+  }
+
+  /* Adjust text styles for smaller screens */
+  nav .text-xl {
+    font-size: 1.1rem; /* Smaller font size */
+  }
+
+  nav a {
+    font-size: 0.95rem; /* Smaller font size */
+  }
+}
+
+/* Responsive styles for very small screens */
+@media (max-width: 480px) {
+  /* Adjust navigation padding */
+  nav {
+    padding: 0.5rem; /* Less padding */
+  }
+
+  /* Adjust text styles further */
+  nav .text-xl {
+    font-size: 1rem; /* Even smaller font size */
+  }
+
+  nav a {
+    font-size: 0.9rem; /* Even smaller font size */
+  }
+}
+
+/* Styles for the body */
+body {
+  background: linear-gradient(
+    to bottom right,
+    #8c8a8f,
+    #6f6877,
+    #47445a,
+    #332b3b
+  ); /* Creates a gradient background from dark to light */
+  background-attachment: fixed; /* Keeps the gradient fixed when the page is scrolled */
+  margin: 0; /* Removes the default margin around the body */
+  padding: 0; /* Removes the default padding within the body */
+  font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Styles for the app container */
+.app {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Sets a semi-transparent white background */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow for a 3D effect */
+  border-radius: 10px; /* Rounds the corners of the container */
+  width: 90%; /* Sets the width to 90% of the parent container */
+  max-width: 600px; /* Sets the maximum width of the container to 600px */
+  margin: 40px auto; /* Centers the container and adds a 40px margin on top and bottom */
+  padding: 20px; /* Adds a 20px padding inside the container */
+  margin-top: 1rem; /* Adds a 1rem margin on top */
+}
+
+/* Flexbox layout for the header controls */
+.header-controls {
+  display: flex; /* Enable Flexbox */
+  justify-content: space-between; /* Distribute space between elements */
+  align-items: center; /* Align items vertically in the center */
+  margin-bottom: 20px; /* Add some space below the header controls */
+}
+
+/* Style adjustments for the timer and question counter */
+#timer,
+#question-counter {
+  font-family: "Whitney", "Helvetica Neue", Helvetica;
+  font-size: 13px;
+  color: #ffffffda;
+  font-weight: 500;
+  padding: 7px;
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.315);
+}
+
+#timer i {
+  margin-right: 5px;
+  animation: rotate 2s linear infinite; /* Adds a rotation animation */
+}
+
+/* Keyframes for rotation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Styles for the header */
+.app h1 {
+  font-size: 300px; /* Sets the font size of the header */
+  color: #ffffff; /* Sets the text color to white */
+  font-weight: 600; /* Makes the text bold */
+  border-bottom: 3px solid #000000; /* Adds a black border below the header */
+  padding-bottom: 20px; /* Adds padding below the header to separate it from the border */
+  margin-top: 20px; /* Adds a margin above the header */
+  margin-bottom: 10px; /* Adds a margin below the header */
+  text-align: center; /* Centers the text horizontally */
+}
+
+/* Styles for the quiz section */
+.quiz {
+  padding: 20px 0; /* Adds vertical padding (top and bottom) */
+}
+
+/* Styles for the subheading within the quiz */
+.quiz h2 {
+  font-size: 17px; /* Sets the font size */
+  color: #ffffff; /* Sets the text color to white */
+  font-weight: 500; /* Makes the text semi-bold */
+  margin: 20px 0; /* Adds a margin of 20px on top and bottom */
+  text-align: left; /* Aligns the text to the left */
+  font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Styles for answer buttons */
+.btn {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.884
+  ); /* Sets a nearly opaque white background */
+  font-size: 14px; /* Sets the font size */
+  color: #222; /* Sets the text color to dark gray */
+  font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500; /* Makes the text semi-bold */
+  width: 100%; /* Makes the button take up the full width of its container */
+  border: 1px solid #222; /* Adds a dark gray border */
+  padding: 10px; /* Adds padding inside the button */
+  margin: 3px 0; /* Adds an 3px margin on top and bottom */
+  text-align: left; /* Aligns the text to the left */
+  border-radius: 4px; /* Rounds the corners of the button */
+  white-space: pre-line; /* Allows text to wrap within the button */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  transition: all 0.3s; /* Adds a transition effect for all properties over 0.3s */
+}
+
+/* Hover styles for the buttons */
+.btn:hover:not([disabled]) {
+  background: #1a477771; /* Changes the background color on hover */
+  color: rgba(255, 255, 255, 0.77); /* Changes the text color on hover */
+  transform: scale(1.03); /* Slightly enlarges the button on hover */
+  transition: 0.3s; /* Adds a transition effect for the hover state */
+  font-weight: bold; /* Makes the text bold on hover */
+}
+
+/* Disabled styles for the buttons */
+.btn:disabled {
+  cursor: no-drop; /* Changes the cursor to indicate the button is disabled */
+}
+
+/* Styles for the correct answer */
+.correct {
+  background: #14ff474b; /* Sets a green background for correct answers */
+  color: #ffffff; /* Sets the text color to white */
+  box-shadow: 0 2px 20px rgba(239, 240, 239, 0.603); /* Adds a shadow for a 3D effect */
+}
+
+/* Styles for the incorrect answer */
+.incorrect {
+  background: rgba(
+    245,
+    0,
+    0,
+    0.479
+  ); /* Sets a semi-transparent red background for incorrect answers */
+  color: #ffffff; /* Sets the text color to white */
+}
+
+.btn.correct:hover {
+  background: #14ff474b; /* Green for correct on hover */
+}
+
+.btn.incorrect:hover {
+  background: rgba(245, 0, 0, 0.479); /* Red for incorrect on hover */
+}
+
+/* Styles for the progress bar container */
+#progress-bar {
+  margin-bottom: 5px; /* Adds a margin below the progress bar */
+  background-color: #f3f3f3; /* Sets a light gray background */
+  border: 1px solid #ddd; /* Adds a light gray border */
+  padding: 1px; /* Adds padding inside the progress bar */
+  border-radius: 5px; /* Rounds the corners of the progress bar */
+}
+
+/* Styles for the progress bar fill */
+#progress {
+  width: 0; /* Initializes the width to 0% (this will be dynamically updated) */
+  height: 6px; /* Sets the height of the progress bar fill */
+  background-color: #196ea2; /* Sets the fill color */
+  padding: 1px; /* Adds padding inside the progress bar */
+  border-radius: 5px; /* Rounds the corners of the progress bar */
+  transition: width 0.8s ease-out; /* Adds a smooth transition effect */
+}
+
+/* Styles for the question image */
+.question-image {
+  max-width: 60%; /* Limits the image width to 60% of its container */
+  height: auto; /* Keeps the image's aspect ratio */
+  display: block; /* Displays the image as a block element */
+  margin: 10px 0; /* Adds a 10px margin on top and bottom */
+  border: 2px solid #000000; /* Adds a black border around the image */
+  border-radius: 5px; /* Rounds the corners of the image */
+  margin-top: 40px; /* Adds a margin above the image */
+  margin-bottom: 40px; /* Adds a margin below the image */
+  margin-left: auto; /* Centers the image horizontally */
+  margin-right: auto; /* Centers the image horizontally */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transitions for transformations and shadow changes */
+}
+
+/* Hover styles for the question image */
+.question-image:hover {
+  transform: scale(1.3); /* Enlarges the image on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhances the shadow on hover */
+}
+
+/* Styles for the explanation text */
+.explanation {
+  background: rgba(0, 0, 0, 0.3); /* Sets a semi-transparent black background */
+  padding: 10px; /* Adds padding inside the explanation */
+  border-radius: 5px; /* Rounds the corners of the explanation box */
+  color: #ffffff; /* Sets the text color to white */
+  margin-top: 20px; /* Adds a margin above the explanation */
+  border: 1px solid #ffffff69; /* Adds a semi-transparent white border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+  font-size: 14px; /* Sets the font size */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+    background-color 0.3s ease-in-out; /* Smooth transitions for transformations and shadow changes */
+}
+
+/* Hover styles for the explanation text */
+.explanation:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhances the shadow on hover */
+  transform: scale(1.07); /* Slightly enlarges the explanation box on hover */
+  background-color: rgba(0, 0, 0, 0.623); /* Darkens the background on hover */
+}
+
+/* Styles for links */
+.link {
+  color: #ffffff; /* Sets the text color to white */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  margin-left: 10px;
+  margin-top: 20px; /* Adds a margin above the link */
+  margin-bottom: 10px; /* Adds a margin below the link */
+  display: inline-block; /* Makes the link behave like a block element, but only take the needed width */
+  transition: all 0.3s; /* Adds a transition effect for all properties */
+}
+
+.link a {
+  color: inherit; /* Inherits the color from the parent element */
+  text-decoration: inherit; /* Inherits the text decoration from the parent element */
+}
+
+.link a:hover {
+  font-size: 1.2em; /* Slightly increase the size on hover */
+}
+
+.link a:hover::after {
+  content: "\1F913"; /* Inserts an emoji on hover */
+}
+
+.link a:hover span {
+  display: none; /* Hide the text on hover */
+}
+
+/* Styles for the button container */
+.button-container {
+  display: flex; /* Uses Flexbox for layout */
+  justify-content: space-between; /* Aligns buttons at the ends of the container */
+  gap: 10px; /* Adds a space between the buttons */
+  margin-top: 10px; /* Adds a margin above the button container */
+}
+
+/* Styles for the Next and Back buttons */
+#next-btn,
+#back-btn {
+  font-size: 11.5px; /* Sets the font size to 11.5px */
+  padding: 7px 10px; /* Adds padding inside the buttons */
+  font-weight: 500; /* Makes the text semi-bold */
+  width: 80px; /* Sets a fixed width for the buttons */
+  border-radius: 10px; /* Rounds the corners of the buttons */
+  border: 1px solid #141e2c34; /* Adds a semi-transparent border */
+  color: #ffffff; /* Sets the text color to white */
+  background-color: #476ce609; /* Sets a semi-transparent black background */
+  box-shadow: 2.5px 2px 2px 1px rgba(0, 0, 0, 0.26); /* Adds a subtle shadow for depth */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  display: block; /* Makes the buttons block elements */
+  transition: transform 0.1s; /* Adds a transition effect for smoother scaling */
+}
+
+/* Hover styles for the Next and Back buttons */
+#next-btn:hover,
+#back-btn:hover {
+  background: #1a477771; /* Changes the background color on hover */
+  color: rgba(255, 255, 255, 0.77); /* Changes the text color on hover */
+  transform: scale(1.1); /* Enlarges the buttons on hover */
+  transition: 0.1s; /* Adds a transition effect for the hover state */
+}
+
+.question-code {
+  background-color: #1e1e1e; /* Dark background similar to VS Code */
+  border: 1px solid #444; /* Darker border */
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: auto;
+  max-height: 400px; /* Optional: Set a max height for the code block */
+  width: auto; /* Make width responsive */
+  font-size: 15px; /* Set the desired font size */
+}
+
+.question-code pre {
+
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: "Courier New", Courier, monospace; /* Monospace font */
+  color: #dcdcdc; /* Light gray text color */
+
+}
+
+/* Styles for the copy button */
+.copy-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #3a3a3a;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  background-color: #4a4a4a;
+}
+/* Styles for the copy message */
+.copy-message {
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* 20px from the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  font-size: 14px; /* Font size */
+  opacity: 1; /* Fully visible */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth transition for opacity and transform */
+  z-index: 1000; /* Ensure it is above other elements */
+}
+
+.copy-message.fade-out {
+  opacity: 0; /* Fade out */
+  transform: translateX(-50%) translateY(20px); /* Move down slightly */
+}
+
+#score-counter {
+  font-family: "Whitney", "Helvetica Neue", Helvetica;
+  font-size: 13px;
+  color: #ffffffac;
+  font-weight: 500;
+  padding: 7px;
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.315);
+}
+
+.label {
+  color: rgb(255, 255, 255); /* Color for the labels */
+}
+
+#correct-count {
+  color: rgb(127, 218, 127); /* Color for correct count */
+  font-weight: bold;
+}
+
+#incorrect-count {
+  color: rgb(236, 144, 144); /* Color for incorrect count */
+  font-weight: bold;
+}
