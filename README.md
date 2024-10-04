@@ -8,7 +8,7 @@
 
 ---
 
-- [Start Training](https://github.com/decelik/OCFA_Quiz)
+- [Start Quiz](https://github.com/decelik/OCFA_Quiz)
 
 
 
