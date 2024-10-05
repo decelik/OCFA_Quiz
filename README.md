@@ -6,7 +6,7 @@
 
 
 
-[Deutsch](#deutsch) | [English](#english)
+[English](#english) | [Deutsch](#deutsch)
 
 ---
 
