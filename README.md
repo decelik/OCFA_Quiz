@@ -164,3 +164,4 @@ Wenn Sie Fragen oder Feedback haben, können Sie sich gerne an den Projektbetreu
 
 ---
 
+![Screenshot 2024-10-05 125146](https://github.com/user-attachments/assets/30b167bb-35e0-4f56-b8f9-8a1847dc275c)
