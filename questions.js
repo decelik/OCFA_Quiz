@@ -34,23 +34,22 @@ export const questions = [
       "The code uses the prefix increment operator (++x), which increments the value of x by one before printing it, resulting in 6.",
   },
   {
-    question:
-      "What is the result of the following code snippet? (Choose 1 answer)",
+    question: "What is the result of the following code snippet? (Choose 1 answer)",
     code: `public class Test {
-    public static void main(String[] args) {
-        int x = 10;
-        int y = 20;
-        System.out.println(x + y + "Java");
-    }
-}`,
+      public static void main(String[] args) {
+          int x = 10;
+          int y = 20;
+          System.out.println(x + y + "Java");
+      }
+  }`,
     answers: [
-      { text: "A) Interface A", correct: true },
-      { text: "A) Interface B", correct: false },
-      { text: "C) Compilation error due to ambiguity", correct: false },
-      { text: "D) Compilation error due to super keyword", correct: false },
+      { text: "A) 30Java", correct: true },
+      { text: "B) Java30", correct: false },
+      { text: "C) 1020Java", correct: false },
+      { text: "D) Java1020", correct: false },
     ],
     explanation:
-      "The code uses the super keyword to call the print method from the parent class, resulting in 'Interface A'.",
+      "The code adds the integers 10 and 20, resulting in 30, and then concatenates 'Java', resulting in '30Java'.",
   },
   {
     question:
