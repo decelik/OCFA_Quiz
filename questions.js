@@ -36,10 +36,10 @@ export const questions = [
   {
     question: "What is the result of the following code snippet? (Choose 1 answer)",
     code: `public class Test {
-      public static void main(String[] args) {
-          int x = 10;
-          int y = 20;
-          System.out.println(x + y + "Java");
+    public static void main(String[] args) {
+        int x = 10;
+        int y = 20;
+        System.out.println(x + y + "Java");
       }
   }`,
     answers: [
