@@ -7973,19 +7973,20 @@ System.out.println(i + "  " + j);`,
   {
     question:
       "Using Decision Statements: Consider the following method... Which of the following statements are correct? (Choose 3 answers)",
-    code: `public void ifTest(boolean flag) {
-  if (flag) //1
-  if (flag) //2
-  System.out.println("True False");
-  else // 3
-  System.out.println("True True");
-  else // 4
-  System.out.println("False False");
+    code: `public void ifTest(boolean flag)
+{
+   if (flag)   //1
+   if (flag)   //2
+   System .out.println("True False");
+   else        // 3
+   System.out.println("True True");
+   else        // 4
+   System.out.println("False False");
 }`,
     answers: [
       {
         text: "If run with an argument of 'false', it will print 'False False'",
-        correct: false,
+        correct: true,
       },
       {
         text: "If run with an argument of 'false', it will print 'True True'",
@@ -7996,18 +7997,16 @@ System.out.println(i + "  " + j);`,
         correct: true,
       },
       { text: "It will never print 'True True'", correct: true },
-      { text: "It will not compile.", correct: true },
+      { text: "It will not compile.", correct: false },
     ],
     explanation:
-      "The code will not compile due to the misplaced else statement. If corrected, it would print 'True False' when flag is true.",
+      "The nested if-else structure is not properly aligned. The 'else' at line 3 is associated with the second 'if' at line 2, not the first 'if' at line 1. Therefore, if the method is called with 'false', the outer 'if' is false, and 'False False' is printed. If called with 'true', the inner 'if' is true, and 'True False' is printed. The 'True True' statement is unreachable.",
   },
   {
     question:
       "Working with Java Operators: Given: int a = 5,  b = 2, c = 30; System.out.println( (a + b)-- * c  ); What is the result? (Choose 1 answer)",
-    code: `
-  int a = 5,  b = 2, c = 30;
-  System.out.println( (a + b)-- * c  );
-  `,
+    code: `int a = 5,  b = 2, c = 30;
+  System.out.println( (a + b)-- * c  );`,
     answers: [
       { text: "180", correct: false },
       { text: "210", correct: false },
