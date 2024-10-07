@@ -1408,13 +1408,13 @@ System.out.println(s2.equals(s3)); //4`,
       { text: "null 1", correct: false },
       { text: "0", correct: false },
       { text: "1", correct: false },
-      { text: "   0", correct: false },
-      { text: "   1", correct: false },
-      { text: "null", correct: true },
-      { text: "It will throw a RuntimeException at run time.", correct: false },
+      { text: "   0 //SPACE BEFORE 0", correct: false },
+      { text: "   1 //SPACE BEFORE 1", correct: false },
+      { text: "null", correct: false },
+      { text: "It will throw a RuntimeException at run time.", correct: true },
     ],
     explanation:
-      "The array 'arr' is initialized with null values. The concat() method does not modify the original strings, so the printData() method prints 'null' for each element.",
+      "When you do new String[2], you create a String array of two elements. arr is therefore not null. But each element of the array is not given any value and is therefore null. When you call a method on that element (i.e. str.concat(str+' '+ind); in initData), it will generate a NullPointerException, which is a RuntimeException.",
   },
   {
     question: "What will the following program print? (Choose 1 answer)",
@@ -5695,44 +5695,6 @@ System.out.println(s2.equals(s3)); //4`,
     ],
     explanation:
       "A float literal must have an 'f' or 'F' suffix unless it is a whole number or in scientific notation. '43e1' and '-1' are valid float declarations.",
-  },
-  {
-    question:
-      "What will the following code print when compiled and run? (Choose 1 answer)",
-    code: `public class OrderTest {
-  public void initData(String[] arr) {
-    int ind = 0;
-    for (String str: arr) {
-      str.concat(str + " " + ind);
-      ind++;
-    }
-  }
-
-  public void printData(String[] arr) {
-    for (String str: arr) {
-      System.out.println(str);
-    }
-  }
-
-  public static void main(String[] args) {
-    OrderTest ot = new OrderTest();
-    String[] arr = new String[2];
-    ot.initData(arr);
-    ot.printData(arr);
-  }
-}`,
-    answers: [
-      { text: "null 0", correct: false },
-      { text: "null 1", correct: false },
-      { text: "0", correct: false },
-      { text: "1", correct: false },
-      { text: "   0", correct: false },
-      { text: "   1", correct: false },
-      { text: "null", correct: true },
-      { text: "It will throw a RuntimeException at run time.", correct: false },
-    ],
-    explanation:
-      "The array 'arr' is initialized with null values. The concat() method does not modify the original strings, so the printData() method prints 'null' for each element.",
   },
   {
     question: "What will the following program print? (Choose 1 answer)",
