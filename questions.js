@@ -1284,8 +1284,8 @@ int c = b + a;
 System.out.println(b = c);`,
     answers: [
       { text: "0", correct: false },
-      { text: "1", correct: false },
-      { text: "2", correct: true },
+      { text: "1", correct: true },
+      { text: "2", correct: false },
       { text: "true", correct: false },
       { text: "false", correct: false },
     ],
@@ -5591,24 +5591,6 @@ System.out.println(sum);`,
     ],
     explanation:
       "The concat() method returns a new string, so the first print statement outputs 'str1str2'. The second print statement outputs 'str1' because str1 is unchanged.",
-  },
-  {
-    question:
-      "What will be the output of the following code snippet? (Choose 1 answer)",
-    code: `int a = 1;
-int[] ia = new int[10];
-int b = ia[a];
-int c = b + a;
-System.out.println(b = c);`,
-    answers: [
-      { text: "0", correct: false },
-      { text: "1", correct: false },
-      { text: "2", correct: true },
-      { text: "true", correct: false },
-      { text: "false", correct: false },
-    ],
-    explanation:
-      "The array ia is initialized with default values of 0. Therefore, b is 0, c is 1, and b is assigned the value of c, which is 2.",
   },
   {
     question:
