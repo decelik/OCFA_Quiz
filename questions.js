@@ -2528,7 +2528,7 @@ for (int i = 0; i < t; t++) {
       "Java Basics: Identify the fundamental principles of Object Oriented Programming. (Choose 2 answers)",
     code: ``,
     answers: [
-      { text: "Code reuse", correct: false },
+      { text: "Code reuse", correct: true },
       { text: "Dependency Injection", correct: false },
       { text: "Hiding unnecessary details", correct: true },
       { text: "Scripting", correct: false },
