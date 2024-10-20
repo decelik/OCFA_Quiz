@@ -1290,7 +1290,7 @@ System.out.println(b = c);`,
       { text: "false", correct: false },
     ],
     explanation:
-      "The array ia is initialized with default values of 0. Therefore, b is 0, c is 1, and b is assigned the value of c, which is 2.",
+      "The code initializes 'a' to 1 and creates an array 'ia' of size 10. All elements in 'ia' are initialized to 0 by default. 'b' is assigned the value of ia[1], which is 0. 'c' is then calculated as b + a, which is 0 + 1 = 1. Finally, the statement 'b = c' assigns 1 to 'b' and prints this value. Therefore, the output is 1.",
   },
   {
     question:
