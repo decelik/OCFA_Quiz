@@ -3426,48 +3426,6 @@ System.out.println(s);`,
   },
   {
     question:
-      "Using Looping Statements: Given the following code, which of these statements are true? (Choose 3 answers)",
-    code: `public class TestClass {
-  public static void main(String args[]) {
-    int k = 0;
-    int m = 0;
-    for (int i = 0; i <= 3; i++) {
-      k++;
-      if (i == 2) {
-        // line 1
-      }
-      m++;
-    }
-    System.out.println(k + ", " + m);
-  }
-}`,
-    answers: [
-      {
-        text: "It will print 3, 2 when line 1 is replaced by break;",
-        correct: false,
-      },
-      {
-        text: "It will print 3, 2 when line 1 is replaced by continue.",
-        correct: false,
-      },
-      {
-        text: "It will print 4, 3 when line 1 is replaced by continue.",
-        correct: true,
-      },
-      {
-        text: "It will print 4, 4 when line 1 is replaced by i = m++;",
-        correct: true,
-      },
-      {
-        text: "It will print 3, 3 when line 1 is replaced by i = 4;",
-        correct: true,
-      },
-    ],
-    explanation:
-      "Replacing line 1 with 'continue' skips the rest of the loop body, resulting in 4, 3. Replacing with 'i = m++' or 'i = 4' affects the loop control variable, resulting in 4, 4 or 3, 3.",
-  },
-  {
-    question:
       "Using Decision Statements: What will the following method return if called with an argument of 7? (Choose 1 answer)",
     code: `public int transformNumber(int n) {
   int radix = 2;
