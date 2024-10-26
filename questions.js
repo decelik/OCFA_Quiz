@@ -1826,7 +1826,7 @@ if (b2 != b1 = !b2) {
   },
   {
     question:
-      "Classes and Constructors: Which of the following can be used as a constructor for the class shell given below? <br><br>(Choose 2 answers)",
+      "Which of the following can be used as a constructor for the class shell given below? <br><br>(Choose 2 answers)",
     code: `public class TestClass {
   // lots of code ...
 }`,
@@ -1896,7 +1896,7 @@ if (b2 != b1 = !b2) {
   },
   {
     question:
-      "Using Looping Statements: What will the following code print? <br><br>(Choose 1 answer)",
+      "What will the following code print? <br><br>(Choose 1 answer)",
     code: `class Test {
   public static void main(String args[]) {
     int c = 0;
@@ -1923,7 +1923,7 @@ if (b2 != b1 = !b2) {
   },
   {
     question:
-      "Classes and Constructors: Which of these statements regarding the following code are correct? <br><br>(Choose 1 answer)",
+      "Which of these statements regarding the following code are correct? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   static int a;
   int b;
@@ -1964,7 +1964,7 @@ if (b2 != b1 = !b2) {
   },
   {
     question:
-      "Using Looping Statements: In the following code what will be the output if 0 (integer value zero) is passed to loopTest()? <br><br>(Choose 1 answer)",
+      "In the following code what will be the output if 0 (integer value zero) is passed to loopTest()? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public void loopTest(int x) {
     loop: for (int i = 1; i < 5; i++) {
@@ -1990,7 +1990,7 @@ if (b2 != b1 = !b2) {
   },
   {
     question:
-      "Using Looping Statements: What will the following program print? <br><br>(Choose 1 answer)",
+      "What will the following program print? <br><br>(Choose 1 answer)",
     code: `class Test {
   public static void main(String args[]) {
     int c = 0;
@@ -2075,7 +2075,7 @@ System.out.println(d);`,
   },
   {
     question:
-      "Using Looping Statements: What will the following program print? <br><br>(Choose 1 answer)",
+      "What will the following program print? <br><br>(Choose 1 answer)",
     code: `class Test {
   public static void main(String args[]) {
     int i = 0,
@@ -2145,7 +2145,7 @@ XXX amount = 1 - rate / 100 * 1 - rate / 100;`,
   },
   {
     question:
-      "Using Decision Statements: Consider the following method: Which of the following statements are correct? <br><br>(Choose 2 answers)",
+      "Consider the following method: Which of the following statements are correct? <br><br>(Choose 2 answers)",
     code: `public static void ifTest(boolean flag) {
   if (flag) //1
   if (flag) //2
@@ -2280,7 +2280,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Looping Statements: What will the following code print when compiled and run? <br><br>(Choose 1 answer)",
+      "What will the following code print when compiled and run? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String[] args) {
     int[] arr = { 1, 2, 3, 4, 5, 6 };
@@ -2334,7 +2334,7 @@ public class TestClass {
   },
   {
     question:
-      "Java Methods: Which of the following code fragments are valid method declarations? <br><br>(Choose 1 answer)",
+      "Which of the following code fragments are valid method declarations? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "void method1{ }", correct: false },
@@ -2363,7 +2363,7 @@ System.out.println(a + ++b * c);`,
   },
   {
     question:
-      "Using Decision Statements: What will the following program print? <br><br>(Choose 1 answer)",
+      "What will the following program print? <br><br>(Choose 1 answer)",
     code: `class Test {
   public static void main(String args[]) {
     int k = 9,
@@ -2539,7 +2539,7 @@ for (int i = 0; i < t; t++) {
   },
   {
     question:
-      "Using Looping Statements: What will be the result of attempting to compile and run the following program? <br><br>(Choose 1 answer)",
+      "What will be the result of attempting to compile and run the following program? <br><br>(Choose 1 answer)",
     code: `class TestClass {
   public static void main(String args[]) {
     boolean b = false;
@@ -2603,7 +2603,7 @@ class B {}`,
   },
   {
     question:
-      "Using Decision Statements: What will be the result of attempting to compile and run the following class? <br><br>(Choose 1 answer)",
+      "What will be the result of attempting to compile and run the following class? <br><br>(Choose 1 answer)",
     code: `public class IfTest {
   public static void main(String args[]) {
     if (true) if (false) System.out.println("True False");
@@ -2699,7 +2699,7 @@ class B {}`,
   },
   {
     question:
-      "Java Methods: Consider the following class definition: What will be the result of compiling and running the class? <br><br>(Choose 1 answer)",
+      "Consider the following class definition: What will be the result of compiling and running the class? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main() {
     new TestClass().sayHello();
@@ -2780,7 +2780,7 @@ System.out.println(i < 20 ? out1() : out2());`,
   },
   {
     question:
-      "What is Java: You are developing a Java rich client application that is to be installed on a lot of workstations used by the employees of your company. The users are located in various office locations across the globe. Which of the following Java technologies will be useful in delivering the application to the users over the internet? <br><br>(Choose 1 answer)",
+      "You are developing a Java rich client application that is to be installed on a lot of workstations used by the employees of your company. The users are located in various office locations across the globe. Which of the following Java technologies will be useful in delivering the application to the users over the internet? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "Java RMI", correct: false },
@@ -2841,7 +2841,7 @@ System.out.println(i < 20 ? out1() : out2());`,
   },
   {
     question:
-      "Java Methods: What will the following code print when run? <br><br>(Choose 1 answer)",
+      "What will the following code print when run? <br><br>(Choose 1 answer)",
     code: `public class Mambo {
   public static String makeItBetter(String str) {
     return str + "!!!";
@@ -2863,7 +2863,7 @@ System.out.println(i < 20 ? out1() : out2());`,
   },
   {
     question:
-      "Classes and Constructors: Given: What can be inserted in the above code so that it will print 10 10.0? <br><br>(Choose 1 answer)",
+      "Given: What can be inserted in the above code so that it will print 10 10.0? <br><br>(Choose 1 answer)",
     code: `class Acct {
   int id;
   double balance;
@@ -2941,7 +2941,7 @@ System.out.println(s1.size() + " " + s1.indexOf("ann"));`,
   },
   {
     question:
-      "Using Decision Statements: What can be the return type of method getSwitch so that this program compiles and runs without any problems? <br><br>(Choose 1 answer)",
+      "What can be the return type of method getSwitch so that this program compiles and runs without any problems? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static XXX getSwitch(int x) {
     return x - 20 / x + x * x;
@@ -3052,7 +3052,7 @@ System.out.println(flag);`,
   },
   {
     question:
-      "Using Decision Statements: What will the following code print? <br><br>(Choose 1 answer)",
+      "What will the following code print? <br><br>(Choose 1 answer)",
     code: `int x = 1;
 int y = 2;
 int z = x++;
@@ -3101,7 +3101,7 @@ System.out.println(answ);`,
   },
   {
     question:
-      "Classes and Constructors: Given a class named Test, which of these would be valid definitions for the constructors for the class? <br><br>(Choose 1 answer)",
+      "Given a class named Test, which of these would be valid definitions for the constructors for the class? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "Test(Test b) { }", correct: true },
@@ -3115,7 +3115,7 @@ System.out.println(answ);`,
   },
   {
     question:
-      "Classes and Constructors: What will the following code print? <br><br>(Choose 1 answer)",
+      "What will the following code print? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   int x = 5;
   int getX() {
@@ -3205,7 +3205,7 @@ System.out.println(s);`,
   },
   {
     question:
-      "Java Methods: Given the following code, which method declarations can be inserted at line 1 without any problems? <br><br>(Choose 3 answers)",
+      "Given the following code, which method declarations can be inserted at line 1 without any problems? <br><br>(Choose 3 answers)",
     code: `public class OverloadTest {
   public int sum(int i1, int i2) {
     return i1 + i2;
@@ -3307,7 +3307,7 @@ System.out.println(s);`,
   },
   {
     question:
-      "Using Looping Statements: What will the following program print? <br><br>(Choose 1 answer)",
+      "What will the following program print? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String[] args) {
     for: for (int i = 0; i < 10; i++) {
@@ -3331,7 +3331,7 @@ System.out.println(s);`,
   },
   {
     question:
-      "Java Methods: What would be the result of attempting to compile and run the following program? <br><br>(Choose 1 answer)",
+      "What would be the result of attempting to compile and run the following program? <br><br>(Choose 1 answer)",
     code: `class TestClass {
   static TestClass ref;
   String[] arguments;
@@ -3426,7 +3426,7 @@ System.out.println(s);`,
   },
   {
     question:
-      "Using Decision Statements: What will the following method return if called with an argument of 7? <br><br>(Choose 1 answer)",
+      "What will the following method return if called with an argument of 7? <br><br>(Choose 1 answer)",
     code: `public int transformNumber(int n) {
   int radix = 2;
   int output = 0;
@@ -3452,7 +3452,7 @@ System.out.println(s);`,
   },
   {
     question:
-      "Using Looping Statements: How many times will the line marked //1 be called in the following code? <br><br>(Choose 1 answer)",
+      "How many times will the line marked //1 be called in the following code? <br><br>(Choose 1 answer)",
     code: `int x = 10;
 do {
   x--;
@@ -3470,7 +3470,7 @@ do {
   },
   {
     question:
-      "Using Decision Statements: Which of the following implementations of a max() method will correctly return the largest value? <br><br>(Choose 1 answer)",
+      "Which of the following implementations of a max() method will correctly return the largest value? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -3517,7 +3517,7 @@ do {
   },
   {
     question:
-      "Using Looping Statements: Consider the following code: How many times will the output contain 2? <br><br>(Choose 1 answer)",
+      "Consider the following code: How many times will the output contain 2? <br><br>(Choose 1 answer)",
     code: `String[] dataList = { "x", "y", "z" };
 for (String dataElement: dataList) {
   int innerCounter = 0;
@@ -3538,7 +3538,7 @@ for (String dataElement: dataList) {
   },
   {
     question:
-      "Using Decision Statements: What will the following program print? <br><br>(Choose 1 answer)",
+      "What will the following program print? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String[] args) {
     Object obj1 = new Object();
@@ -3562,7 +3562,7 @@ for (String dataElement: dataList) {
   },
   {
     question:
-      "Using Looping Statements: Using a break in a while loop causes the loop to break the current iteration and start the next iteration of the loop. <br><br>(Choose 1 answer)",
+      "Using a break in a while loop causes the loop to break the current iteration and start the next iteration of the loop. <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "True", correct: false },
@@ -3803,7 +3803,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Decision Statements: Which of the following expressions will evaluate to true if preceded by the following code? <br><br>(Choose 3 answers)",
+      "Which of the following expressions will evaluate to true if preceded by the following code? <br><br>(Choose 3 answers)",
     code: `String a = "java";
 char[] b = {
   'j',
@@ -3844,7 +3844,7 @@ public class StaticImports {
   },
   {
     question:
-      'Classes and Constructors: Which of the following are true about the "default" constructor? <br><br>(Choose 2 answers)',
+      'Which of the following are true about the "default" constructor? <br><br>(Choose 2 answers)',
     code: ``,
     answers: [
       {
@@ -3873,7 +3873,7 @@ public class StaticImports {
   },
   {
     question:
-      "What is Java: Which of the following are true about Java? <br><br>(Choose 2 answers)",
+      "Which of the following are true about Java? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "It provides automatic exception handling.", correct: false },
@@ -3908,7 +3908,7 @@ public class StaticImports {
   },
   {
     question:
-      "Using Looping Statements: What will the following code print? <br><br>(Choose 1 answer)",
+      "What will the following code print? <br><br>(Choose 1 answer)",
     code: `void crazyLoop() {
   int c = 0;
   JACK: while (c < 8) {
@@ -3942,7 +3942,7 @@ public class StaticImports {
   },
   {
     question:
-      "Using Looping Statements: What will the following program print? <br><br>(Choose 1 answer)",
+      "What will the following program print? <br><br>(Choose 1 answer)",
     code: `class Test {
   public static void main(String args[]) {
     int
@@ -3970,7 +3970,7 @@ public class StaticImports {
   },
   {
     question:
-      "Using Looping Statements: What will the following code print when run? <br><br>(Choose 1 answer)",
+      "What will the following code print when run? <br><br>(Choose 1 answer)",
     code: `public class Mambo {
   public static void main(String args[]) {
     for (int i = 0; i < 5; i++) {
@@ -4045,7 +4045,7 @@ class main {
   },
   {
     question:
-      "What is Java: Which of the following are features of Java? <br><br>(Choose 2 answers)",
+      "Which of the following are features of Java? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "It is strongly typed", correct: true },
@@ -4163,7 +4163,7 @@ System.out.println(str.charAt(2));
   },
   {
     question:
-      "Using Decision Statements: Given the code fragment: What is the result? <br><br>(Choose 1 answer)",
+      "Given the code fragment: What is the result? <br><br>(Choose 1 answer)",
     code: `int[] balances1 = new int[] {
   10,
   20
@@ -4184,7 +4184,7 @@ System.out.print(balances1 == balances2);`,
   },
   {
     question:
-      "Using Looping Statements: Consider the following method, which is called with an argument of 7: What will it print? <br><br>(Choose 1 answer)",
+      "Consider the following method, which is called with an argument of 7: What will it print? <br><br>(Choose 1 answer)",
     code: `public void method1(int i) {
   int j = (i * 30 - 2) / 100;
   POINT1: for (; j < 10; j++) {
@@ -4230,7 +4230,7 @@ String s2 = "World";
   },
   {
     question:
-      "Classes and Constructors: What will be the result of attempting to compile the following program? <br><br>(Choose 1 answer)",
+      "What will be the result of attempting to compile the following program? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   long l1;
   public void TestClass(long pLong) {
@@ -5916,7 +5916,7 @@ System.out.println(5 + 6); //4`,
   },
   {
     question:
-      "Java Methods: Consider the following method. Which of the following methods correctly overload the above method? <br><br>(Choose 2 answers)",
+      "Consider the following method. Which of the following methods correctly overload the above method? <br><br>(Choose 2 answers)",
     code: `public int setVar(int a, int b, float c) {
   //valid code not shown
 }`,
@@ -5944,7 +5944,7 @@ System.out.println(5 + 6); //4`,
   },
   {
     question:
-      "Using Decision Statements: Given the code fragment, what is the result? <br><br>(Choose 1 answer)",
+      "Given the code fragment, what is the result? <br><br>(Choose 1 answer)",
     code: `int[] balances1 = new int[] {
   10,
   20
@@ -6012,7 +6012,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "Classes and Constructors: Which of the following are correct ways to initialize the static variables MAX and CLASS_GUID? <br><br>(Choose 2 answers)",
+      "Which of the following are correct ways to initialize the static variables MAX and CLASS_GUID? <br><br>(Choose 2 answers)",
     code: `class Widget {
   static int MAX; //1
   static final String CLASS_GUID; //2
@@ -6117,7 +6117,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "Java Methods: What will be the result of attempting to compile and run the following class? <br><br>(Choose 1 answer)",
+      "What will be the result of attempting to compile and run the following class? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String args[]) {
     int i = 1;
@@ -6149,7 +6149,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "What is Java: Which of the following is correct about Java byte code? <br><br>(Choose 1 answer)",
+      "Which of the following is correct about Java byte code? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "It can run on any OS and chip architecture.", correct: false },
@@ -6171,7 +6171,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "What is Java: Java ME can be used to develop applications for: <br><br>(Choose 1 answer)",
+      "Java ME can be used to develop applications for: <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -6203,7 +6203,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "Using Decision Statements: Which of these expressions will return true? <br><br>(Choose 4 answers)",
+      "Which of these expressions will return true? <br><br>(Choose 4 answers)",
     code: ``,
     answers: [
       { text: '"hello world".equals("hello world")', correct: true },
@@ -6241,7 +6241,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "Classes and Constructors: You are writing a class that represents the equation of a straight line: y = mx + c. This class has only one method named calcY that takes the value of x and returns the value of y. Which variable scopes will you use to store the values of m and c in an instance of this class? <br><br>(Choose 1 answer)",
+      "You are writing a class that represents the equation of a straight line: y = mx + c. This class has only one method named calcY that takes the value of x and returns the value of y. Which variable scopes will you use to store the values of m and c in an instance of this class? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "global variables", correct: false },
@@ -6254,7 +6254,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "Using Looping Statements: What will the following code print? <br><br>(Choose 1 answer)",
+      "What will the following code print? <br><br>(Choose 1 answer)",
     code: `public class BreakTest {
   public static void main(String[] args) {
     int i = 0,
@@ -6277,7 +6277,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "Using Decision Statements: What is the result of executing the following fragment of code? <br><br>(Choose 1 answer)",
+      "What is the result of executing the following fragment of code? <br><br>(Choose 1 answer)",
     code: `boolean b1 = false;
 boolean b2 = false;
 if (b2 = b1 == false) {
@@ -6297,7 +6297,7 @@ if (b2 = b1 == false) {
   },
   {
     question:
-      "Using Looping Statements: Given the code, what will it print when compiled and run? <br><br>(Choose 1 answer)",
+      "Given the code, what will it print when compiled and run? <br><br>(Choose 1 answer)",
     code: `package strings;
 public class StringFromChar {
   public static void main(String[] args) {
@@ -6342,7 +6342,7 @@ public class StringFromChar {
   },
   {
     question:
-      "Using Looping Statements: What is the effect of compiling and running this class? <br><br>(Choose 1 answer)",
+      "What is the effect of compiling and running this class? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String args[]) {
     int sum = 0;
@@ -6396,7 +6396,7 @@ public class StringFromChar {
   },
   {
     question:
-      "Using Decision Statements: What is the result of executing the following code when the value of i is 5? <br><br>(Choose 1 answer)",
+      "What is the result of executing the following code when the value of i is 5? <br><br>(Choose 1 answer)",
     code: `switch (i) {
 default:
 case 1:
@@ -6421,7 +6421,7 @@ case 3:
   },
   {
     question:
-      "Using Looping Statements: What will the following code print when run? <br><br>(Choose 1 answer)",
+      "What will the following code print when run? <br><br>(Choose 1 answer)",
     code: `public class Mambo {
   static int m = 10,
   n = 20;
@@ -6481,7 +6481,7 @@ case 3:
   },
   {
     question:
-      "Using Looping Statements: Consider the following code snippet. Which of the following will produce the same result? <br><br>(Choose 1 answer)",
+      "Consider the following code snippet. Which of the following will produce the same result? <br><br>(Choose 1 answer)",
     code: `for (int i = INT1; i < INT2; i++) {
   System.out.println(i);
 }`,
@@ -6509,7 +6509,7 @@ case 3:
   },
   {
     question:
-      "Using Decision Statements: Which of the following four constructs are valid? <br><br>(Choose 1 answer)",
+      "Which of the following four constructs are valid? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "1, 3", correct: false },
@@ -6592,7 +6592,7 @@ System.out.printf("I scored %d marks in the %s exam!", exam, marks);`,
   },
   {
     question:
-      "Using Decision Statements: Which of the following statements concerning the switch construct are true? <br><br>(Choose 3 answers)",
+      "Which of the following statements concerning the switch construct are true? <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       {
@@ -6636,7 +6636,7 @@ System.out.printf("I scored %d marks in the %s exam!", exam, marks);`,
   },
   {
     question:
-      "Classes and Constructors: Which of these statements are true? <br><br>(Choose 2 answers)",
+      "Which of these statements are true? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -6710,7 +6710,7 @@ System.out.printf("I scored %d marks in the %s exam!", exam, marks);`,
   },
   {
     question:
-      "Java Methods: Which of the following statements are true? <br><br>(Choose 2 answers)",
+      "Which of the following statements are true? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -6759,7 +6759,7 @@ System.out.println(myStr);`,
   },
   {
     question:
-      "Using Decision Statements: Which line, if any, will give a compile time error? <br><br>(Choose 1 answer)",
+      "Which line, if any, will give a compile time error? <br><br>(Choose 1 answer)",
     code: `void test(byte x) {
   switch (x) {
   case 'a':
@@ -6792,7 +6792,7 @@ System.out.println(myStr);`,
   },
   {
     question:
-      "Java Methods: Consider the following code. Which of the following lines can be added independently to the above class so that it will run without any errors or exceptions? <br><br>(Choose 2 answers)",
+      "Consider the following code. Which of the following lines can be added independently to the above class so that it will run without any errors or exceptions? <br><br>(Choose 2 answers)",
     code: `public class Varargs {
   public void test() {
     test1(10); //1
@@ -7041,7 +7041,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Looping Statements: What can be inserted in the following code so that it will print exactly 2345 when compiled and run? <br><br>(Choose 2 answers)",
+      "What can be inserted in the following code so that it will print exactly 2345 when compiled and run? <br><br>(Choose 2 answers)",
     code: `public class FlowTest {
   static int[] data = { 1, 2, 3, 4, 5 };
   public static void main(String[] args) {
@@ -7068,7 +7068,7 @@ public class TestClass {
   },
   {
     question:
-      "Classes and Constructors: Given the following code, which statements can be placed at the indicated position without causing compile and run time errors? <br><br>(Choose 2 answers)",
+      "Given the following code, which statements can be placed at the indicated position without causing compile and run time errors? <br><br>(Choose 2 answers)",
     code: `public class Test {
   int i1;
   static int i2;
@@ -7136,7 +7136,7 @@ public class TestClass {
   },
   {
     question:
-      "Classes and Constructors: What will happen when the following code is compiled? <br><br>(Choose 1 answer)",
+      "What will happen when the following code is compiled? <br><br>(Choose 1 answer)",
     code: `public class FooBar {
   private int FooBar; //1
   public FooBar(int FooBar) {
@@ -7168,7 +7168,7 @@ public class TestClass {
   },
   {
     question:
-      "Classes and Constructors: Under what situations does a class get a default constructor? <br><br>(Choose 1 answer)",
+      "Under what situations does a class get a default constructor? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -7194,7 +7194,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Looping Statements: What will be the output if you run the following program? <br><br>(Choose 1 answer)",
+      "What will be the output if you run the following program? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String args[]) {
     int i;
@@ -7217,7 +7217,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Looping Statements: What will be the result of attempting to compile and run the following program? <br><br>(Choose 1 answer)",
+      "What will be the result of attempting to compile and run the following program? <br><br>(Choose 1 answer)",
     code: `class TestClass {
   public static void main(String args[]) {
     int i = 0;
@@ -7286,7 +7286,7 @@ public class TestClass {
   },
   {
     question:
-      "Java Methods: How can you declare a method someMethod() such that an instance of the class is not needed to access it and all the members of the same package have access to it? <br><br>(Choose 3 answers)",
+      "How can you declare a method someMethod() such that an instance of the class is not needed to access it and all the members of the same package have access to it? <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       { text: "public static void someMethod()", correct: true },
@@ -7320,7 +7320,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Looping Statements: Which of the following statements regarding 'break' and 'continue' are true? <br><br>(Choose 1 answer)",
+      "Which of the following statements regarding 'break' and 'continue' are true? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -7340,7 +7340,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Looping Statements: Given the following code fragment, which of the following lines would be a part of the output? <br><br>(Choose 3 answers)",
+      "Given the following code fragment, which of the following lines would be a part of the output? <br><br>(Choose 3 answers)",
     code: `outer: for (int i = 0; i < 3; i++) {
   for (int j = 0; j < 2; j++) {
     if (i == j) {
@@ -7375,7 +7375,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Decision Statements: What will it print when the following code compiled and run? <br><br>(Choose 1 answer)",
+      "What will it print when the following code compiled and run? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static int switchTest(int k) {
     int j = 1;
@@ -7427,7 +7427,7 @@ public class TestClass {
   },
   {
     question:
-      "Classes and Constructors: What would be the result of trying to compile and run the following program? <br><br>(Choose 1 answer)",
+      "What would be the result of trying to compile and run the following program? <br><br>(Choose 1 answer)",
     code: `public class Test {
   int[] ia = new int[1];
   Object oA[] = new Object[1];
@@ -7458,7 +7458,7 @@ public class TestClass {
   },
   {
     question:
-      "Java Methods: Given the following pairs of method declarations, which of the statements are true? <br><br>(Choose 2 answers)",
+      "Given the following pairs of method declarations, which of the statements are true? <br><br>(Choose 2 answers)",
     code: `1.
 void perform_work(int time) {}
 int perform_work(int time, int speed) {
@@ -7708,7 +7708,7 @@ class OtherClass {
   },
   {
     question:
-      "Using Looping Statements: You have been given an array of objects and you need to process this array as follows - 1. Call a method on each object from first to last one by one. 2. Call a method on each object from last to first one by one. 3. Call a method on only those objects at even index (0, 2, 4, 6, etc.) Which of the following are correct? <br><br>(Choose 1 answer)",
+      "You have been given an array of objects and you need to process this array as follows - 1. Call a method on each object from first to last one by one. 2. Call a method on each object from last to first one by one. 3. Call a method on only those objects at even index (0, 2, 4, 6, etc.) Which of the following are correct? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -7737,7 +7737,7 @@ class OtherClass {
   },
   {
     question:
-      "Using Decision Statements: Which of the following will not give any error at compile time and run time? <br><br>(Choose 4 answers)",
+      "Which of the following will not give any error at compile time and run time? <br><br>(Choose 4 answers)",
     code: ``,
     answers: [
       { text: "if (8 == 81) {}", correct: true },
@@ -7760,7 +7760,7 @@ class OtherClass {
   },
   {
     question:
-      "Using Decision Statements: What will happen if you try to compile and run the following program? <br><br>(Choose 2 answers)",
+      "What will happen if you try to compile and run the following program? <br><br>(Choose 2 answers)",
     code: `public class TestClass {
   public static void main(String[] args) {
     calculate(2);
@@ -7814,7 +7814,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Looping Statements: What will the following code print? <br><br>(Choose 1 answer)",
+      "What will the following code print? <br><br>(Choose 1 answer)",
     code: `void crazyLoop() {
   int c = 0;
   JACK: while (c < 8) {
@@ -7849,7 +7849,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Looping Statements: What will the following program snippet print? <br><br>(Choose 1 answer)",
+      "What will the following program snippet print? <br><br>(Choose 1 answer)",
     code: `int i = 0,
 j = 11;
 do {
@@ -7871,7 +7871,7 @@ System.out.println(i + "  " + j);`,
   },
   {
     question:
-      "Using Decision Statements: Consider the following method... Which of the following statements are correct? <br><br>(Choose 3 answers)",
+      "Consider the following method... Which of the following statements are correct? <br><br>(Choose 3 answers)",
     code: `public void ifTest(boolean flag)
 {
    if (flag)   //1
