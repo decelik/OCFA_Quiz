@@ -167,7 +167,7 @@ export const questions = [
       { text: "Only one of the above is correct.", correct: false },
     ],
     explanation:
-      "When run with no arguments, the try block exits early due to the return statement, but the finally block is still executed, so only 'The end' is printed. When run with one argument, an exception is thrown, the catch block prints 'Exception in Main', and the finally block prints 'The end'.",
+      "When run with no arguments, the try block exits early due to the return statement, but the finally block is still executed, so only 'The end' is printed. <br><br>When run with one argument, an exception is thrown, the catch block prints 'Exception in Main', and the finally block prints 'The end'.",
   },
   {
     question:
@@ -466,8 +466,8 @@ if (s1.remove("a")) {
 }
 System.out.println(s1);`,
     answers: [
-      { text: "[b]", correct: true },
-      { text: "[c]", correct: false },
+      { text: "[b]", correct: false },
+      { text: "[c]", correct: true },
       { text: "[b, c, a]", correct: false },
       { text: "[a, b, c, a]", correct: false },
       { text: "Exception at runtime", correct: false },
@@ -971,7 +971,7 @@ public class TestClass {
       "'default', 'throws', 'long', and 'strictfp' are Java keywords. 'null' is a literal, and 'String' is a class.",
   },
   {
-    question: "What letters will be printed by this program? <br><br>(Choose 1 answer)",
+    question: "What letters will be printed by this program? <br><br>(Choose 3 answers)",
     code: `public class ForSwitch {
   public static void main(String args[]) {
     char i;
@@ -998,13 +998,14 @@ public class TestClass {
 }`,
     answers: [
       { text: "A", correct: false },
-      { text: "B", correct: true },
-      { text: "C", correct: false },
+      { text: "B", correct: false },
+      { text: "C", correct: true },
       { text: "D", correct: false },
-      { text: "F", correct: false },
+      { text: "E", correct: true },
+      { text: "F", correct: true },
     ],
     explanation:
-      "The switch statement matches case 1, printing 'B', and then breaks out of the LOOP.",
+      `In the first iteration, i starts at 0. The switch statement evaluates i++, which checks the value of i as 0 before incrementing it to 1. Since none of the cases match, it continues to the next iteration.<br><br>In the second iteration, i is now 1. The switch evaluates i++ again, matching case 1, which prints "B." However, because there is no break statement after this case, the execution continues to case 2, which then prints "C" before breaking out of that case.<br><br>In the third iteration, i becomes 3. The switch checks the value, matches case 3, and prints "D," but again, since there is no further break, it moves to case 4. In this case, it prints "E," and since there is still no break, it falls through to case 'E', printing "F."<br><br>Thus, the final output of the program is "C," "E," and "F," as the fall-through behavior in the switch statement allows the code to execute multiple cases without breaking out immediately.`,
   },
   {
     question:
@@ -1629,11 +1630,11 @@ c = a + b;`,
         correct: false,
       },
       { text: "It will print 5, 10.", correct: false },
-      { text: "It will print 10, 10.", correct: true },
-      { text: "It will throw an exception when run.", correct: false },
+      { text: "It will print 10, 10.", correct: false },
+      { text: "It will throw an exception when run.", correct: true },
     ],
     explanation:
-      "The method setIt() sets x.link to y.link, which is null. Therefore, a.link is set to null, and b.link is set to a, resulting in '10, 10'.",
+      "When the Holder class is compiled and run, it will throw a NullPointerException at runtime. This occurs because the a.link is set to null within the setIt method, and the program attempts to access a.link.value in the print statement. Since a.link is null, this results in the exception.",
   },
   {
     question:
@@ -2336,14 +2337,14 @@ public class TestClass {
   },
   {
     question:
-      "Given: What is the result? <br><br>(Choose 1 answer)",
+      "What is the result? <br><br>(Choose 1 answer)",
     code: `int a = 5, b = 2, c = 30;
 System.out.println(a + ++b * c);`,
     answers: [
       { text: "65", correct: false },
-      { text: "210", correct: true },
+      { text: "210", correct: false },
       { text: "180", correct: false },
-      { text: "95", correct: false },
+      { text: "95", correct: true },
       { text: "Compilation failure", correct: false },
     ],
     explanation:
@@ -2797,7 +2798,7 @@ System.out.println(i < 20 ? out1() : out2());`,
   },
   {
     question:
-      "Given: What is the output? <br><br>(Choose 1 answer)",
+      "What is the output? <br><br>(Choose 1 answer)",
     code: `public class Test {
   public int div(int a, int b) throws Exception {
     try {
@@ -2818,14 +2819,14 @@ System.out.println(i < 20 ? out1() : out2());`,
   }
 }`,
     answers: [
-      { text: "exception in div", correct: true },
+      { text: "exception in div", correct: false },
       { text: "exception in main", correct: false },
       { text: "exception in div exception in main", correct: false },
-      { text: "exception in div 0", correct: false },
+      { text: "exception in div" + "\n" + "0", correct: true },
       { text: "Compilation failure", correct: false },
     ],
     explanation:
-      "The ArithmeticException is caught in the div method, printing 'exception in div'. The method returns 0, which is printed by the main method.",
+      `The div method attempts to divide a by b. When div(5, 0) is called, an ArithmeticException is thrown due to division by zero. The catch block in div catches this exception, prints "exception in div," and returns 0. The main method then prints this returned value.`,
   },
   {
     question:
@@ -2851,7 +2852,7 @@ System.out.println(i < 20 ? out1() : out2());`,
   },
   {
     question:
-      "Given: What can be inserted in the above code so that it will print 10 10.0? <br><br>(Choose 1 answer)",
+      "What can be inserted in the above code so that it will print 10 10.0? <br><br>(Choose 1 answer)",
     code: `class Acct {
   int id;
   double balance;
@@ -2963,15 +2964,15 @@ System.out.println(s1.size() + " " + s1.indexOf("ann"));`,
     answers: [
       { text: 'userName.equals("")', correct: false },
       { text: 'userName.removeWhiteSpaces().equals("")', correct: false },
-      { text: "userName.trim().length == 0", correct: true },
-      { text: 'userName.trim().equals("")', correct: false },
+      { text: "userName.trim().length == 0", correct: false },
+      { text: 'userName.trim().equals("")', correct: true },
     ],
     explanation:
-      "The method trim() removes leading and trailing spaces. Checking if the length is 0 determines if the string is empty.",
+      `The method userName.trim().equals("") checks if the trimmed version of userName is equal to an empty string, effectively determining if it is empty or consists only of spaces.`,
   },
   {
     question:
-      "Consider the following code in file TestClass.java: <br><br>>his file is compiled and run using the following command line: java -version TestClass <br><br>What will be the output? <br><br>(Choose 1 answer)",
+      "Consider the following code in file TestClass.java: <br><br>This file is compiled and run using the following command line: java -version TestClass <br><br>What will be the output? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String[] args) {
     System.out.println("Hello!!!");
@@ -3058,7 +3059,7 @@ System.out.println(answ);`,
       { text: "3", correct: false },
     ],
     explanation:
-      "The expression evaluates to 2 because 'x' is 2, 'a' is 1, 'y' is 1, 'b' is 1, and 'z' is 1. The ternary operator selects 'y' as the final value.",
+      "The code initializes several integer variables: x is set to 1, y to 2, and z is assigned the value of x++, resulting in z being 1 and x being incremented to 2. Next, a is assigned the value of --y, which decrements y to 1. <br><br>Then, b is assigned the value of z--, making b equal to 1 while z is decremented to 0. The code then increments z with b += ++z, resulting in b being updated to 2. <br><br>Finally, the ternary conditional expression checks if x (which is 2) is greater than a (which is 1). Since this condition is true, it evaluates y > b, which is false, leading to answ being assigned the value of b, which is 2. <br><br>Thus, when System.out.println(answ); is executed, it prints the value 2.",
   },
   {
     question:
@@ -3448,13 +3449,13 @@ do {
 } while ( x < 10 );`,
     answers: [
       { text: "0", correct: false },
-      { text: "1", correct: true },
+      { text: "1", correct: false },
       { text: "9", correct: false },
       { text: "10", correct: false },
-      { text: "None of these.", correct: false },
+      { text: "None of these.", correct: true },
     ],
     explanation:
-      "The do-while loop executes once, printing 9, because the condition 'x<10' is false after the first iteration.",
+      "Initially, the variable x is set to 10. The do loop executes its body at least once, which decrements x from 10 to 9 and prints this value. The loop then checks the condition x < 10. Since 9 is less than 10, the condition is true, and the loop continues.<br><br>This process repeats, with x being decremented further and printed each time. As a result, x will continue to decrease indefinitely, printing values down to negative infinity. The loop never exits because the condition x < 10 will always remain true. <br><br>Therefore, the line marked //1 will be called an infinite number of times.",
   },
   {
     question:
@@ -3917,7 +3918,7 @@ public class StaticImports {
   },
   {
     question:
-      "Which of the following are valid class declarations? (Not the whole class, just the declaration). <br><br>(Choose 1 answer)",
+      "Which of the following are valid class declarations? (Not the whole class, just the declaration). <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "public class Hello", correct: true },
@@ -4134,7 +4135,7 @@ System.out.println(str.charAt(2));
   },
   {
     question:
-      "Given: What can be inserted in the above code at the specified location without causing compilation error? <br><br>(Choose 1 answer)",
+      "What can be inserted in the above code at the specified location without causing compilation error? <br><br>(Choose 1 answer)",
     code: `class Account {
   //insert code here
 }
@@ -4201,7 +4202,7 @@ System.out.print(balances1 == balances2);`,
   },
   {
     question:
-      "Given: Which of the following options are valid when inserted independently at the line marked //1? <br><br>(Choose 3 answers)",
+      "Which of the following options are valid when inserted independently at the line marked //1? <br><br>(Choose 3 answers)",
     code: `String s1 = "Hello";
 String s2 = "World";
 //1
@@ -4705,20 +4706,40 @@ if (flag = false) {
   },
   {
     question:
-      "Identify the valid for loop constructs assuming the following declarations: Object o = null; ArrayList c = //valid ArrayList object; int[] ia = //valid array. <br><br>(Choose 2 answers)",
-    code: ``,
+      "Identify the valid for loop constructs assuming the following declarations: <br><br>(Choose 2 answers)",
+    code: `Object o = null; 
+ArrayList c = // valid ArrayList object; 
+int[] ia = // valid array;
+
+// A) 
+for(o : c){ }
+
+// B) 
+for(final Object o2 : c){ }
+
+// C) 
+for(int i : ia) { }
+
+// D) 
+for(Iterator it : c.iterator()){ }
+
+// E) 
+for(int i = 1; i <= ia.length; i++){  
+    System.out.println(ia[i]); 
+}
+`,
     answers: [
-      { text: "for(o : c){ }", correct: false },
-      { text: "for(final Object o2 :c){ }", correct: true },
-      { text: "for(int i : ia) { }", correct: true },
-      { text: "for(Iterator it : c.iterator()){ }", correct: false },
+      { text: "A", correct: false },
+      { text: "B", correct: true },
+      { text: "C", correct: true },
+      { text: "D", correct: false },
       {
-        text: "for(int i = 1; i<=ia.length; i++){  System.out.println(ia[i]); }",
+        text: "E",
         correct: false,
       },
     ],
     explanation:
-      "The enhanced for loop (for-each) is valid for iterating over collections and arrays. The syntax 'for(type var : array/collection)' is correct for iterating over 'c' and 'ia'.",
+      "The first construct, for(o : c), is invalid because the variable o is uninitialized and cannot hold elements from the collection. <br><br>The second construct, for(final Object o2 : c), is valid since o2 is declared as final and can store elements from the ArrayList c. <br><br>The third construct, for(int i : ia), is also valid because i can hold the integer values from the int[] ia array.<br><br>The fourth construct, for(Iterator it : c.iterator()), is invalid because an enhanced for loop cannot directly use an Iterator like this. Lastly, the fifth construct, for(int i = 1; i <= ia.length; i++), is invalid because it starts indexing from 1, which would lead to an ArrayIndexOutOfBoundsException when accessing ia[i]. <br><br>Therefore, the valid constructs are B and",
   },
   {
     question: "What will the following code print? <br><br>(Choose 1 answer)",
@@ -4736,8 +4757,8 @@ if (s1.remove("a")) {
 }
 System.out.println(s1);`,
     answers: [
-      { text: "[b]", correct: true },
-      { text: "[c]", correct: false },
+      { text: "[b]", correct: false },
+      { text: "[c]", correct: true },
       { text: "[b, c, a]", correct: false },
       { text: "[a, b, c, a]", correct: false },
       { text: "Exception at runtime", correct: false },
@@ -5235,7 +5256,7 @@ public class TestClass {
       "'default', 'throws', 'long', and 'strictfp' are Java keywords. 'null' is a literal, and 'String' is a class.",
   },
   {
-    question: "What letters will be printed by this program? <br><br>(Choose 1 answer)",
+    question: "What letters will be printed by this program? <br><br>(Choose 3 answers)",
     code: `public class ForSwitch {
   public static void main(String args[]) {
     char i;
@@ -5262,13 +5283,14 @@ public class TestClass {
 }`,
     answers: [
       { text: "A", correct: false },
-      { text: "B", correct: true },
-      { text: "C", correct: false },
+      { text: "B", correct: false },
+      { text: "C", correct: true },
       { text: "D", correct: false },
-      { text: "F", correct: false },
+      { text: "E", correct: true },
+      { text: "F", correct: true },
     ],
     explanation:
-      "The switch statement matches case 1, printing 'B', and then breaks out of the LOOP.",
+      `In the first iteration, i starts at 0. The switch statement evaluates i++, which checks the value of i as 0 before incrementing it to 1. Since none of the cases match, it continues to the next iteration.<br><br>In the second iteration, i is now 1. The switch evaluates i++ again, matching case 1, which prints "B." However, because there is no break statement after this case, the execution continues to case 2, which then prints "C" before breaking out of that case.<br><br>In the third iteration, i becomes 3. The switch checks the value, matches case 3, and prints "D," but again, since there is no further break, it moves to case 4. In this case, it prints "E," and since there is still no break, it falls through to case 'E', printing "F."<br><br>Thus, the final output of the program is "C," "E," and "F," as the fall-through behavior in the switch statement allows the code to execute multiple cases without breaking out immediately.`,
   },
   {
     question:
@@ -5817,11 +5839,11 @@ c = a + b;`,
         correct: false,
       },
       { text: "It will print 5, 10.", correct: false },
-      { text: "It will print 10, 10.", correct: true },
-      { text: "It will throw an exception when run.", correct: false },
+      { text: "It will print 10, 10.", correct: false },
+      { text: "It will throw an exception when run.", correct: true },
     ],
     explanation:
-      "The method setIt() sets x.link to y.link, which is null. Therefore, a.link is set to null, and b.link is set to a, resulting in '10, 10'.",
+      "When the Holder class is compiled and run, it will throw a NullPointerException at runtime. This occurs because the a.link is set to null within the setIt method, and the program attempts to access a.link.value in the print statement. Since a.link is null, this results in the exception.",
   },
   {
     question:
@@ -6186,14 +6208,14 @@ System.out.println(i + " " + j);`,
   `,
     answers: [
       { text: "50", correct: false },
-      { text: "60", correct: true },
-      { text: "75", correct: false },
+      { text: "60", correct: false },
+      { text: "75", correct: true },
       { text: "0", correct: false },
       { text: "Compilation failure", correct: false },
       { text: "Exception at run time", correct: false },
     ],
     explanation:
-      "The expression evaluates to 5 * 30 / 2 = 150 / 2 = 75. However, due to the post-decrement, the value of 'a' used is 5, resulting in 60.",
+      "The given code initializes three variables: a with a value of 5, b with 2, and c with 30. The expression a-- * c / b uses the current value of a, which is 5, before it is decremented. This results in 5 * 30, giving 150. <br><br>When divided by b (which is 2), the final result is 75. Therefore, the output will be 75.",
   },
   {
     question:
@@ -6243,8 +6265,8 @@ if (b2 = b1 == false) {
 }`,
     answers: [
       { text: "Compile time error.", correct: false },
-      { text: "It will print true;", correct: true },
-      { text: "It will print false;", correct: false },
+      { text: "It will print true.", correct: true },
+      { text: "It will print false.", correct: false },
       { text: "Runtime error.", correct: false },
       { text: "It will print nothing.", correct: false },
     ],
@@ -6782,36 +6804,6 @@ System.out.println(myStr);`,
       { text: "java.net", correct: false },
     ],
     explanation: "The Random class is part of the java.util package.",
-  },
-  {
-    question:
-      "Given the class, now consider the following 3 options for running the program. Which of the following statements are true? <br><br>(Choose 2 answers)",
-    code: `// Filename: Test.java
-public class Test {
-  public static void main(String args[]) {
-    for (int i = 0; i < args.length; i++) {
-      System.out.print("  " + args[i]);
-    }
-  }
-}`,
-    answers: [
-      {
-        text: "The program will throw java.lang.ArrayIndexOutofBoundsException on option a.",
-        correct: false,
-      },
-      {
-        text: "The program will throw java.lang.NullPointerException on option a.",
-        correct: false,
-      },
-      {
-        text: "The program will print Test param1 on option b.",
-        correct: false,
-      },
-      { text: "It will print param1 param2 on option c.", correct: true },
-      { text: "It will not print anything on option a.", correct: true },
-    ],
-    explanation:
-      "The program will not print anything for option a because args is empty. It will print 'param1 param2' for option c.",
   },
   {
     question:
@@ -7630,7 +7622,7 @@ class OtherClass {
         text: "The class will fail to compile, since the class OtherClass must be defined in a file called OtherClass.java",
         correct: false,
       },
-      { text: "The class will fail to compile .", correct: true },
+      { text: "The class will fail to compile.", correct: true },
       { text: "None of the above.", correct: false },
     ],
     explanation:
@@ -7751,7 +7743,7 @@ class OtherClass {
   },
   {
     question:
-      "Consider the following TestClass.java file in the current directory: package a.a.a; public class TestClass { public static void main(String[] args) { System.out.println('Good!!!'); } } Which of the following command lines should be used for compiling if the generated class file is to be executed using the following command line: java -classpath . a.a.a.TestClass <br><br>(Choose 1 answer)",
+      "Consider the following TestClass.java file in the current directory. Which of the following command lines should be used for compiling if the generated class file is to be executed using the following command line: java -classpath . a.a.a.TestClass <br><br>(Choose 1 answer)",
     code: `package a.a.a;
 public class TestClass {
   public static void main(String[] args) {
