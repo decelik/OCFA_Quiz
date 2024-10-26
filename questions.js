@@ -1716,7 +1716,7 @@ public class TestClass {
   },
   {
     question:
-      "Java Basics: Which of the following are valid declarations of the standard main method? (Choose 2 answers)",
+      "Which of the following are valid declarations of the standard main method? (Choose 2 answers)",
     code: ``,
     answers: [
       { text: "static void main(String args[ ]) { }", correct: false },
@@ -1769,7 +1769,7 @@ public class TestClass {
   },
   {
     question:
-      "Java Basics: Given the following set of member declarations, which of the following is true? (Choose 2 answers)",
+      "Given the following set of member declarations, which of the following is true? (Choose 2 answers)",
     code: `int a; //  (1)
 static int a; //  (2)
 int f() {
@@ -1882,7 +1882,7 @@ if (b2 != b1 = !b2) {
   },
   {
     question:
-      "Java Basics: Which method declarations will enable a class to be run as a standalone program? (Choose 2 answers)",
+      "Which method declarations will enable a class to be run as a standalone program? (Choose 2 answers)",
     code: ``,
     answers: [
       { text: "static void main(String args[])", correct: false },
@@ -2016,7 +2016,7 @@ if (b2 != b1 = !b2) {
   },
   {
     question:
-      "Java Basics: Consider the following class: What will be printed when the above class is run using the following command line: java ArgsPrinter 1 2 3 4? (Choose 1 answer)",
+      "Consider the following class: What will be printed when the above class is run using the following command line: java ArgsPrinter 1 2 3 4? (Choose 1 answer)",
     code: `public class ArgsPrinter {
   public static void main(String args) {
     for (int i = 0; i < 3; i++) {
@@ -2394,7 +2394,7 @@ System.out.println(a + ++b * c);`,
   },
   {
     question:
-      "Java Basics: Which of the following is a benefit of encapsulation? (Choose 1 answer)",
+      "Which of the following is a benefit of encapsulation? (Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -2525,7 +2525,7 @@ for (int i = 0; i < t; t++) {
   },
   {
     question:
-      "Java Basics: Identify the fundamental principles of Object Oriented Programming. (Choose 2 answers)",
+      "Identify the fundamental principles of Object Oriented Programming. (Choose 2 answers)",
     code: ``,
     answers: [
       { text: "Code reuse", correct: true },
@@ -2589,7 +2589,7 @@ class B {}`,
       "The '-d' option specifies the root directory for package directories. The class files will be placed in /home/com/enthu and /home/com/foo.",
   },
   {
-    question: "Java Basics: A Java method .... (Choose 2 answers)",
+    question: "A Java method .... (Choose 2 answers)",
     code: ``,
     answers: [
       { text: "cannot return multiple values.", correct: true },
@@ -2669,7 +2669,7 @@ class B {}`,
       "The static variable 'a' is incremented twice, resulting in 3. The instance variable 'b' is incremented twice, resulting in 3. The local variable 'c' is incremented twice, resulting in 3.",
   },
   {
-    question: "Java Basics: The JRE contains: (Choose 2 answers)",
+    question: "The JRE contains: (Choose 2 answers)",
     code: ``,
     answers: [
       { text: "Java API", correct: true },
@@ -2905,7 +2905,7 @@ public class Account {
   },
   {
     question:
-      "Java Basics: Consider the following code: What will be the output when it is run by giving the following command: java Test good bye friend!? (Choose 1 answer)",
+      "Consider the following code: What will be the output when it is run by giving the following command: java Test good bye friend!? (Choose 1 answer)",
     code: `class Test {
   public static void main(String[] args) {
     for (int i = 0; i < args.length; i++) System.out.print(i == 0 ? args[i] : " " + args[i]);
@@ -2983,7 +2983,7 @@ System.out.println(s1.size() + " " + s1.indexOf("ann"));`,
   },
   {
     question:
-      "Java Basics: Consider the following code in file TestClass.java: This file is compiled and run using the following command line: java -version TestClass What will be the output? (Choose 1 answer)",
+      "Consider the following code in file TestClass.java: This file is compiled and run using the following command line: java -version TestClass What will be the output? (Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String[] args) {
     System.out.println("Hello!!!");
@@ -3238,7 +3238,7 @@ System.out.println(s);`,
       "The methods with different parameter types are valid overloads. The method with the same parameter types is not a valid overload.",
   },
   {
-    question: "Java Basics: Identify correct statements: (Choose 1 answer)",
+    question: "Identify correct statements: (Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -3665,7 +3665,7 @@ for (String dataElement: dataList) {
   },
   {
     question:
-      "Java Basics: Given the following code: How many object references are being created? (Choose 1 answer)",
+      "Given the following code: How many object references are being created? (Choose 1 answer)",
     code: `class References {
   String s1;
   String s2 = null;
@@ -3737,7 +3737,7 @@ public class TestClass {
   },
   {
     question:
-      "Java Basics: Consider the following program: What will the value of 'harry' if the program is run from the command line: java TestClass 111 222 333? (Choose 1 answer)",
+      "Consider the following program: What will the value of 'harry' if the program is run from the command line: java TestClass 111 222 333? (Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String[] args) {
     String tom = args[0];
@@ -3929,7 +3929,7 @@ public class StaticImports {
   },
   {
     question:
-      "Java Basics: Which of the following are valid class declarations? (Not the whole class, just the declaration). (Choose 1 answer)",
+      "Which of the following are valid class declarations? (Not the whole class, just the declaration). (Choose 1 answer)",
     code: ``,
     answers: [
       { text: "public class Hello", correct: true },
@@ -4004,7 +4004,7 @@ public class StaticImports {
   },
   {
     question:
-      "Java Basics: The options below contain the complete contents of a file. Which of these options can be run with the following command line once compiled? java main (Choose 1 answer)",
+      "The options below contain the complete contents of a file. Which of these options can be run with the following command line once compiled? java main (Choose 1 answer)",
     code: `//in file main.java
 class main {
   public void main(String[] args) {
@@ -4058,7 +4058,7 @@ class main {
   },
   {
     question:
-      'Java Basics: Which of the following are correct about "encapsulation"? (Choose 2 answers)',
+      'Which of the following are correct about "encapsulation"? (Choose 2 answers)',
     code: ``,
     answers: [
       { text: "Encapsulation is same as polymorphism.", correct: false },
@@ -4146,7 +4146,7 @@ System.out.println(str.charAt(2));
   },
   {
     question:
-      "Java Basics: Given: What can be inserted in the above code at the specified location without causing compilation error? (Choose 1 answer)",
+      "Given: What can be inserted in the above code at the specified location without causing compilation error? (Choose 1 answer)",
     code: `class Account {
   //insert code here
 }
@@ -6104,7 +6104,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "Java Basics: While compiling a java file you want the compiler to generate the class file in a particular directory. Which javac option will you use? (Choose 1 answer)",
+      "While compiling a java file you want the compiler to generate the class file in a particular directory. Which javac option will you use? (Choose 1 answer)",
     code: ``,
     answers: [
       { text: "-dest", correct: false },
@@ -6546,7 +6546,7 @@ case 3:
   },
   {
     question:
-      "Java Basics: Which of the following features are provided by the JDK? (Choose 4 answers)",
+      "Which of the following features are provided by the JDK? (Choose 4 answers)",
     code: ``,
     answers: [
       { text: "A Java Runtime Environment (JRE).", correct: true },
@@ -6659,7 +6659,7 @@ System.out.printf("I scored %d marks in the %s exam!", exam, marks);`,
   },
   {
     question:
-      "Java Basics: Which of the following features are provided by a JDK? (Choose 1 answer)",
+      "Which of the following features are provided by a JDK? (Choose 1 answer)",
     code: ``,
     answers: [
       { text: "Networking protocols", correct: false },
@@ -6829,7 +6829,7 @@ System.out.println(myStr);`,
   },
   {
     question:
-      "Java Basics: Given the class, now consider the following 3 options for running the program. Which of the following statements are true? (Choose 2 answers)",
+      "Given the class, now consider the following 3 options for running the program. Which of the following statements are true? (Choose 2 answers)",
     code: `// Filename: Test.java
 public class Test {
   public static void main(String args[]) {
@@ -7027,7 +7027,7 @@ public class TestClass {
   },
   {
     question:
-      "Java Basics: Which of the given options can be successfully inserted at line 1? (Choose 3 answers)",
+      "Which of the given options can be successfully inserted at line 1? (Choose 3 answers)",
     code: `
   //line 1
   public class A {
@@ -7092,7 +7092,7 @@ public class TestClass {
   },
   {
     question:
-      "Java Basics: Which of the following are benefits of polymorphism? (Choose 2 answers)",
+      "Which of the following are benefits of polymorphism? (Choose 2 answers)",
     code: ``,
     answers: [
       { text: "It makes the code more reusable.", correct: true },
@@ -7304,7 +7304,7 @@ public class TestClass {
   },
   {
     question:
-      "Java Basics: What will the following code print when run? (Choose 1 answer)",
+      "What will the following code print when run? (Choose 1 answer)",
     code: `public class TestClass {
   public static long main(String[] args) {
     System.out.println("Hello");
@@ -7414,7 +7414,7 @@ public class TestClass {
   },
   {
     question:
-      "Java Basics: Which of the following are true about accessor methods? (Choose 1 answer)",
+      "Which of the following are true about accessor methods? (Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -7564,7 +7564,7 @@ void Perform_work(int time) {}`,
       "The code will not compile because the catch block is incorrectly placed after the finally block.",
   },
   {
-    question: "Java Basics: What is meant by 'encapsulation'? (Choose 1 answer)",
+    question: "What is meant by 'encapsulation'? (Choose 1 answer)",
     code: ``,
     answers: [
       { text: "There is no way to access member variables.", correct: false },
@@ -7639,7 +7639,7 @@ void Perform_work(int time) {}`,
       "The condition 'i == f' is false, so c is not incremented. The second condition is true, so c is incremented by 2, resulting in 'b'.",
   },
   {
-    question: "Java Basics: What is meant by 'encapsulation'? (Choose 1 answer)",
+    question: "What is meant by 'encapsulation'? (Choose 1 answer)",
     code: ``,
     answers: [
       { text: "There is no way to access member variable.", correct: false },
@@ -7658,7 +7658,7 @@ void Perform_work(int time) {}`,
   },
   {
     question:
-      "Java Basics: Assuming that the following are the complete contents of TestClass.java file, what will be result of attempting to compile this file? (Choose 1 answer)",
+      "Assuming that the following are the complete contents of TestClass.java file, what will be result of attempting to compile this file? (Choose 1 answer)",
     code: `import java.util. * ;
 package test;
 public class TestClass {
@@ -7798,7 +7798,7 @@ class OtherClass {
   },
   {
     question:
-      "Java Basics: Consider the following TestClass.java file in the current directory: package a.a.a; public class TestClass { public static void main(String[] args) { System.out.println('Good!!!'); } } Which of the following command lines should be used for compiling if the generated class file is to be executed using the following command line: java -classpath . a.a.a.TestClass (Choose 1 answer)",
+      "Consider the following TestClass.java file in the current directory: package a.a.a; public class TestClass { public static void main(String[] args) { System.out.println('Good!!!'); } } Which of the following command lines should be used for compiling if the generated class file is to be executed using the following command line: java -classpath . a.a.a.TestClass (Choose 1 answer)",
     code: `package a.a.a;
 public class TestClass {
   public static void main(String[] args) {
