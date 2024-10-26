@@ -1,6 +1,6 @@
 export const questions = [
   {
-    question: "What is the result of the following code? (Choose 1 answer)",
+    question: "What is the result of the following code? <br><br>(Choose 1 answer)",
     code: `public class Test {
     public static void main(String[] args) {
         System.out.println(10 + 20 + "Java");
@@ -17,7 +17,7 @@ export const questions = [
   },
   {
     question:
-      "What is the result of the following code snippet? (Choose 1 answer)",
+      "What is the result of the following code snippet? <br><br>(Choose 1 answer)",
     code: `public class Test {
     public static void main(String[] args) {
         int x = 5;
@@ -34,7 +34,7 @@ export const questions = [
       "The code uses the prefix increment operator (++x), which increments the value of x by one before printing it, resulting in 6.",
   },
   {
-    question: "What is the result of the following code snippet? (Choose 1 answer)",
+    question: "What is the result of the following code snippet? <br><br>(Choose 1 answer)",
     code: `public class Test {
     public static void main(String[] args) {
         int x = 10;
@@ -53,7 +53,7 @@ export const questions = [
   },
   {
     question:
-      "What will be the output of the following program? (Choose 3 answers)",
+      "What will be the output of the following program? <br><br>(Choose 3 answers)",
     code: `public class TestClass {
     public static void main(String args[]) {
         try {
@@ -97,7 +97,7 @@ export const questions = [
   },
   {
     question:
-      "What will be the result of compiling and running the following program? (Choose 1 answer)",
+      "What will be the result of compiling and running the following program? <br><br>(Choose 1 answer)",
     code: `class SomeClass {
     public static void main(String args[]) {
         int size = 10;
@@ -132,7 +132,7 @@ export const questions = [
   },
   {
     question:
-      "Given the following program, which of these statements are true? (Choose 2 answers)",
+      "Given the following program, which of these statements are true? <br><br>(Choose 2 answers)",
     code: `public class FinallyTest {
     public static void main(String args[]) {
         try {
@@ -171,7 +171,7 @@ export const questions = [
   },
   {
     question:
-      "You have an array of objects and you want to search for a particular object in that array. Which of the following Java statements will you need to use? (Choose 2 answers)",
+      "You have an array of objects and you want to search for a particular object in that array. Which of the following Java statements will you need to use? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "Conditional", correct: true },
@@ -184,7 +184,7 @@ export const questions = [
   },
   {
     question:
-      "What may be done to the above code to make it print 100? (Choose 1 answer)",
+      "What may be done to the above code to make it print 100? <br><br>(Choose 1 answer)",
     code: `class Node {
     static final int TYPE = 100;
     public static void print() {
@@ -213,7 +213,7 @@ public class Test {
   },
   {
     question:
-      "Identify the valid for loop constructs assuming the following declarations: Object o = null; ArrayList c = //valid ArrayList object. int[] ia = //valid array. (Choose 2 answers)",
+      "Identify the valid for loop constructs assuming the following declarations: Object o = null; ArrayList c = //valid ArrayList object. int[] ia = //valid array. <br><br>(Choose 2 answers)",
     code: `Object o = null;
 ArrayList c = //valid ArrayList object;
 int[] ia = //valid array;`,
@@ -231,7 +231,7 @@ int[] ia = //valid array;`,
       "The enhanced for loop (for-each) syntax requires a type declaration, so 'for(o : c)' is invalid. 'for(final Object o2 : c)' is valid, as is 'for(int i : ia)' for iterating over arrays. 'for(Iterator it : c.iterator())' is invalid because it's missing the proper syntax for an enhanced for loop. The last option has an off-by-one error in the array indexing.",
   },
   {
-    question: "What will the following code print? (Choose 1 answer)",
+    question: "What will the following code print? <br><br>(Choose 1 answer)",
     code: `List s1 = new ArrayList();
 s1.add("a");
 s1.add("b");
@@ -257,7 +257,7 @@ System.out.println(s1);`,
   },
   {
     question:
-      "What will be the output of the following program? (Choose 3 answers)",
+      "What will be the output of the following program? <br><br>(Choose 3 answers)",
     code: `public class TestClass {
   public static void main(String args[]) {
     try {
@@ -301,7 +301,7 @@ System.out.println(s1);`,
   },
   {
     question:
-      "What will be the result of compiling and running the following program? (Choose 1 answer)",
+      "What will be the result of compiling and running the following program? <br><br>(Choose 1 answer)",
     code: `class SomeClass {
   public static void main(String args[]) {
     int size = 10;
@@ -336,7 +336,7 @@ System.out.println(s1);`,
   },
   {
     question:
-      "Given the following program, which of these statements are true? (Choose 2 answers)",
+      "Given the following program, which of these statements are true? <br><br>(Choose 2 answers)",
     code: `public class FinallyTest {
   public static void main(String args[]) {
     try {
@@ -373,7 +373,7 @@ System.out.println(s1);`,
   },
   {
     question:
-      "You have an array of objects and you want to search for a particular object in that array. Which of the following Java statements will you need to use? (Choose 1 answer)",
+      "You have an array of objects and you want to search for a particular object in that array. Which of the following Java statements will you need to use? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "Conditional", correct: false },
@@ -386,7 +386,7 @@ System.out.println(s1);`,
   },
   {
     question:
-      "What may be done to the above code to make it print 100? (Choose 2 answers)",
+      "What may be done to the above code to make it print 100? <br><br>(Choose 2 answers)",
     code: `class Node {
   static final int TYPE = 100;
   public static void print() {
@@ -414,7 +414,7 @@ public class Test {
       "The static method print() can be called using the class name Node.print() or by creating an instance of Node and calling print() on it.",
   },
   {
-    question: "What will the following code print? (Choose 1 answer)",
+    question: "What will the following code print? <br><br>(Choose 1 answer)",
     code: `boolean flag = true;
 if (flag = false) {
   System.out.println("1");
@@ -435,7 +435,7 @@ if (flag = false) {
   },
   {
     question:
-      "Identify the valid for loop constructs assuming the following declarations: Object o = null; ArrayList c = //valid ArrayList object; int[] ia = //valid array. (Choose 2 answers)",
+      "Identify the valid for loop constructs assuming the following declarations: Object o = null; ArrayList c = //valid ArrayList object; int[] ia = //valid array. <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "for(o : c){ }", correct: false },
@@ -451,7 +451,7 @@ if (flag = false) {
       "The enhanced for loop (for-each) is valid for iterating over collections and arrays. The syntax 'for(type var : array/collection)' is correct for iterating over 'c' and 'ia'.",
   },
   {
-    question: "What will the following code print? (Choose 1 answer)",
+    question: "What will the following code print? <br><br>(Choose 1 answer)",
     code: `List s1 = new ArrayList();
 s1.add("a");
 s1.add("b");
@@ -477,7 +477,7 @@ System.out.println(s1);`,
   },
   {
     question:
-      "Which one can hold a larger integer value, a char or a short? (Choose 1 answer)",
+      "Which one can hold a larger integer value, a char or a short? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "char", correct: true },
@@ -494,7 +494,7 @@ System.out.println(s1);`,
   },
   {
     question:
-      "You are writing a class named AccountManager. This class is the starting point of your application and is to be executing from the command line. What should be the name of the file containing this class's source code? (Choose 1 answer)",
+      "You are writing a class named AccountManager. This class is the starting point of your application and is to be executing from the command line. What should be the name of the file containing this class's source code? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "accountmanager.java", correct: false },
@@ -511,7 +511,7 @@ System.out.println(s1);`,
   },
   {
     question:
-      "What should be inserted at //1 so that Y.java can compile without any error? (Choose 2 answers)",
+      "What should be inserted at //1 so that Y.java can compile without any error? <br><br>(Choose 2 answers)",
     code: `//in file /root/com/foo/X.java
 package com.foo;
 public class X {
@@ -541,7 +541,7 @@ public class Y {
       "To access the static field LOGICID from class X, you need to import it using 'import static com.foo.X.*;' or directly use 'com.foo.X.LOGICID'.",
   },
   {
-    question: "Which of the following are features of Java? (Choose 2 answers)",
+    question: "Which of the following are features of Java? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -564,7 +564,7 @@ public class Y {
   },
   {
     question:
-      "Which of the following statements are true if the above program is run with the command line: java Test closed? (Choose 1 answer)",
+      "Which of the following statements are true if the above program is run with the command line: java Test closed? <br><br>(Choose 1 answer)",
     code: `public class Test {
   public static void main(String[] args) {
       if (args[0].equals("open"))
@@ -593,7 +593,7 @@ public class Y {
       "The program will throw an ArrayIndexOutOfBoundsException because it tries to access args[1] when only one argument is provided.",
   },
   {
-    question: "What will the following code print when run? (Choose 4 answers)",
+    question: "What will the following code print when run? <br><br>(Choose 4 answers)",
     code: `public class TestClass {
   public static void main(String[] args) throws Exception {
     String[] sa = {
@@ -622,7 +622,7 @@ public class Y {
   },
   {
     question:
-      "Which of the following statements will print true? (Choose 2 answers)",
+      "Which of the following statements will print true? <br><br>(Choose 2 answers)",
     code: `int x = 5;
 int y = 9;
 int z = 12;
@@ -639,7 +639,7 @@ boolean b = true;`,
   },
   {
     question:
-      "What will be the output when the above code is executed? (Choose 1 answer)",
+      "What will be the output when the above code is executed? <br><br>(Choose 1 answer)",
     code: `public static void main(String[] args) throws Exception {
   int i = 1,
   j = 10;
@@ -660,7 +660,7 @@ boolean b = true;`,
   },
   {
     question:
-      "Given the following class, which of these are valid ways of referring to the class from outside of the package com.enthu? (Choose 2 answers)",
+      "Given the following class, which of these are valid ways of referring to the class from outside of the package com.enthu? <br><br>(Choose 2 answers)",
     code: `package com.enthu;
 public class Base {
   // ....
@@ -684,7 +684,7 @@ public class Base {
   },
   {
     question:
-      "Which of the following are true about the enhanced for loop? (Choose 1 answer)",
+      "Which of the following are true about the enhanced for loop? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -709,7 +709,7 @@ public class Base {
   },
   {
     question:
-      "Which lines contain a valid constructor in the following code? (Choose 3 answers)",
+      "Which lines contain a valid constructor in the following code? <br><br>(Choose 3 answers)",
     code: `public class TestClass {
   public TestClass(int a, int b) {} // 1
   public void TestClass(int a) {} // 2
@@ -729,7 +729,7 @@ public class Base {
   },
   {
     question:
-      "Which of the following is true about a Java source file? (Choose 2 answers)",
+      "Which of the following is true about a Java source file? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "It must have exactly one package statement.", correct: false },
@@ -755,7 +755,7 @@ public class Base {
       "A Java source file can have zero or one package statement and zero or more import statements. Classes in the same package are not automatically imported.",
   },
   {
-    question: "Identify correct statements. (Choose 1 answer)",
+    question: "Identify correct statements. <br><br>(Choose 1 answer)",
     code: `double da[] = new double[3];`,
     answers: [
       {
@@ -780,7 +780,7 @@ public class Base {
       "The array 'da' is initialized with default values of 0.0, not null. The correct loop will print 0.0 three times.",
   },
   {
-    question: "Which of these for statements are valid? (Choose 1 answer)",
+    question: "Which of these for statements are valid? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "1, 2", correct: false },
@@ -794,7 +794,7 @@ public class Base {
   },
   {
     question:
-      "What letters, and in what order, will be printed when the following program is compiled and run? (Choose 1 answer)",
+      "What letters, and in what order, will be printed when the following program is compiled and run? <br><br>(Choose 1 answer)",
     code: `public class FinallyTest {
   public static void main(String args[]) throws Exception {
     try {
@@ -821,7 +821,7 @@ public class Base {
   },
   {
     question:
-      "What, if anything, is wrong with the following code? (Choose 1 answer)",
+      "What, if anything, is wrong with the following code? <br><br>(Choose 1 answer)",
     code: `void test(int x) {
    switch(x) {
       case 1:
@@ -851,7 +851,7 @@ public class Base {
       "The code is syntactically correct. A switch statement does not require break statements or a specific order for case labels.",
   },
   {
-    question: "Identify correct statements. (Choose 2 answers)",
+    question: "Identify correct statements. <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -880,7 +880,7 @@ public class Base {
   },
   {
     question:
-      "Which of the following statements will print true? (Choose 2 answers)",
+      "Which of the following statements will print true? <br><br>(Choose 2 answers)",
     code: `int a = 10, b = 20, c = 30, d = 40;
 boolean t = true;`,
     answers: [
@@ -896,7 +896,7 @@ boolean t = true;`,
       "The second and third statements evaluate to true. The first statement is false because 'a > b' is false, and the fourth statement is false because '(b>c && c>d)' is false.",
   },
   {
-    question: "What is the result? (Choose 1 answer)",
+    question: "What is the result? <br><br>(Choose 1 answer)",
     code: `String str = "hello\\r\\n" + "world";
 System.out.println(str.length);`,
     answers: [
@@ -911,7 +911,7 @@ System.out.println(str.length);`,
   },
   {
     question:
-      "A try statement must always have a ............. associated with it. (Choose 1 answer)",
+      "A try statement must always have a ............. associated with it. <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "catch", correct: false },
@@ -925,7 +925,7 @@ System.out.println(str.length);`,
   },
   {
     question:
-      "What sequence of digits will the following program print? (Choose 1 answer)",
+      "What sequence of digits will the following program print? <br><br>(Choose 1 answer)",
     code: `import java.util. * ;
 public class ListTest {
   public static void main(String args[]) {
@@ -949,7 +949,7 @@ public class ListTest {
   },
   {
     question:
-      "Which two lines can be inserted at locations marked //1 and //2? (Choose 1 answer)",
+      "Which two lines can be inserted at locations marked //1 and //2? <br><br>(Choose 1 answer)",
     code: `//1
 //2
 public class TestClass {
@@ -970,7 +970,7 @@ public class TestClass {
       "A package statement can be placed at the top of the file. Import statements are not needed for java.lang classes.",
   },
   {
-    question: "Which of these are keywords in Java? (Choose 4 answers)",
+    question: "Which of these are keywords in Java? <br><br>(Choose 4 answers)",
     code: ``,
     answers: [
       { text: "default", correct: true },
@@ -984,7 +984,7 @@ public class TestClass {
       "'default', 'throws', 'long', and 'strictfp' are Java keywords. 'null' is a literal, and 'String' is a class.",
   },
   {
-    question: "What letters will be printed by this program? (Choose 1 answer)",
+    question: "What letters will be printed by this program? <br><br>(Choose 1 answer)",
     code: `public class ForSwitch {
   public static void main(String args[]) {
     char i;
@@ -1021,7 +1021,7 @@ public class TestClass {
   },
   {
     question:
-      "Which of the following operators can be used in conjunction with a String object? (Choose 3 answers)",
+      "Which of the following operators can be used in conjunction with a String object? <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       { text: "+", correct: true },
@@ -1034,7 +1034,7 @@ public class TestClass {
       "The '+' and '+=' operators can be used for string concatenation, and the '.' operator is used to call methods on a String object.",
   },
   {
-    question: "What will the following code snippet print? (Choose 1 answer)",
+    question: "What will the following code snippet print? <br><br>(Choose 1 answer)",
     code: `int count = 0,
 sum = 0;
 do {
@@ -1052,7 +1052,7 @@ System.out.println(sum);`,
     explanation: "The loop skips numbers divisible by 3, so the sum is 48.",
   },
   {
-    question: "What is the result? (Choose 1 answer)",
+    question: "What is the result? <br><br>(Choose 1 answer)",
     code: `public static void main(String[] args) {
   int[] balances1 = new int[2];
   balances1[0] = 10;
@@ -1074,7 +1074,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "Which of the following are NOT valid operators in Java? (Choose 4 answers)",
+      "Which of the following are NOT valid operators in Java? <br><br>(Choose 4 answers)",
     code: ``,
     answers: [
       { text: "sizeof", correct: true },
@@ -1088,7 +1088,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "Which statements regarding the following code are correct? (Choose 1 answer)",
+      "Which statements regarding the following code are correct? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String args[]) {
     int x = Integer.parseInt(args[0]);
@@ -1114,7 +1114,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "Which of the following statements can be inserted successfully at // 1? (Choose 3 answers)",
+      "Which of the following statements can be inserted successfully at // 1? <br><br>(Choose 3 answers)",
     code: `public class InitTest {
   static int si = 10;
   int i;
@@ -1136,7 +1136,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "Which of the following code snippets will compile without any errors? (Choose 4 answers)",
+      "Which of the following code snippets will compile without any errors? <br><br>(Choose 4 answers)",
     code: ``,
     answers: [
       { text: "while (false) { x=3; }", correct: true },
@@ -1148,7 +1148,7 @@ System.out.println(sum);`,
       "All the code snippets will compile without errors. The while and if statements with 'false' will not execute their blocks, but they are syntactically correct.",
   },
   {
-    question: "What will the following program print? (Choose 1 answer)",
+    question: "What will the following program print? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   static int someInt = 10;
   public static void changeIt(int a) {
@@ -1171,7 +1171,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "Which of the following options, when inserted in the above code, will print 111 222? (Choose 1 answer)",
+      "Which of the following options, when inserted in the above code, will print 111 222? <br><br>(Choose 1 answer)",
     code: `public class Account {
   int id;
   public Account(int id) {
@@ -1210,7 +1210,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "What command should be given to compile and run a java source file named TestClass.java (for standard Oracle JDK)? (Choose 1 answer)",
+      "What command should be given to compile and run a java source file named TestClass.java (for standard Oracle JDK)? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "javac TestClass and java TestClass.class", correct: false },
@@ -1224,7 +1224,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "What will the following class print when compiled and run? (Choose 1 answer)",
+      "What will the following class print when compiled and run? <br><br>(Choose 1 answer)",
     code: `public class Holder {
   int value = 1;
   Holder link;
@@ -1255,7 +1255,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "What will be the result of attempting to compile and run the following code? (Choose 1 answer)",
+      "What will be the result of attempting to compile and run the following code? <br><br>(Choose 1 answer)",
     code: `class TestClass {
   public static void main(String args[]) {
     String str1 = "str1";
@@ -1276,7 +1276,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "What will be the output of the following code snippet? (Choose 1 answer)",
+      "What will be the output of the following code snippet? <br><br>(Choose 1 answer)",
     code: `int a = 1;
 int[] ia = new int[10];
 int b = ia[a];
@@ -1294,7 +1294,7 @@ System.out.println(b = c);`,
   },
   {
     question:
-      "How many objects and reference variables are created by the following code? (Choose 1 answer)",
+      "How many objects and reference variables are created by the following code? <br><br>(Choose 1 answer)",
     code: `TestClass t1, t2, t3, t4;
 t1 = t2 = new TestClass();
 t3 = new TestClass();`,
@@ -1310,7 +1310,7 @@ t3 = new TestClass();`,
   },
   {
     question:
-      "What will the following class print when compiled and run? (Choose 1 answer)",
+      "What will the following class print when compiled and run? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public int methodA(int a) {
     return a * 2;
@@ -1344,7 +1344,7 @@ t3 = new TestClass();`,
       "The program will not compile because methodA is declared twice with the same parameter list, which is not allowed.",
   },
   {
-    question: "Which lines will print true? (Choose 2 answers)",
+    question: "Which lines will print true? <br><br>(Choose 2 answers)",
     code: `String s1 = "java";
 String s2 = "java";
 String s3 = new String("java");
@@ -1366,7 +1366,7 @@ System.out.println(s2.equals(s3)); //4`,
   },
   {
     question:
-      "Which of the following declarations are valid? (Choose 3 answers)",
+      "Which of the following declarations are valid? <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       { text: "float f1 = 1.0;", correct: false },
@@ -1380,7 +1380,7 @@ System.out.println(s2.equals(s3)); //4`,
   },
   {
     question:
-      "What will the following code print when compiled and run? (Choose 1 answer)",
+      "What will the following code print when compiled and run? <br><br>(Choose 1 answer)",
     code: `public class OrderTest {
   public void initData(String[] arr) {
     int ind = 0;
@@ -1417,7 +1417,7 @@ System.out.println(s2.equals(s3)); //4`,
       "When you do new String[2], you create a String array of two elements. arr is therefore not null. But each element of the array is not given any value and is therefore null. When you call a method on that element (i.e. str.concat(str+' '+ind); in initData), it will generate a NullPointerException, which is a RuntimeException.",
   },
   {
-    question: "What will the following program print? (Choose 1 answer)",
+    question: "What will the following program print? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String[] args) {
     int x = 1;
@@ -1438,7 +1438,7 @@ System.out.println(s2.equals(s3)); //4`,
   },
   {
     question:
-      "Which of the following statements are correct? (Choose 1 answer)",
+      "Which of the following statements are correct? <br><br>(Choose 1 answer)",
     code: `class A {
   public void doA(int k) throws Exception { // 0
     for (int i = 0; i < 10; i++) {
@@ -1483,7 +1483,7 @@ System.out.println(s2.equals(s3)); //4`,
   },
   {
     question:
-      "What is the result of executing the following fragment of code? (Choose 1 answer)",
+      "What is the result of executing the following fragment of code? <br><br>(Choose 1 answer)",
     code: `boolean b1 = false;
 boolean b2 = false;
 if (b2 = b1 != b2) {
@@ -1503,7 +1503,7 @@ if (b2 = b1 != b2) {
   },
   {
     question:
-      "Which of the following statements will print YES? (Choose 2 answers)",
+      "Which of the following statements will print YES? <br><br>(Choose 2 answers)",
     code: `String a = "aAaA", b = "bbBB";`,
     answers: [
       {
@@ -1527,7 +1527,7 @@ if (b2 = b1 != b2) {
       "The second statement prints YES because 'a.substring(1,2)' is 'A' and 'b.substring(2)' is 'BB', forming 'ABB'. The third statement prints YES because both strings have the same length.",
   },
   {
-    question: "Which of the following statements are true? (Choose 2 answers)",
+    question: "Which of the following statements are true? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -1551,7 +1551,7 @@ if (b2 = b1 != b2) {
       "The modulus operator can be used with both integral and floating-point operands. The && operator only works with boolean operands. The operators *, /, and % have the same precedence level, and the += operator can be used with both integral and String operands.",
   },
   {
-    question: "What will the following program print? (Choose 1 answer)",
+    question: "What will the following program print? <br><br>(Choose 1 answer)",
     code: `class LoopTest {
   public static void main(String args[]) {
     int counter = 0;
@@ -1576,7 +1576,7 @@ if (b2 = b1 != b2) {
   },
   {
     question:
-      "The following method will compile and run without any problems. (Choose 1 answer)",
+      "The following method will compile and run without any problems. <br><br>(Choose 1 answer)",
     code: `public void switchTest(byte x) {
   switch (x) {
   case 'b':
@@ -1597,7 +1597,7 @@ if (b2 = b1 != b2) {
   },
   {
     question:
-      "How many string objects are created in the following code fragment? (Choose 1 answer)",
+      "How many string objects are created in the following code fragment? <br><br>(Choose 1 answer)",
     code: `String a, b, c;
 a = new String("hello");
 b = a;
@@ -1614,7 +1614,7 @@ c = a + b;`,
   },
   {
     question:
-      "What will the following class print when compiled and run? (Choose 1 answer)",
+      "What will the following class print when compiled and run? <br><br>(Choose 1 answer)",
     code: `class Holder {
   int value = 1;
   Holder link;
@@ -1649,7 +1649,7 @@ c = a + b;`,
   },
   {
     question:
-      "Which of the following method declarations correctly declares a method named sum that takes an array of integers and returns the sum of the values in that array? (Choose 1 answer)",
+      "Which of the following method declarations correctly declares a method named sum that takes an array of integers and returns the sum of the values in that array? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "sum(int[] : array) : int { // code here }", correct: false },
@@ -1663,7 +1663,7 @@ c = a + b;`,
   },
   {
     question:
-      "Arrays and ArrayLists: What will the following code print? (Choose 1 answer)",
+      "What will the following code print? <br><br>(Choose 1 answer)",
     code: `List s1 = new ArrayList();
 s1.add("a");
 s1.add("b");
@@ -1683,7 +1683,7 @@ System.out.println(s1.remove("a") + " " + s1.remove("x"));
   },
   {
     question:
-      "Working with Java Data Types: Which of the following is NOT a primitive data value in Java? (Choose 2 answers)",
+      "Which of the following is NOT a primitive data value in Java? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: '"x"', correct: true },
@@ -1697,7 +1697,7 @@ System.out.println(s1.remove("a") + " " + s1.remove("x"));
   },
   {
     question:
-      "Arrays and ArrayLists: What can be inserted in the above code so that it can compile without any error? (Choose 2 answers)",
+      "What can be inserted in the above code so that it can compile without any error? <br><br>(Choose 2 answers)",
     code: `import java.util. * ;
 public class TestClass {
   public static void main(String[] args) throws Exception {
@@ -1716,7 +1716,7 @@ public class TestClass {
   },
   {
     question:
-      "Which of the following are valid declarations of the standard main method? (Choose 2 answers)",
+      "Which of the following are valid declarations of the standard main method? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "static void main(String args[ ]) { }", correct: false },
@@ -1733,7 +1733,7 @@ public class TestClass {
   },
   {
     question:
-      "Working with the String Class: What will the following statement print? (Choose 1 answer)",
+      "What will the following statement print? <br><br>(Choose 1 answer)",
     code: `System.out.printf("I scored %d marks in the %s exam!", "90%", "Java Foundations");`,
     answers: [
       {
@@ -1755,7 +1755,7 @@ public class TestClass {
   },
   {
     question:
-      "Working with Java Data Types: Which of the following can be valid declarations of an integer variable? (Choose 2 answers)",
+      "Which of the following can be valid declarations of an integer variable? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "global int x = 10;", correct: false },
@@ -1769,7 +1769,7 @@ public class TestClass {
   },
   {
     question:
-      "Given the following set of member declarations, which of the following is true? (Choose 2 answers)",
+      "Given the following set of member declarations, which of the following is true? <br><br>(Choose 2 answers)",
     code: `int a; //  (1)
 static int a; //  (2)
 int f() {
@@ -1806,7 +1806,7 @@ static int f() {
   },
   {
     question:
-      "Working with Java Operators: What is the result of executing the following fragment of code? (Choose 1 answer)",
+      "What is the result of executing the following fragment of code? <br><br>(Choose 1 answer)",
     code: `boolean b1 = false;
 boolean b2 = false;
 if (b2 != b1 = !b2) {
@@ -1826,7 +1826,7 @@ if (b2 != b1 = !b2) {
   },
   {
     question:
-      "Classes and Constructors: Which of the following can be used as a constructor for the class shell given below? (Choose 2 answers)",
+      "Classes and Constructors: Which of the following can be used as a constructor for the class shell given below? <br><br>(Choose 2 answers)",
     code: `public class TestClass {
   // lots of code ...
 }`,
@@ -1842,7 +1842,7 @@ if (b2 != b1 = !b2) {
   },
   {
     question:
-      "Basic Java Elements: Which of the following methods do not follow JavaBeans naming conventions? (Choose 1 answer)",
+      "Which of the following methods do not follow JavaBeans naming conventions? <br><br>(Choose 1 answer)",
     code: `public class Bond {
   public String ticker;
   private double Coupon;
@@ -1882,7 +1882,7 @@ if (b2 != b1 = !b2) {
   },
   {
     question:
-      "Which method declarations will enable a class to be run as a standalone program? (Choose 2 answers)",
+      "Which method declarations will enable a class to be run as a standalone program? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "static void main(String args[])", correct: false },
@@ -1896,7 +1896,7 @@ if (b2 != b1 = !b2) {
   },
   {
     question:
-      "Using Looping Statements: What will the following code print? (Choose 1 answer)",
+      "Using Looping Statements: What will the following code print? <br><br>(Choose 1 answer)",
     code: `class Test {
   public static void main(String args[]) {
     int c = 0;
@@ -1923,7 +1923,7 @@ if (b2 != b1 = !b2) {
   },
   {
     question:
-      "Classes and Constructors: Which of these statements regarding the following code are correct? (Choose 1 answer)",
+      "Classes and Constructors: Which of these statements regarding the following code are correct? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   static int a;
   int b;
@@ -1964,7 +1964,7 @@ if (b2 != b1 = !b2) {
   },
   {
     question:
-      "Using Looping Statements: In the following code what will be the output if 0 (integer value zero) is passed to loopTest()? (Choose 1 answer)",
+      "Using Looping Statements: In the following code what will be the output if 0 (integer value zero) is passed to loopTest()? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public void loopTest(int x) {
     loop: for (int i = 1; i < 5; i++) {
@@ -1990,7 +1990,7 @@ if (b2 != b1 = !b2) {
   },
   {
     question:
-      "Using Looping Statements: What will the following program print? (Choose 1 answer)",
+      "Using Looping Statements: What will the following program print? <br><br>(Choose 1 answer)",
     code: `class Test {
   public static void main(String args[]) {
     int c = 0;
@@ -2016,7 +2016,7 @@ if (b2 != b1 = !b2) {
   },
   {
     question:
-      "Consider the following class: What will be printed when the above class is run using the following command line: java ArgsPrinter 1 2 3 4? (Choose 1 answer)",
+      "Consider the following class: What will be printed when the above class is run using the following command line: java ArgsPrinter 1 2 3 4? <br><br>(Choose 1 answer)",
     code: `public class ArgsPrinter {
   public static void main(String args) {
     for (int i = 0; i < 3; i++) {
@@ -2036,7 +2036,7 @@ if (b2 != b1 = !b2) {
   },
   {
     question:
-      "Working with the Random and Math Classes: What can be inserted at //1 and //2 in the code below so that it will print a number between 0.0 and 1.0? (Assume that no package has been imported in the code.) (Choose 2 answers)",
+      "Working with the Random and Math Classes: What can be inserted at //1 and //2 in the code below so that it will print a number between 0.0 and 1.0? (Assume that no package has been imported in the code.) <br><br>(Choose 2 answers)",
     code: `//1
 double d = //2
 System.out.println(d);`,
@@ -2061,7 +2061,7 @@ System.out.println(d);`,
   },
   {
     question:
-      "Working with Java Data Types: Which of these is the correct format to use to create the char literal of value a? Assume that \\u0061 is the unicode value for a. (Choose 2 answers)",
+      "Which of these is the correct format to use to create the char literal of value a? Assume that \\u0061 is the unicode value for a. <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "'a'", correct: true },
@@ -2075,7 +2075,7 @@ System.out.println(d);`,
   },
   {
     question:
-      "Using Looping Statements: What will the following program print? (Choose 1 answer)",
+      "Using Looping Statements: What will the following program print? <br><br>(Choose 1 answer)",
     code: `class Test {
   public static void main(String args[]) {
     int i = 0,
@@ -2101,7 +2101,7 @@ System.out.println(d);`,
   },
   {
     question:
-      "Working with Java Data Types: Given the following two lines of code: What can XXX be? (Choose 1 answer)",
+      "Given the following two lines of code: What can XXX be? <br><br>(Choose 1 answer)",
     code: `int rate = 10;
 XXX amount = 1 - rate / 100 * 1 - rate / 100;`,
     answers: [
@@ -2116,7 +2116,7 @@ XXX amount = 1 - rate / 100 * 1 - rate / 100;`,
   },
   {
     question:
-      "Debugging and Exception Handling: Which code fragments will print the last argument given on the command line to the standard output, and exit without any output and exceptions on the command line if no arguments are given? (Choose 3 answers)",
+      "Which code fragments will print the last argument given on the command line to the standard output, and exit without any output and exceptions on the command line if no arguments are given? <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       {
@@ -2145,7 +2145,7 @@ XXX amount = 1 - rate / 100 * 1 - rate / 100;`,
   },
   {
     question:
-      "Using Decision Statements: Consider the following method: Which of the following statements are correct? (Choose 2 answers)",
+      "Using Decision Statements: Consider the following method: Which of the following statements are correct? <br><br>(Choose 2 answers)",
     code: `public static void ifTest(boolean flag) {
   if (flag) //1
   if (flag) //2
@@ -2179,7 +2179,7 @@ XXX amount = 1 - rate / 100 * 1 - rate / 100;`,
   },
   {
     question:
-      "Debugging and Exception Handling: Which digits and in what order will be printed when the following program is run? (Choose 1 answer)",
+      "Which digits and in what order will be printed when the following program is run? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String args[]) {
     int k = 0;
@@ -2219,7 +2219,7 @@ XXX amount = 1 - rate / 100 * 1 - rate / 100;`,
   },
   {
     question:
-      "Working with Java Data Types: Which of the following statements are true? (Choose 2 answers)",
+      "Which of the following statements are true? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -2239,7 +2239,7 @@ XXX amount = 1 - rate / 100 * 1 - rate / 100;`,
   },
   {
     question:
-      "Arrays and ArrayLists: What will the following code print when compiled and run? (Choose 1 answer)",
+      "What will the following code print when compiled and run? <br><br>(Choose 1 answer)",
     code: `import java.util. * ;
 public class TestClass {
   public static void main(String[] args) throws Exception {
@@ -2267,7 +2267,7 @@ public class TestClass {
   },
   {
     question:
-      "Working with Java Data Types: You are developing a class that represents a Book. Which data type will you use for storing the ISBN number, which is an alphanumeric number, of the book? (Choose 1 answer)",
+      "You are developing a class that represents a Book. Which data type will you use for storing the ISBN number, which is an alphanumeric number, of the book? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "int", correct: false },
@@ -2280,7 +2280,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Looping Statements: What will the following code print when compiled and run? (Choose 1 answer)",
+      "Using Looping Statements: What will the following code print when compiled and run? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String[] args) {
     int[] arr = { 1, 2, 3, 4, 5, 6 };
@@ -2312,7 +2312,7 @@ public class TestClass {
   },
   {
     question:
-      "Working with the Random and Math Classes: Identify valid for constructs: (Choose 3 answers)",
+      "Working with the Random and Math Classes: Identify valid for constructs: <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       {
@@ -2334,7 +2334,7 @@ public class TestClass {
   },
   {
     question:
-      "Java Methods: Which of the following code fragments are valid method declarations? (Choose 1 answer)",
+      "Java Methods: Which of the following code fragments are valid method declarations? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "void method1{ }", correct: false },
@@ -2348,7 +2348,7 @@ public class TestClass {
   },
   {
     question:
-      "Working with Java Operators: Given: What is the result? (Choose 1 answer)",
+      "Given: What is the result? <br><br>(Choose 1 answer)",
     code: `int a = 5, b = 2, c = 30;
 System.out.println(a + ++b * c);`,
     answers: [
@@ -2363,7 +2363,7 @@ System.out.println(a + ++b * c);`,
   },
   {
     question:
-      "Using Decision Statements: What will the following program print? (Choose 1 answer)",
+      "Using Decision Statements: What will the following program print? <br><br>(Choose 1 answer)",
     code: `class Test {
   public static void main(String args[]) {
     int k = 9,
@@ -2394,7 +2394,7 @@ System.out.println(a + ++b * c);`,
   },
   {
     question:
-      "Which of the following is a benefit of encapsulation? (Choose 1 answer)",
+      "Which of the following is a benefit of encapsulation? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -2420,7 +2420,7 @@ System.out.println(a + ++b * c);`,
   },
   {
     question:
-      "Working with the String Class: Which of these statements concerning the charAt() method of java.lang.String class are true? (Choose 2 answers)",
+      "Which of these statements concerning the charAt() method of java.lang.String class are true? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -2446,7 +2446,7 @@ System.out.println(a + ++b * c);`,
   },
   {
     question:
-      "Working with Java Data Types: Which of the following are valid declarations: (Choose 3 answers)",
+      "Which of the following are valid declarations: <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       { text: "int a = b = c = 100;", correct: false },
@@ -2460,7 +2460,7 @@ System.out.println(a + ++b * c);`,
   },
   {
     question:
-      "Debugging and Exception Handling: What will be the result of attempting to compile and run the following program? (Choose 1 answer)",
+      "What will be the result of attempting to compile and run the following program? <br><br>(Choose 1 answer)",
     code: `class TestClass {
   public static void main(String args[]) {
     int i = 0;
@@ -2506,7 +2506,7 @@ System.out.println(a + ++b * c);`,
   },
   {
     question:
-      "Working with Java Data Types: Given the following code snippet: What can XXX be? (Choose 1 answer)",
+      "Given the following code snippet: What can XXX be? <br><br>(Choose 1 answer)",
     code: `int rate = 10;
 int t = 5;
 XXX amount = 1000.0;
@@ -2525,7 +2525,7 @@ for (int i = 0; i < t; t++) {
   },
   {
     question:
-      "Identify the fundamental principles of Object Oriented Programming. (Choose 2 answers)",
+      "Identify the fundamental principles of Object Oriented Programming. <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "Code reuse", correct: true },
@@ -2539,7 +2539,7 @@ for (int i = 0; i < t; t++) {
   },
   {
     question:
-      "Using Looping Statements: What will be the result of attempting to compile and run the following program? (Choose 1 answer)",
+      "Using Looping Statements: What will be the result of attempting to compile and run the following program? <br><br>(Choose 1 answer)",
     code: `class TestClass {
   public static void main(String args[]) {
     boolean b = false;
@@ -2568,7 +2568,7 @@ for (int i = 0; i < t; t++) {
   },
   {
     question:
-      "Working with the String Class: Consider the following two java files in /home/user directory: The files are compiled using the following command line: javac -d /home *.java Where will the class files be created? (Choose 1 answer)",
+      "Consider the following two java files in /home/user directory: <br><br>The files are compiled using the following command line: javac -d /home *.java <br><br>Where will the class files be created? <br><br>(Choose 1 answer)",
     code: `//file A.java
 package com.enthu;
 class A {}
@@ -2589,7 +2589,7 @@ class B {}`,
       "The '-d' option specifies the root directory for package directories. The class files will be placed in /home/com/enthu and /home/com/foo.",
   },
   {
-    question: "A Java method .... (Choose 2 answers)",
+    question: "A Java method .... <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "cannot return multiple values.", correct: true },
@@ -2603,7 +2603,7 @@ class B {}`,
   },
   {
     question:
-      "Using Decision Statements: What will be the result of attempting to compile and run the following class? (Choose 1 answer)",
+      "Using Decision Statements: What will be the result of attempting to compile and run the following class? <br><br>(Choose 1 answer)",
     code: `public class IfTest {
   public static void main(String args[]) {
     if (true) if (false) System.out.println("True False");
@@ -2636,7 +2636,7 @@ class B {}`,
       "The nested if-else structure will execute the else block, printing 'True True'.",
   },
   {
-    question: "What will be the output of the following code? (Choose 2 answers)",
+    question: "What will be the output of the following code? <br><br>(Choose 2 answers)",
     code: `public class Test {
   static int a;
   int b;
@@ -2669,7 +2669,7 @@ class B {}`,
       "The static variable 'a' is incremented twice, resulting in 3. The instance variable 'b' is incremented twice, resulting in 3. The local variable 'c' is incremented twice, resulting in 3.",
   },
   {
-    question: "The JRE contains: (Choose 2 answers)",
+    question: "The JRE contains: <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "Java API", correct: true },
@@ -2683,7 +2683,7 @@ class B {}`,
   },
   {
     question:
-      "Working with Java Data Types: Which of the following are primitive integral types in java? (Choose 4 answers)",
+      "Which of the following are primitive integral types in java? <br><br>(Choose 4 answers)",
     code: ``,
     answers: [
       { text: "float", correct: false },
@@ -2699,7 +2699,7 @@ class B {}`,
   },
   {
     question:
-      "Java Methods: Consider the following class definition: What will be the result of compiling and running the class? (Choose 1 answer)",
+      "Java Methods: Consider the following class definition: What will be the result of compiling and running the class? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main() {
     new TestClass().sayHello();
@@ -2723,7 +2723,7 @@ class B {}`,
   },
   {
     question:
-      "Working with the String Class: What will the following code print? (Choose 1 answer)",
+      "What will the following code print? <br><br>(Choose 1 answer)",
     code: `String abc = "";
 abc.concat("abc");
 abc.concat("def");
@@ -2746,7 +2746,7 @@ System.out.println(abc);`,
   },
   {
     question:
-      "Working with Java Operators: The following code snippet will not compile... (Choose 1 answer)",
+      "The following code snippet will not compile... <br><br>(Choose 1 answer)",
     code: `int i = 10;
 System.out.println(i < 20 ? out1() : out2());`,
     answers: [
@@ -2758,7 +2758,7 @@ System.out.println(i < 20 ? out1() : out2());`,
   },
   {
     question:
-      "Working with the String Class: What will be written to the standard output when the following program is run? (Choose 1 answer)",
+      "What will be written to the standard output when the following program is run? <br><br>(Choose 1 answer)",
     code: `public class TrimTest {
   public static void main(String args[]) {
     String blank = " "; // one space
@@ -2780,7 +2780,7 @@ System.out.println(i < 20 ? out1() : out2());`,
   },
   {
     question:
-      "What is Java: You are developing a Java rich client application that is to be installed on a lot of workstations used by the employees of your company. The users are located in various office locations across the globe. Which of the following Java technologies will be useful in delivering the application to the users over the internet? (Choose 1 answer)",
+      "What is Java: You are developing a Java rich client application that is to be installed on a lot of workstations used by the employees of your company. The users are located in various office locations across the globe. Which of the following Java technologies will be useful in delivering the application to the users over the internet? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "Java RMI", correct: false },
@@ -2794,7 +2794,7 @@ System.out.println(i < 20 ? out1() : out2());`,
   },
   {
     question:
-      "Basic Java Elements: Which of the following are literals? (Choose 3 answers)",
+      "Which of the following are literals? <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       { text: "goto", correct: false },
@@ -2809,7 +2809,7 @@ System.out.println(i < 20 ? out1() : out2());`,
   },
   {
     question:
-      "Debugging and Exception Handling: Given: What is the output? (Choose 1 answer)",
+      "Given: What is the output? <br><br>(Choose 1 answer)",
     code: `public class Test {
   public int div(int a, int b) throws Exception {
     try {
@@ -2841,7 +2841,7 @@ System.out.println(i < 20 ? out1() : out2());`,
   },
   {
     question:
-      "Java Methods: What will the following code print when run? (Choose 1 answer)",
+      "Java Methods: What will the following code print when run? <br><br>(Choose 1 answer)",
     code: `public class Mambo {
   public static String makeItBetter(String str) {
     return str + "!!!";
@@ -2863,7 +2863,7 @@ System.out.println(i < 20 ? out1() : out2());`,
   },
   {
     question:
-      "Classes and Constructors: Given: What can be inserted in the above code so that it will print 10 10.0? (Choose 1 answer)",
+      "Classes and Constructors: Given: What can be inserted in the above code so that it will print 10 10.0? <br><br>(Choose 1 answer)",
     code: `class Acct {
   int id;
   double balance;
@@ -2905,7 +2905,7 @@ public class Account {
   },
   {
     question:
-      "Consider the following code: What will be the output when it is run by giving the following command: java Test good bye friend!? (Choose 1 answer)",
+      "Consider the following code: What will be the output when it is run by giving the following command: java Test good bye friend!? <br><br>(Choose 1 answer)",
     code: `class Test {
   public static void main(String[] args) {
     for (int i = 0; i < args.length; i++) System.out.print(i == 0 ? args[i] : " " + args[i]);
@@ -2923,7 +2923,7 @@ public class Account {
   },
   {
     question:
-      "Arrays and ArrayLists: What will the following code print when run? (Choose 1 answer)",
+      "What will the following code print when run? <br><br>(Choose 1 answer)",
     code: `List s1 = new ArrayList();
 s1.add("ann");
 if (s1.contains("ann")) s1.add("ann");
@@ -2941,7 +2941,7 @@ System.out.println(s1.size() + " " + s1.indexOf("ann"));`,
   },
   {
     question:
-      "Using Decision Statements: What can be the return type of method getSwitch so that this program compiles and runs without any problems? (Choose 1 answer)",
+      "Using Decision Statements: What can be the return type of method getSwitch so that this program compiles and runs without any problems? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static XXX getSwitch(int x) {
     return x - 20 / x + x * x;
@@ -2970,7 +2970,7 @@ System.out.println(s1.size() + " " + s1.indexOf("ann"));`,
   },
   {
     question:
-      "Working with the String Class: Your GUI screen contains a text field for username. The String variable used to store the value entered by the user is named userName. Which of the following lines of code will you use to check whether the userName is empty or not? A value containing only spaces is also considered empty. (Choose 1 answer)",
+      "Your GUI screen contains a text field for username. The String variable used to store the value entered by the user is named userName. Which of the following lines of code will you use to check whether the userName is empty or not? A value containing only spaces is also considered empty. <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: 'userName.equals("")', correct: false },
@@ -2983,7 +2983,7 @@ System.out.println(s1.size() + " " + s1.indexOf("ann"));`,
   },
   {
     question:
-      "Consider the following code in file TestClass.java: This file is compiled and run using the following command line: java -version TestClass What will be the output? (Choose 1 answer)",
+      "Consider the following code in file TestClass.java: <br><br>>his file is compiled and run using the following command line: java -version TestClass <br><br>What will be the output? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String[] args) {
     System.out.println("Hello!!!");
@@ -3006,7 +3006,7 @@ System.out.println(s1.size() + " " + s1.indexOf("ann"));`,
   },
   {
     question:
-      "Basic Java Elements: Which of the following statements is correct? (Choose 1 answer)",
+      "Which of the following statements is correct? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -3035,7 +3035,7 @@ System.out.println(s1.size() + " " + s1.indexOf("ann"));`,
   },
   {
     question:
-      "Arrays and ArrayLists: What can be inserted in the following code so that it will print true when run? (Choose 1 answer)",
+      "What can be inserted in the following code so that it will print true when run? <br><br>(Choose 1 answer)",
     code: `List s1 = new ArrayList();
 s1.add("ann");
 s1.add("bella");
@@ -3052,7 +3052,7 @@ System.out.println(flag);`,
   },
   {
     question:
-      "Using Decision Statements: What will the following code print? (Choose 1 answer)",
+      "Using Decision Statements: What will the following code print? <br><br>(Choose 1 answer)",
     code: `int x = 1;
 int y = 2;
 int z = x++;
@@ -3074,7 +3074,7 @@ System.out.println(answ);`,
   },
   {
     question:
-      "Arrays and ArrayLists: Identify the correct statements about ArrayList. (Choose 3 answers)",
+      "Identify the correct statements about ArrayList. <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       {
@@ -3101,7 +3101,7 @@ System.out.println(answ);`,
   },
   {
     question:
-      "Classes and Constructors: Given a class named Test, which of these would be valid definitions for the constructors for the class? (Choose 1 answer)",
+      "Classes and Constructors: Given a class named Test, which of these would be valid definitions for the constructors for the class? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "Test(Test b) { }", correct: true },
@@ -3115,7 +3115,7 @@ System.out.println(answ);`,
   },
   {
     question:
-      "Classes and Constructors: What will the following code print? (Choose 1 answer)",
+      "Classes and Constructors: What will the following code print? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   int x = 5;
   int getX() {
@@ -3147,7 +3147,7 @@ System.out.println(answ);`,
   },
   {
     question:
-      "Working with the String Class: What will the following lines of code print? (Choose 1 answer)",
+      "What will the following lines of code print? <br><br>(Choose 1 answer)",
     code: `String s = "java";
 s.replace('j', 'l');
 s = s.substring(0, 2);
@@ -3164,7 +3164,7 @@ System.out.println(s);`,
   },
   {
     question:
-      "Working with the String Class: What will be printed when the following code snippet is executed? (Choose 1 answer)",
+      "What will be printed when the following code snippet is executed? <br><br>(Choose 1 answer)",
     code: `String str = "123456789";
 String s = str.substring(2, 5);
 System.out.println(s);`,
@@ -3180,7 +3180,7 @@ System.out.println(s);`,
   },
   {
     question:
-      "Basic Java Elements: Following is not a valid comment: /* this comment /* // /** is not valid */ (Choose 1 answer)",
+      "Following is not a valid comment: /* this comment /* // /** is not valid */ <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "True", correct: true },
@@ -3191,8 +3191,8 @@ System.out.println(s);`,
   },
   {
     question:
-      'Working with the String Class: What what will the following statement: "    hello java guru   ".trim(); return? (Choose 1 answer)',
-    code: ``,
+      'What what will the following statement return? <br><br>(Choose 1 answer)',
+    code: `"    hello java guru   ".trim();`,
     answers: [
       { text: "The line of code will not Compile.", correct: false },
       { text: '"hellojavaguru"', correct: false },
@@ -3205,7 +3205,7 @@ System.out.println(s);`,
   },
   {
     question:
-      "Java Methods: Given the following code, which method declarations can be inserted at line 1 without any problems? (Choose 3 answers)",
+      "Java Methods: Given the following code, which method declarations can be inserted at line 1 without any problems? <br><br>(Choose 3 answers)",
     code: `public class OverloadTest {
   public int sum(int i1, int i2) {
     return i1 + i2;
@@ -3238,7 +3238,7 @@ System.out.println(s);`,
       "The methods with different parameter types are valid overloads. The method with the same parameter types is not a valid overload.",
   },
   {
-    question: "Identify correct statements: (Choose 1 answer)",
+    question: "Identify correct statements: <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -3267,7 +3267,7 @@ System.out.println(s);`,
   },
   {
     question:
-      "Debugging and Exception Handling: What will be the output of the following class... (Choose 1 answer)",
+      "What will be the output of the following class... <br><br>(Choose 1 answer)",
     code: `class Test {
   public static void main(String[] args) {
     int j = 1;
@@ -3293,7 +3293,7 @@ System.out.println(s);`,
   },
   {
     question:
-      "Working with Java Data Types: Which of the following is illegal? (Choose 1 answer)",
+      "Which of the following is illegal? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "char c = 320;", correct: false },
@@ -3307,7 +3307,7 @@ System.out.println(s);`,
   },
   {
     question:
-      "Using Looping Statements: What will the following program print? (Choose 1 answer)",
+      "Using Looping Statements: What will the following program print? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String[] args) {
     for: for (int i = 0; i < 10; i++) {
@@ -3331,7 +3331,7 @@ System.out.println(s);`,
   },
   {
     question:
-      "Java Methods: What would be the result of attempting to compile and run the following program? (Choose 1 answer)",
+      "Java Methods: What would be the result of attempting to compile and run the following program? <br><br>(Choose 1 answer)",
     code: `class TestClass {
   static TestClass ref;
   String[] arguments;
@@ -3367,7 +3367,7 @@ System.out.println(s);`,
   },
   {
     question:
-      "Arrays and ArrayLists: Which of the following statements about an array are correct? (Choose 1 answer)",
+      "Which of the following statements about an array are correct? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "An array can dynamically grow in size.", correct: false },
@@ -3393,7 +3393,7 @@ System.out.println(s);`,
   },
   {
     question:
-      "Basic Java Elements: Which class definition uses the naming conventions of Java Programming? (Choose 1 answer)",
+      "Which class definition uses the naming conventions of Java Programming? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -3426,7 +3426,7 @@ System.out.println(s);`,
   },
   {
     question:
-      "Using Decision Statements: What will the following method return if called with an argument of 7? (Choose 1 answer)",
+      "Using Decision Statements: What will the following method return if called with an argument of 7? <br><br>(Choose 1 answer)",
     code: `public int transformNumber(int n) {
   int radix = 2;
   int output = 0;
@@ -3452,7 +3452,7 @@ System.out.println(s);`,
   },
   {
     question:
-      "Using Looping Statements: How many times will the line marked //1 be called in the following code? (Choose 1 answer)",
+      "Using Looping Statements: How many times will the line marked //1 be called in the following code? <br><br>(Choose 1 answer)",
     code: `int x = 10;
 do {
   x--;
@@ -3470,7 +3470,7 @@ do {
   },
   {
     question:
-      "Using Decision Statements: Which of the following implementations of a max() method will correctly return the largest value? (Choose 1 answer)",
+      "Using Decision Statements: Which of the following implementations of a max() method will correctly return the largest value? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -3495,7 +3495,7 @@ do {
   },
   {
     question:
-      "Working with Java Data Types: What will the following program print? (Choose 1 answer)",
+      "What will the following program print? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   static String str;
   public static void main(String[] args) {
@@ -3517,7 +3517,7 @@ do {
   },
   {
     question:
-      "Using Looping Statements: Consider the following code: How many times will the output contain 2? (Choose 1 answer)",
+      "Using Looping Statements: Consider the following code: How many times will the output contain 2? <br><br>(Choose 1 answer)",
     code: `String[] dataList = { "x", "y", "z" };
 for (String dataElement: dataList) {
   int innerCounter = 0;
@@ -3538,7 +3538,7 @@ for (String dataElement: dataList) {
   },
   {
     question:
-      "Using Decision Statements: What will the following program print? (Choose 1 answer)",
+      "Using Decision Statements: What will the following program print? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String[] args) {
     Object obj1 = new Object();
@@ -3562,7 +3562,7 @@ for (String dataElement: dataList) {
   },
   {
     question:
-      "Using Looping Statements: Using a break in a while loop causes the loop to break the current iteration and start the next iteration of the loop. (Choose 1 answer)",
+      "Using Looping Statements: Using a break in a while loop causes the loop to break the current iteration and start the next iteration of the loop. <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "True", correct: false },
@@ -3573,7 +3573,7 @@ for (String dataElement: dataList) {
   },
   {
     question:
-      "Arrays and ArrayLists: Which of the following statements will correctly create and initialize an array of Strings to non null elements? (Choose 4 answers)",
+      "Which of the following statements will correctly create and initialize an array of Strings to non null elements? <br><br>(Choose 4 answers)",
     code: ``,
     answers: [
       { text: 'String[] sA = new String[1] { "aaa"};', correct: false },
@@ -3587,7 +3587,7 @@ for (String dataElement: dataList) {
   },
   {
     question:
-      "Debugging and Exception Handling: What will be the output of the following program? (Choose 1 answer)",
+      "What will be the output of the following program? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String[] args) throws Exception {
     try {
@@ -3617,7 +3617,7 @@ for (String dataElement: dataList) {
   },
   {
     question:
-      "Working with Java Operators: Which of the following code snippets will print exactly 10? (Choose 3 answers)",
+      "Which of the following code snippets will print exactly 10? <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       {
@@ -3634,7 +3634,7 @@ for (String dataElement: dataList) {
   },
   {
     question:
-      "Arrays and ArrayLists: What is the result of compiling and running the following program? (Choose 1 answer)",
+      "What is the result of compiling and running the following program? <br><br>(Choose 1 answer)",
     code: `public class Learner {
   public static void main(String[] args) {
     String[] dataArr = new String[4];
@@ -3651,21 +3651,21 @@ for (String dataElement: dataList) {
   }
 }`,
     answers: [
-      { text: "Bill Steve Larry null", correct: true },
+      { text: "Bill Steve Larry null", correct: false },
       {
         text: "Bill Steve Larry class java.lang.NullPointerException",
         correct: false,
       },
       { text: "class java.lang.Exception Bill Steve Larry", correct: false },
       { text: "Bill Steve Larry class java.lang.Exception", correct: false },
-      { text: "null Bill Steve Larry", correct: false },
+      { text: "null Bill Steve Larry", correct: true },
     ],
     explanation:
-      "The array contains null at index 0, so 'null' is printed first, followed by the other elements.",
+      `An array called dataArr is initialized with a size of four, where all elements are initially set to null. The code assigns "Bill" to dataArr[1], "Steve" to dataArr[2], and "Larry" to dataArr[3], while dataArr[0] remains null.<br><br>As the for-each loop iterates over the array, it prints each element in order. The first element prints null, followed by "Bill", "Steve", and "Larry". Since there are no exceptions, the catch block is never executed, resulting in the output being a single line with each value separated by a space.`,
   },
   {
     question:
-      "Given the following code: How many object references are being created? (Choose 1 answer)",
+      "Given the following code: How many object references are being created? <br><br>(Choose 1 answer)",
     code: `class References {
   String s1;
   String s2 = null;
@@ -3687,7 +3687,7 @@ for (String dataElement: dataList) {
   },
   {
     question:
-      "Working with the String Class: What will the following code snippet print when run? (Choose 1 answer)",
+      "What will the following code snippet print when run? <br><br>(Choose 1 answer)",
     code: `String str = "asdfasdf";
 char ch = str.charAt(3);
 if (ch == 'a') str = str.replace('a', 'x');
@@ -3705,7 +3705,7 @@ System.out.println(str);`,
   },
   {
     question:
-      "Arrays and ArrayLists: What will the following code print when compiled and run? (Choose 1 answer)",
+      "What will the following code print when compiled and run? <br><br>(Choose 1 answer)",
     code: `import java.util. * ;
 public class TestClass {
   public static void main(String[] args) throws Exception {
@@ -3737,7 +3737,7 @@ public class TestClass {
   },
   {
     question:
-      "Consider the following program: What will the value of 'harry' if the program is run from the command line: java TestClass 111 222 333? (Choose 1 answer)",
+      "Consider the following program: What will the value of 'harry' if the program is run from the command line: java TestClass 111 222 333? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String[] args) {
     String tom = args[0];
@@ -3760,7 +3760,7 @@ public class TestClass {
   },
   {
     question:
-      "Arrays and ArrayLists: Given the complete contents of TestClass.java file: Which import statement should be added to make it compile? (Choose 1 answer)",
+      "Given the complete contents of TestClass.java file: Which import statement should be added to make it compile? <br><br>(Choose 1 answer)",
     code: `package x;
 public class TestClass {
   ArrayList < String > al;
@@ -3787,7 +3787,7 @@ public class TestClass {
   },
   {
     question:
-      "Arrays and ArrayLists: Which of the following are benefits of ArrayList over an array? (Choose 1 answer)",
+      "Which of the following are benefits of ArrayList over an array? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -3803,7 +3803,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Decision Statements: Which of the following expressions will evaluate to true if preceded by the following code? (Choose 3 answers)",
+      "Using Decision Statements: Which of the following expressions will evaluate to true if preceded by the following code? <br><br>(Choose 3 answers)",
     code: `String a = "java";
 char[] b = {
   'j',
@@ -3824,7 +3824,7 @@ String d = a;`,
   },
   {
     question:
-      "Basic Java Elements: Given that java.lang.Integer class has a public static field named MAX_VALUE, which of the given options should be inserted at line 1 so that the following code can compile without any errors? (Choose 2 answers)",
+      "Given that java.lang.Integer class has a public static field named MAX_VALUE, which of the given options should be inserted at line 1 so that the following code can compile without any errors? <br><br>(Choose 2 answers)",
     code: `package objective1;
 // 1
 public class StaticImports {
@@ -3844,7 +3844,7 @@ public class StaticImports {
   },
   {
     question:
-      'Classes and Constructors: Which of the following are true about the "default" constructor? (Choose 2 answers)',
+      'Classes and Constructors: Which of the following are true about the "default" constructor? <br><br>(Choose 2 answers)',
     code: ``,
     answers: [
       {
@@ -3873,7 +3873,7 @@ public class StaticImports {
   },
   {
     question:
-      "What is Java: Which of the following are true about Java? (Choose 2 answers)",
+      "What is Java: Which of the following are true about Java? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "It provides automatic exception handling.", correct: false },
@@ -3889,7 +3889,7 @@ public class StaticImports {
   },
   {
     question:
-      "Working with the String Class: What will be the output of the following program (excluding the quotes)? (Choose 1 answer)",
+      "What will be the output of the following program (excluding the quotes)? <br><br>(Choose 1 answer)",
     code: `public class SubstringTest {
   public static void main(String args[]) {
     String String = "string isa string";
@@ -3908,7 +3908,7 @@ public class StaticImports {
   },
   {
     question:
-      "Using Looping Statements: What will the following code print? (Choose 1 answer)",
+      "Using Looping Statements: What will the following code print? <br><br>(Choose 1 answer)",
     code: `void crazyLoop() {
   int c = 0;
   JACK: while (c < 8) {
@@ -3929,7 +3929,7 @@ public class StaticImports {
   },
   {
     question:
-      "Which of the following are valid class declarations? (Not the whole class, just the declaration). (Choose 1 answer)",
+      "Which of the following are valid class declarations? (Not the whole class, just the declaration). <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "public class Hello", correct: true },
@@ -3942,7 +3942,7 @@ public class StaticImports {
   },
   {
     question:
-      "Using Looping Statements: What will the following program print? (Choose 1 answer)",
+      "Using Looping Statements: What will the following program print? <br><br>(Choose 1 answer)",
     code: `class Test {
   public static void main(String args[]) {
     int
@@ -3970,7 +3970,7 @@ public class StaticImports {
   },
   {
     question:
-      "Using Looping Statements: What will the following code print when run? (Choose 1 answer)",
+      "Using Looping Statements: What will the following code print when run? <br><br>(Choose 1 answer)",
     code: `public class Mambo {
   public static void main(String args[]) {
     for (int i = 0; i < 5; i++) {
@@ -3991,7 +3991,7 @@ public class StaticImports {
   },
   {
     question:
-      "Working with Java Data Types: Which integral types in Java have a range of 2^16 integers? OR Which integral types in Java can represent exactly 2^16 distinct integers? (Choose 2 answers)",
+      "Which integral types in Java have a range of 2^16 integers? OR Which integral types in Java can represent exactly 2^16 distinct integers? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "char", correct: true },
@@ -4004,7 +4004,7 @@ public class StaticImports {
   },
   {
     question:
-      "The options below contain the complete contents of a file. Which of these options can be run with the following command line once compiled? java main (Choose 1 answer)",
+      "The options below contain the complete contents of a file. Which of these options can be run with the following command line once compiled? java main <br><br>(Choose 1 answer)",
     code: `//in file main.java
 class main {
   public void main(String[] args) {
@@ -4045,7 +4045,7 @@ class main {
   },
   {
     question:
-      "What is Java: Which of the following are features of Java? (Choose 2 answers)",
+      "What is Java: Which of the following are features of Java? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "It is strongly typed", correct: true },
@@ -4058,7 +4058,7 @@ class main {
   },
   {
     question:
-      'Which of the following are correct about "encapsulation"? (Choose 2 answers)',
+      'Which of the following are correct about "encapsulation"? <br><br>(Choose 2 answers)',
     code: ``,
     answers: [
       { text: "Encapsulation is same as polymorphism.", correct: false },
@@ -4084,7 +4084,7 @@ class main {
   },
   {
     question:
-      "Basic Java Elements: You have been given a library that contains the following class: What should be inserted at //1 above? (Choose 2 answers)",
+      "You have been given a library that contains the following class: What should be inserted at //1 above? <br><br>(Choose 2 answers)",
     code: `// 1 insert code here
 public class Furnace {
   public void cool(Cooler c) { // 2
@@ -4104,7 +4104,7 @@ public class Furnace {
   },
   {
     question:
-      "Working with the String Class: What will be printed when the following code snippet is executed? (Choose 1 answer)",
+      "What will be printed when the following code snippet is executed? <br><br>(Choose 1 answer)",
     code: `String str = "123456789";
 str.substring(2, 5);
 System.out.println(str.charAt(2));
@@ -4120,7 +4120,7 @@ System.out.println(str.charAt(2));
   },
   {
     question:
-      "Working with Java Operators: What will the following code print when run without any arguments? (Choose 1 answer)",
+      "What will the following code print when run without any arguments? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static int m1(int i) {
     return++i;
@@ -4146,7 +4146,7 @@ System.out.println(str.charAt(2));
   },
   {
     question:
-      "Given: What can be inserted in the above code at the specified location without causing compilation error? (Choose 1 answer)",
+      "Given: What can be inserted in the above code at the specified location without causing compilation error? <br><br>(Choose 1 answer)",
     code: `class Account {
   //insert code here
 }
@@ -4163,7 +4163,7 @@ System.out.println(str.charAt(2));
   },
   {
     question:
-      "Using Decision Statements: Given the code fragment: What is the result? (Choose 1 answer)",
+      "Using Decision Statements: Given the code fragment: What is the result? <br><br>(Choose 1 answer)",
     code: `int[] balances1 = new int[] {
   10,
   20
@@ -4184,7 +4184,7 @@ System.out.print(balances1 == balances2);`,
   },
   {
     question:
-      "Using Looping Statements: Consider the following method, which is called with an argument of 7: What will it print? (Choose 1 answer)",
+      "Using Looping Statements: Consider the following method, which is called with an argument of 7: What will it print? <br><br>(Choose 1 answer)",
     code: `public void method1(int i) {
   int j = (i * 30 - 2) / 100;
   POINT1: for (; j < 10; j++) {
@@ -4213,7 +4213,7 @@ System.out.print(balances1 == balances2);`,
   },
   {
     question:
-      "Working with Java Operators: Given: Which of the following options are valid when inserted independently at the line marked //1? (Choose 3 answers)",
+      "Given: Which of the following options are valid when inserted independently at the line marked //1? <br><br>(Choose 3 answers)",
     code: `String s1 = "Hello";
 String s2 = "World";
 //1
@@ -4230,7 +4230,7 @@ String s2 = "World";
   },
   {
     question:
-      "Classes and Constructors: What will be the result of attempting to compile the following program? (Choose 1 answer)",
+      "Classes and Constructors: What will be the result of attempting to compile the following program? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   long l1;
   public void TestClass(long pLong) {
@@ -4268,7 +4268,7 @@ String s2 = "World";
   },
   {
     question:
-      "Basic Java Elements: Which of the following are reserved words in Java? (Choose 2 answers)",
+      "Which of the following are reserved words in Java? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "goto", correct: true },
@@ -4281,7 +4281,7 @@ String s2 = "World";
       "'goto' and 'package' are reserved words in Java. 'goto' is reserved but not used.",
   },
   {
-    question: "What is the result of the following code? (Choose 1 answer)",
+    question: "What is the result of the following code? <br><br>(Choose 1 answer)",
     code: `public class Test {
   public static void main(String[] args) {
     System.out.println(10 + 20 + "Java");
@@ -4298,7 +4298,7 @@ String s2 = "World";
   },
   {
     question:
-      "What is the result of the following code snippet? (Choose 1 answer)",
+      "What is the result of the following code snippet? <br><br>(Choose 1 answer)",
     code: `public class Test {
   public static void main(String[] args) {
     int x = 5;
@@ -4316,7 +4316,7 @@ String s2 = "World";
   },
   {
     question:
-      "What is the result of the following code snippet? (Choose 1 answer)",
+      "What is the result of the following code snippet? <br><br>(Choose 1 answer)",
     code: `public class Test {
   public static void main(String[] args) {
     int x = 10;
@@ -4335,7 +4335,7 @@ String s2 = "World";
   },
   {
     question:
-      "What will be the output of the following program? (Choose 3 answers)",
+      "What will be the output of the following program? <br><br>(Choose 3 answers)",
     code: `public class TestClass {
   public static void main(String args[]) {
     try {
@@ -4379,7 +4379,7 @@ String s2 = "World";
   },
   {
     question:
-      "What will be the result of compiling and running the following program? (Choose 1 answer)",
+      "What will be the result of compiling and running the following program? <br><br>(Choose 1 answer)",
     code: `class SomeClass {
   public static void main(String args[]) {
     int size = 10;
@@ -4414,7 +4414,7 @@ String s2 = "World";
   },
   {
     question:
-      "Given the following program, which of these statements are true? (Choose 2 answers)",
+      "Given the following program, which of these statements are true? <br><br>(Choose 2 answers)",
     code: `public class FinallyTest {
   public static void main(String args[]) {
     try {
@@ -4453,7 +4453,7 @@ String s2 = "World";
   },
   {
     question:
-      "You have an array of objects and you want to search for a particular object in that array. Which of the following Java statements will you need to use? (Choose 2 answers)",
+      "You have an array of objects and you want to search for a particular object in that array. Which of the following Java statements will you need to use? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "Conditional", correct: true },
@@ -4466,7 +4466,7 @@ String s2 = "World";
   },
   {
     question:
-      "What may be done to the above code to make it print 100? (Choose 1 answer)",
+      "What may be done to the above code to make it print 100? <br><br>(Choose 1 answer)",
     code: `class Node {
   static final int TYPE = 100;
   public static void print() {
@@ -4495,7 +4495,7 @@ public class Test {
   },
   {
     question:
-      "Identify the valid for loop constructs assuming the following declarations: Object o = null; ArrayList c = //valid ArrayList object. int[] ia = //valid array. (Choose 2 answers)",
+      "Identify the valid for loop constructs assuming the following declarations: Object o = null; ArrayList c = //valid ArrayList object. int[] ia = //valid array. <br><br>(Choose 2 answers)",
     code: `Object o = null;
 ArrayList c = //valid ArrayList object;
 int[] ia = //valid array;`,
@@ -4513,7 +4513,7 @@ int[] ia = //valid array;`,
       "The enhanced for loop (for-each) syntax requires a type declaration, so 'for(o : c)' is invalid. 'for(final Object o2 : c)' is valid, as is 'for(int i : ia)' for iterating over arrays. 'for(Iterator it : c.iterator())' is invalid because it's missing the proper syntax for an enhanced for loop. The last option has an off-by-one error in the array indexing.",
   },
   {
-    question: "What will the following code print? (Choose 1 answer)",
+    question: "What will the following code print? <br><br>(Choose 1 answer)",
     code: `List s1 = new ArrayList();
 s1.add("a");
 s1.add("b");
@@ -4539,7 +4539,7 @@ System.out.println(s1);`,
   },
   {
     question:
-      "What will be the output of the following program? (Choose 3 answers)",
+      "What will be the output of the following program? <br><br>(Choose 3 answers)",
     code: `public class TestClass {
   public static void main(String args[]) {
     try {
@@ -4583,7 +4583,7 @@ System.out.println(s1);`,
   },
   {
     question:
-      "What will be the result of compiling and running the following program? (Choose 1 answer)",
+      "What will be the result of compiling and running the following program? <br><br>(Choose 1 answer)",
     code: `class SomeClass {
   public static void main(String args[]) {
     int size = 10;
@@ -4618,7 +4618,7 @@ System.out.println(s1);`,
   },
   {
     question:
-      "Given the following program, which of these statements are true? (Choose 2 answers)",
+      "Given the following program, which of these statements are true? <br><br>(Choose 2 answers)",
     code: `public class FinallyTest {
   public static void main(String args[]) {
     try {
@@ -4655,7 +4655,7 @@ System.out.println(s1);`,
   },
   {
     question:
-      "You have an array of objects and you want to search for a particular object in that array. Which of the following Java statements will you need to use? (Choose 1 answer)",
+      "You have an array of objects and you want to search for a particular object in that array. Which of the following Java statements will you need to use? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "Conditional", correct: false },
@@ -4668,7 +4668,7 @@ System.out.println(s1);`,
   },
   {
     question:
-      "What may be done to the above code to make it print 100? (Choose 2 answers)",
+      "What may be done to the above code to make it print 100? <br><br>(Choose 2 answers)",
     code: `class Node {
   static final int TYPE = 100;
   public static void print() {
@@ -4696,7 +4696,7 @@ public class Test {
       "The static method print() can be called using the class name Node.print() or by creating an instance of Node and calling print() on it.",
   },
   {
-    question: "What will the following code print? (Choose 1 answer)",
+    question: "What will the following code print? <br><br>(Choose 1 answer)",
     code: `boolean flag = true;
 if (flag = false) {
   System.out.println("1");
@@ -4717,7 +4717,7 @@ if (flag = false) {
   },
   {
     question:
-      "Identify the valid for loop constructs assuming the following declarations: Object o = null; ArrayList c = //valid ArrayList object; int[] ia = //valid array. (Choose 2 answers)",
+      "Identify the valid for loop constructs assuming the following declarations: Object o = null; ArrayList c = //valid ArrayList object; int[] ia = //valid array. <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "for(o : c){ }", correct: false },
@@ -4733,7 +4733,7 @@ if (flag = false) {
       "The enhanced for loop (for-each) is valid for iterating over collections and arrays. The syntax 'for(type var : array/collection)' is correct for iterating over 'c' and 'ia'.",
   },
   {
-    question: "What will the following code print? (Choose 1 answer)",
+    question: "What will the following code print? <br><br>(Choose 1 answer)",
     code: `List s1 = new ArrayList();
 s1.add("a");
 s1.add("b");
@@ -4759,7 +4759,7 @@ System.out.println(s1);`,
   },
   {
     question:
-      "Which one can hold a larger integer value, a char or a short? (Choose 1 answer)",
+      "Which one can hold a larger integer value, a char or a short? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "char", correct: true },
@@ -4776,7 +4776,7 @@ System.out.println(s1);`,
   },
   {
     question:
-      "You are writing a class named AccountManager. This class is the starting point of your application and is to be executing from the command line. What should be the name of the file containing this class's source code? (Choose 1 answer)",
+      "You are writing a class named AccountManager. This class is the starting point of your application and is to be executing from the command line. What should be the name of the file containing this class's source code? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "accountmanager.java", correct: false },
@@ -4793,7 +4793,7 @@ System.out.println(s1);`,
   },
   {
     question:
-      "What should be inserted at //1 so that Y.java can compile without any error? (Choose 2 answers)",
+      "What should be inserted at //1 so that Y.java can compile without any error? <br><br>(Choose 2 answers)",
     code: `//in file /root/com/foo/X.java
 package com.foo;
 public class X {
@@ -4823,7 +4823,7 @@ public class Y {
       "To access the static field LOGICID from class X, you need to import it using 'import static com.foo.X.*;' or directly use 'com.foo.X.LOGICID'.",
   },
   {
-    question: "Which of the following are features of Java? (Choose 2 answers)",
+    question: "Which of the following are features of Java? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -4846,7 +4846,7 @@ public class Y {
   },
   {
     question:
-      "Which of the following statements are true if the above program is run with the command line: java Test closed? (Choose 1 answer)",
+      "Which of the following statements are true if the above program is run with the command line: java Test closed? <br><br>(Choose 1 answer)",
     code: `public class Test {
   public static void main(String[] args) {
     if (args[0].equals("open")) if (args[1].equals("someone")) System.out.println("Hello!");
@@ -4873,7 +4873,7 @@ public class Y {
       "The program will throw an ArrayIndexOutOfBoundsException because it tries to access args[1] when only one argument is provided.",
   },
   {
-    question: "What will the following code print when run? (Choose 4 answers)",
+    question: "What will the following code print when run? <br><br>(Choose 4 answers)",
     code: `public class TestClass {
   public static void main(String[] args) throws Exception {
     String[] sa = { "a", "b", "c" };
@@ -4898,7 +4898,7 @@ public class Y {
   },
   {
     question:
-      "Which of the following statements will print true? (Choose 2 answers)",
+      "Which of the following statements will print true? <br><br>(Choose 2 answers)",
     code: `int x = 5;
 int y = 9;
 int z = 12;
@@ -4915,7 +4915,7 @@ boolean b = true;`,
   },
   {
     question:
-      "What will be the output when the above code is executed? (Choose 1 answer)",
+      "What will be the output when the above code is executed? <br><br>(Choose 1 answer)",
     code: `public static void main(String[] args) throws Exception {
   int i = 1,
   j = 10;
@@ -4936,7 +4936,7 @@ boolean b = true;`,
   },
   {
     question:
-      "Given the following class, which of these are valid ways of referring to the class from outside of the package com.enthu? (Choose 2 answers)",
+      "Given the following class, which of these are valid ways of referring to the class from outside of the package com.enthu? <br><br>(Choose 2 answers)",
     code: `package com.enthu;
 public class Base {
   // ....
@@ -4960,7 +4960,7 @@ public class Base {
   },
   {
     question:
-      "Which of the following are true about the enhanced for loop? (Choose 1 answer)",
+      "Which of the following are true about the enhanced for loop? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -4985,7 +4985,7 @@ public class Base {
   },
   {
     question:
-      "Which lines contain a valid constructor in the following code? (Choose 3 answers)",
+      "Which lines contain a valid constructor in the following code? <br><br>(Choose 3 answers)",
     code: `public class TestClass {
   public TestClass(int a, int b) {} // 1
   public void TestClass(int a) {} // 2
@@ -5005,7 +5005,7 @@ public class Base {
   },
   {
     question:
-      "Which of the following is true about a Java source file? (Choose 2 answers)",
+      "Which of the following is true about a Java source file? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "It must have exactly one package statement.", correct: false },
@@ -5031,7 +5031,7 @@ public class Base {
       "A Java source file can have zero or one package statement and zero or more import statements. Classes in the same package are not automatically imported.",
   },
   {
-    question: "Identify correct statements. (Choose 1 answer)",
+    question: "Identify correct statements. <br><br>(Choose 1 answer)",
     code: `double da[] = new double[3];`,
     answers: [
       {
@@ -5056,7 +5056,7 @@ public class Base {
       "The array 'da' is initialized with default values of 0.0, not null. The correct loop will print 0.0 three times.",
   },
   {
-    question: "Which of these for statements are valid? (Choose 1 answer)",
+    question: "Which of these for statements are valid? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "1, 2", correct: false },
@@ -5070,7 +5070,7 @@ public class Base {
   },
   {
     question:
-      "What letters, and in what order, will be printed when the following program is compiled and run? (Choose 1 answer)",
+      "What letters, and in what order, will be printed when the following program is compiled and run? <br><br>(Choose 1 answer)",
     code: `public class FinallyTest {
   public static void main(String args[]) throws Exception {
     try {
@@ -5097,7 +5097,7 @@ public class Base {
   },
   {
     question:
-      "What, if anything, is wrong with the following code? (Choose 1 answer)",
+      "What, if anything, is wrong with the following code? <br><br>(Choose 1 answer)",
     code: `void test(int x) {
   switch (x) {
   case 1:
@@ -5127,7 +5127,7 @@ public class Base {
       "The code is syntactically correct. A switch statement does not require break statements or a specific order for case labels.",
   },
   {
-    question: "Identify correct statements. (Choose 2 answers)",
+    question: "Identify correct statements. <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -5156,7 +5156,7 @@ public class Base {
   },
   {
     question:
-      "Which of the following statements will print true? (Choose 2 answers)",
+      "Which of the following statements will print true? <br><br>(Choose 2 answers)",
     code: `int a = 10, b = 20, c = 30, d = 40;
 boolean t = true;`,
     answers: [
@@ -5172,7 +5172,7 @@ boolean t = true;`,
       "The second and third statements evaluate to true. The first statement is false because 'a > b' is false, and the fourth statement is false because '(b>c && c>d)' is false.",
   },
   {
-    question: "What is the result? (Choose 1 answer)",
+    question: "What is the result? <br><br>(Choose 1 answer)",
     code: `String str = "hello\\r\\n" + "world";
 System.out.println(str.length);`,
     answers: [
@@ -5187,7 +5187,7 @@ System.out.println(str.length);`,
   },
   {
     question:
-      "A try statement must always have a ............. associated with it. (Choose 1 answer)",
+      "A try statement must always have a ............. associated with it. <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "catch", correct: false },
@@ -5201,7 +5201,7 @@ System.out.println(str.length);`,
   },
   {
     question:
-      "What sequence of digits will the following program print? (Choose 1 answer)",
+      "What sequence of digits will the following program print? <br><br>(Choose 1 answer)",
     code: `import java.util. * ;
 public class ListTest {
   public static void main(String args[]) {
@@ -5225,7 +5225,7 @@ public class ListTest {
   },
   {
     question:
-      "Which two lines can be inserted at locations marked //1 and //2? (Choose 1 answer)",
+      "Which two lines can be inserted at locations marked //1 and //2? <br><br>(Choose 1 answer)",
     code: `//1
 //2
 public class TestClass {
@@ -5246,7 +5246,7 @@ public class TestClass {
       "A package statement can be placed at the top of the file. Import statements are not needed for java.lang classes.",
   },
   {
-    question: "Which of these are keywords in Java? (Choose 4 answers)",
+    question: "Which of these are keywords in Java? <br><br>(Choose 4 answers)",
     code: ``,
     answers: [
       { text: "default", correct: true },
@@ -5260,7 +5260,7 @@ public class TestClass {
       "'default', 'throws', 'long', and 'strictfp' are Java keywords. 'null' is a literal, and 'String' is a class.",
   },
   {
-    question: "What letters will be printed by this program? (Choose 1 answer)",
+    question: "What letters will be printed by this program? <br><br>(Choose 1 answer)",
     code: `public class ForSwitch {
   public static void main(String args[]) {
     char i;
@@ -5297,7 +5297,7 @@ public class TestClass {
   },
   {
     question:
-      "Which of the following operators can be used in conjunction with a String object? (Choose 3 answers)",
+      "Which of the following operators can be used in conjunction with a String object? <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       { text: "+", correct: true },
@@ -5310,7 +5310,7 @@ public class TestClass {
       "The '+' and '+=' operators can be used for string concatenation, and the '.' operator is used to call methods on a String object.",
   },
   {
-    question: "What will the following code snippet print? (Choose 1 answer)",
+    question: "What will the following code snippet print? <br><br>(Choose 1 answer)",
     code: `int count = 0,
 sum = 0;
 do {
@@ -5328,7 +5328,7 @@ System.out.println(sum);`,
     explanation: "The loop skips numbers divisible by 3, so the sum is 48.",
   },
   {
-    question: "What is the result? (Choose 1 answer)",
+    question: "What is the result? <br><br>(Choose 1 answer)",
     code: `public static void main(String[] args) {
   int[] balances1 = new int[2];
   balances1[0] = 10;
@@ -5350,7 +5350,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "Which of the following are NOT valid operators in Java? (Choose 4 answers)",
+      "Which of the following are NOT valid operators in Java? <br><br>(Choose 4 answers)",
     code: ``,
     answers: [
       { text: "sizeof", correct: true },
@@ -5364,7 +5364,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "Which statements regarding the following code are correct? (Choose 1 answer)",
+      "Which statements regarding the following code are correct? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String args[]) {
     int x = Integer.parseInt(args[0]);
@@ -5390,7 +5390,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "Which of the following statements can be inserted successfully at // 1? (Choose 3 answers)",
+      "Which of the following statements can be inserted successfully at // 1? <br><br>(Choose 3 answers)",
     code: `public class InitTest {
   static int si = 10;
   int i;
@@ -5412,7 +5412,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "Which of the following code snippets will compile without any errors? (Choose 4 answers)",
+      "Which of the following code snippets will compile without any errors? <br><br>(Choose 4 answers)",
     code: ``,
     answers: [
       { text: "while (false) { x=3; }", correct: true },
@@ -5424,7 +5424,7 @@ System.out.println(sum);`,
       "All the code snippets will compile without errors. The while and if statements with 'false' will not execute their blocks, but they are syntactically correct.",
   },
   {
-    question: "What will the following program print? (Choose 1 answer)",
+    question: "What will the following program print? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   static int someInt = 10;
   public static void changeIt(int a) {
@@ -5447,7 +5447,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "Which of the following options, when inserted in the above code, will print 111 222? (Choose 1 answer)",
+      "Which of the following options, when inserted in the above code, will print 111 222? <br><br>(Choose 1 answer)",
     code: `public class Account {
   int id;
   public Account(int id) {
@@ -5486,7 +5486,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "What command should be given to compile and run a java source file named TestClass.java (for standard Oracle JDK)? (Choose 1 answer)",
+      "What command should be given to compile and run a java source file named TestClass.java (for standard Oracle JDK)? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "javac TestClass and java TestClass.class", correct: false },
@@ -5500,7 +5500,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "What will the following class print when compiled and run? (Choose 1 answer)",
+      "What will the following class print when compiled and run? <br><br>(Choose 1 answer)",
     code: `public class Holder {
   int value = 1;
   Holder link;
@@ -5531,7 +5531,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "What will be the result of attempting to compile and run the following code? (Choose 1 answer)",
+      "What will be the result of attempting to compile and run the following code? <br><br>(Choose 1 answer)",
     code: `class TestClass {
   public static void main(String args[]) {
     String str1 = "str1";
@@ -5552,7 +5552,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "How many objects and reference variables are created by the following code? (Choose 1 answer)",
+      "How many objects and reference variables are created by the following code? <br><br>(Choose 1 answer)",
     code: `TestClass t1, t2, t3, t4;
 t1 = t2 = new TestClass();
 t3 = new TestClass();`,
@@ -5568,7 +5568,7 @@ t3 = new TestClass();`,
   },
   {
     question:
-      "What will the following class print when compiled and run? (Choose 1 answer)",
+      "What will the following class print when compiled and run? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public int methodA(int a) {
     return a * 2;
@@ -5602,7 +5602,7 @@ t3 = new TestClass();`,
       "The program will not compile because methodA is declared twice with the same parameter list, which is not allowed.",
   },
   {
-    question: "Which lines will print true? (Choose 2 answers)",
+    question: "Which lines will print true? <br><br>(Choose 2 answers)",
     code: `String s1 = "java";
 String s2 = "java";
 String s3 = new String("java");
@@ -5624,7 +5624,7 @@ System.out.println(s2.equals(s3)); //4`,
   },
   {
     question:
-      "Which of the following declarations are valid? (Choose 3 answers)",
+      "Which of the following declarations are valid? <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       { text: "float f1 = 1.0;", correct: false },
@@ -5637,7 +5637,7 @@ System.out.println(s2.equals(s3)); //4`,
       "A float literal must have an 'f' or 'F' suffix unless it is a whole number or in scientific notation. '43e1' and '-1' are valid float declarations.",
   },
   {
-    question: "What will the following program print? (Choose 1 answer)",
+    question: "What will the following program print? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String[] args) {
     int x = 1;
@@ -5658,7 +5658,7 @@ System.out.println(s2.equals(s3)); //4`,
   },
   {
     question:
-      "Which of the following statements are correct? (Choose 1 answer)",
+      "Which of the following statements are correct? <br><br>(Choose 1 answer)",
     code: `class A {
   public void doA(int k) throws Exception { // 0
     for (int i = 0; i < 10; i++) {
@@ -5703,7 +5703,7 @@ System.out.println(s2.equals(s3)); //4`,
   },
   {
     question:
-      "What is the result of executing the following fragment of code? (Choose 1 answer)",
+      "What is the result of executing the following fragment of code? <br><br>(Choose 1 answer)",
     code: `boolean b1 = false;
 boolean b2 = false;
 if (b2 = b1 != b2) {
@@ -5723,7 +5723,7 @@ if (b2 = b1 != b2) {
   },
   {
     question:
-      "Which of the following statements will print YES? (Choose 2 answers)",
+      "Which of the following statements will print YES? <br><br>(Choose 2 answers)",
     code: `String a = "aAaA", b = "bbBB";`,
     answers: [
       {
@@ -5747,7 +5747,7 @@ if (b2 = b1 != b2) {
       "The second statement prints YES because 'a.substring(1,2)' is 'A' and 'b.substring(2)' is 'BB', forming 'ABB'. The third statement prints YES because both strings have the same length.",
   },
   {
-    question: "Which of the following statements are true? (Choose 2 answers)",
+    question: "Which of the following statements are true? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -5771,7 +5771,7 @@ if (b2 = b1 != b2) {
       "The modulus operator can be used with both integral and floating-point operands. The && operator only works with boolean operands. The operators *, /, and % have the same precedence level, and the += operator can be used with both integral and String operands.",
   },
   {
-    question: "What will the following program print? (Choose 1 answer)",
+    question: "What will the following program print? <br><br>(Choose 1 answer)",
     code: `class LoopTest {
   public static void main(String args[]) {
     int counter = 0;
@@ -5796,7 +5796,7 @@ if (b2 = b1 != b2) {
   },
   {
     question:
-      "The following method will compile and run without any problems. (Choose 1 answer)",
+      "The following method will compile and run without any problems. <br><br>(Choose 1 answer)",
     code: `public void switchTest(byte x) {
   switch (x) {
   case 'b':
@@ -5817,7 +5817,7 @@ if (b2 = b1 != b2) {
   },
   {
     question:
-      "How many string objects are created in the following code fragment? (Choose 1 answer)",
+      "How many string objects are created in the following code fragment? <br><br>(Choose 1 answer)",
     code: `String a, b, c;
 a = new String("hello");
 b = a;
@@ -5834,7 +5834,7 @@ c = a + b;`,
   },
   {
     question:
-      "What will the following class print when compiled and run? (Choose 1 answer)",
+      "What will the following class print when compiled and run? <br><br>(Choose 1 answer)",
     code: `class Holder {
   int value = 1;
   Holder link;
@@ -5869,7 +5869,7 @@ c = a + b;`,
   },
   {
     question:
-      "Which of the following method declarations correctly declares a method named sum that takes an array of integers and returns the sum of the values in that array? (Choose 1 answer)",
+      "Which of the following method declarations correctly declares a method named sum that takes an array of integers and returns the sum of the values in that array? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "sum(int[] : array) : int { // code here }", correct: false },
@@ -5883,7 +5883,7 @@ c = a + b;`,
   },
   {
     question:
-      "Working with the String Class: Which of these expressions will obtain the substring '456' from a string defined by String str = '01234567'? (Choose 1 answer)",
+      "Which of these expressions will obtain the substring '456' from a string defined by String str = '01234567'? <br><br>(Choose 1 answer)",
     code: `
   String str = "01234567";
   `,
@@ -5899,7 +5899,7 @@ c = a + b;`,
   },
   {
     question:
-      "Working with Java Operators: What will be the output of the following lines? (Choose 1 answer)",
+      "What will be the output of the following lines? <br><br>(Choose 1 answer)",
     code: `System.out.println("" + 5 + 6); //1
 System.out.println(5 + "" + 6); //2
 System.out.println(5 + 6 + ""); //3
@@ -5916,7 +5916,7 @@ System.out.println(5 + 6); //4`,
   },
   {
     question:
-      "Java Methods: Consider the following method. Which of the following methods correctly overload the above method? (Choose 2 answers)",
+      "Java Methods: Consider the following method. Which of the following methods correctly overload the above method? <br><br>(Choose 2 answers)",
     code: `public int setVar(int a, int b, float c) {
   //valid code not shown
 }`,
@@ -5944,7 +5944,7 @@ System.out.println(5 + 6); //4`,
   },
   {
     question:
-      "Using Decision Statements: Given the code fragment, what is the result? (Choose 1 answer)",
+      "Using Decision Statements: Given the code fragment, what is the result? <br><br>(Choose 1 answer)",
     code: `int[] balances1 = new int[] {
   10,
   20
@@ -5966,7 +5966,7 @@ System.out.print(balances1.length + " " + balances2.length);`,
   },
   {
     question:
-      "Arrays and ArrayLists: Given the following line of code, identify the correct statement. (Choose 1 answer)",
+      "Given the following line of code, identify the correct statement. <br><br>(Choose 1 answer)",
     code: `
   List students = new ArrayList();
   `,
@@ -5993,7 +5993,7 @@ System.out.print(balances1.length + " " + balances2.length);`,
   },
   {
     question:
-      "Working with Java Operators: What will the following code print? (Choose 1 answer)",
+      "What will the following code print? <br><br>(Choose 1 answer)",
     code: `int i = 0;
 int j = 1;
 if ((i++==0) && (j++==2)) {
@@ -6012,7 +6012,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "Classes and Constructors: Which of the following are correct ways to initialize the static variables MAX and CLASS_GUID? (Choose 2 answers)",
+      "Classes and Constructors: Which of the following are correct ways to initialize the static variables MAX and CLASS_GUID? <br><br>(Choose 2 answers)",
     code: `class Widget {
   static int MAX; //1
   static final String CLASS_GUID; //2
@@ -6047,7 +6047,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "Working with Java Data Types: Which of these assignments are valid? (Choose 3 answers)",
+      "Which of these assignments are valid? <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       { text: "short s = 12;", correct: true },
@@ -6061,7 +6061,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "Working with Java Data Types: Consider the following program. Identify the correct statements. (Choose 2 answers)",
+      "Consider the following program. Identify the correct statements. <br><br>(Choose 2 answers)",
     code: `class Test {
   public static void main(String[] args) {
     short s = 10; // 1
@@ -6083,7 +6083,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "Working with the String Class: Which line will print the string 'MUM'? (Choose 1 answer)",
+      "Which line will print the string 'MUM'? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String args[]) {
     String s = "MINIMUM";
@@ -6104,7 +6104,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "While compiling a java file you want the compiler to generate the class file in a particular directory. Which javac option will you use? (Choose 1 answer)",
+      "While compiling a java file you want the compiler to generate the class file in a particular directory. Which javac option will you use? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "-dest", correct: false },
@@ -6117,7 +6117,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "Java Methods: What will be the result of attempting to compile and run the following class? (Choose 1 answer)",
+      "Java Methods: What will be the result of attempting to compile and run the following class? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String args[]) {
     int i = 1;
@@ -6149,7 +6149,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "What is Java: Which of the following is correct about Java byte code? (Choose 1 answer)",
+      "What is Java: Which of the following is correct about Java byte code? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "It can run on any OS and chip architecture.", correct: false },
@@ -6171,7 +6171,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "What is Java: Java ME can be used to develop applications for: (Choose 1 answer)",
+      "What is Java: Java ME can be used to develop applications for: <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -6187,7 +6187,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "Arrays and ArrayLists: Given the following declaration, select the correct way to get the size of the array, assuming that the array has been initialized. (Choose 1 answer)",
+      "Given the following declaration, select the correct way to get the size of the array, assuming that the array has been initialized. <br><br>(Choose 1 answer)",
     code: `
   int[] intArr;
   `,
@@ -6203,7 +6203,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "Using Decision Statements: Which of these expressions will return true? (Choose 4 answers)",
+      "Using Decision Statements: Which of these expressions will return true? <br><br>(Choose 4 answers)",
     code: ``,
     answers: [
       { text: '"hello world".equals("hello world")', correct: true },
@@ -6223,7 +6223,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "Working with Java Operators: Given the code, what is the result? (Choose 1 answer)",
+      "Given the code, what is the result? <br><br>(Choose 1 answer)",
     code: `
   int a = 5, b = 2, c = 30;
   System.out.println(a-- * c / b);
@@ -6241,7 +6241,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "Classes and Constructors: You are writing a class that represents the equation of a straight line: y = mx + c. This class has only one method named calcY that takes the value of x and returns the value of y. Which variable scopes will you use to store the values of m and c in an instance of this class? (Choose 1 answer)",
+      "Classes and Constructors: You are writing a class that represents the equation of a straight line: y = mx + c. This class has only one method named calcY that takes the value of x and returns the value of y. Which variable scopes will you use to store the values of m and c in an instance of this class? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "global variables", correct: false },
@@ -6254,7 +6254,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "Using Looping Statements: What will the following code print? (Choose 1 answer)",
+      "Using Looping Statements: What will the following code print? <br><br>(Choose 1 answer)",
     code: `public class BreakTest {
   public static void main(String[] args) {
     int i = 0,
@@ -6277,7 +6277,7 @@ System.out.println(i + " " + j);`,
   },
   {
     question:
-      "Using Decision Statements: What is the result of executing the following fragment of code? (Choose 1 answer)",
+      "Using Decision Statements: What is the result of executing the following fragment of code? <br><br>(Choose 1 answer)",
     code: `boolean b1 = false;
 boolean b2 = false;
 if (b2 = b1 == false) {
@@ -6297,7 +6297,7 @@ if (b2 = b1 == false) {
   },
   {
     question:
-      "Using Looping Statements: Given the code, what will it print when compiled and run? (Choose 1 answer)",
+      "Using Looping Statements: Given the code, what will it print when compiled and run? <br><br>(Choose 1 answer)",
     code: `package strings;
 public class StringFromChar {
   public static void main(String[] args) {
@@ -6328,7 +6328,7 @@ public class StringFromChar {
   },
   {
     question:
-      "Arrays and ArrayLists: Which of the following correctly declare a variable which can hold an array of 10 integers? (Choose 2 answers)",
+      "Which of the following correctly declare a variable which can hold an array of 10 integers? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "int[] iA", correct: true },
@@ -6342,7 +6342,7 @@ public class StringFromChar {
   },
   {
     question:
-      "Using Looping Statements: What is the effect of compiling and running this class? (Choose 1 answer)",
+      "Using Looping Statements: What is the effect of compiling and running this class? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String args[]) {
     int sum = 0;
@@ -6364,7 +6364,7 @@ public class StringFromChar {
   },
   {
     question:
-      "Working with the String Class: What will the following statement print? (Choose 1 answer)",
+      "What will the following statement print? <br><br>(Choose 1 answer)",
     code: `
   System.out.printf("This is %s %s", "what", "it", "is");
   `,
@@ -6382,7 +6382,7 @@ public class StringFromChar {
   },
   {
     question:
-      "Arrays and ArrayLists: Which of the following statements are valid? (Choose 2 answers)",
+      "Which of the following statements are valid? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "String[] sa = new String[3]{ 'a', 'b', 'c'};", correct: false },
@@ -6396,7 +6396,7 @@ public class StringFromChar {
   },
   {
     question:
-      "Using Decision Statements: What is the result of executing the following code when the value of i is 5? (Choose 1 answer)",
+      "Using Decision Statements: What is the result of executing the following code when the value of i is 5? <br><br>(Choose 1 answer)",
     code: `switch (i) {
 default:
 case 1:
@@ -6421,7 +6421,7 @@ case 3:
   },
   {
     question:
-      "Using Looping Statements: What will the following code print when run? (Choose 1 answer)",
+      "Using Looping Statements: What will the following code print when run? <br><br>(Choose 1 answer)",
     code: `public class Mambo {
   static int m = 10,
   n = 20;
@@ -6447,7 +6447,7 @@ case 3:
   },
   {
     question:
-      "Basic Java Elements: What will the following program print? (Choose 1 answer)",
+      "What will the following program print? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String[] args) {
     unsigned byte b = 0;
@@ -6467,7 +6467,7 @@ case 3:
   },
   {
     question:
-      "Working with Java Operators: Which of the following are valid operators in Java? (Choose 3 answers)",
+      "Which of the following are valid operators in Java? <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       { text: "!", correct: true },
@@ -6481,7 +6481,7 @@ case 3:
   },
   {
     question:
-      "Using Looping Statements: Consider the following code snippet. Which of the following will produce the same result? (Choose 1 answer)",
+      "Using Looping Statements: Consider the following code snippet. Which of the following will produce the same result? <br><br>(Choose 1 answer)",
     code: `for (int i = INT1; i < INT2; i++) {
   System.out.println(i);
 }`,
@@ -6509,7 +6509,7 @@ case 3:
   },
   {
     question:
-      "Using Decision Statements: Which of the following four constructs are valid? (Choose 1 answer)",
+      "Using Decision Statements: Which of the following four constructs are valid? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "1, 3", correct: false },
@@ -6523,7 +6523,7 @@ case 3:
   },
   {
     question:
-      "Working with Java Data Types: What will the following program print? (Choose 1 answer)",
+      "What will the following program print? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   static int someInt = 10;
   public static void changeIt(int a) {
@@ -6546,7 +6546,7 @@ case 3:
   },
   {
     question:
-      "Which of the following features are provided by the JDK? (Choose 4 answers)",
+      "Which of the following features are provided by the JDK? <br><br>(Choose 4 answers)",
     code: ``,
     answers: [
       { text: "A Java Runtime Environment (JRE).", correct: true },
@@ -6560,7 +6560,7 @@ case 3:
   },
   {
     question:
-      "Working with Java Operators: Which of the following expressions correctly implement the following equation: y = 10x² + 20x + 30? Assume that all variables are of type ints. (Choose 2 answers)",
+      "Which of the following expressions correctly implement the following equation:<br><br> y = 10x² + 20x + 30? <br><br>Assume that all variables are of type ints. <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "y = 10**x + 20*x + 30;", correct: false },
@@ -6574,7 +6574,7 @@ case 3:
   },
   {
     question:
-      "Working with the String Class: What will the following statement print? (Choose 1 answer)",
+      "What will the following statement print? <br><br>(Choose 1 answer)",
     code: `int marks = 90;
 String exam = "OCJA";
 System.out.printf("I scored %d marks in the %s exam!", exam, marks);`,
@@ -6592,7 +6592,7 @@ System.out.printf("I scored %d marks in the %s exam!", exam, marks);`,
   },
   {
     question:
-      "Using Decision Statements: Which of the following statements concerning the switch construct are true? (Choose 3 answers)",
+      "Using Decision Statements: Which of the following statements concerning the switch construct are true? <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       {
@@ -6612,7 +6612,7 @@ System.out.printf("I scored %d marks in the %s exam!", exam, marks);`,
   },
   {
     question:
-      "Debugging and Exception Handling: What will happen when the following program is compiled and run? (Choose 1 answer)",
+      "What will happen when the following program is compiled and run? <br><br>(Choose 1 answer)",
     code: `public class SM {
   public String checkIt(String s) {
     if (s.length() == 0 || s == null) {
@@ -6636,7 +6636,7 @@ System.out.printf("I scored %d marks in the %s exam!", exam, marks);`,
   },
   {
     question:
-      "Classes and Constructors: Which of these statements are true? (Choose 2 answers)",
+      "Classes and Constructors: Which of these statements are true? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -6659,7 +6659,7 @@ System.out.printf("I scored %d marks in the %s exam!", exam, marks);`,
   },
   {
     question:
-      "Which of the following features are provided by a JDK? (Choose 1 answer)",
+      "Which of the following features are provided by a JDK? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "Networking protocols", correct: false },
@@ -6672,7 +6672,7 @@ System.out.printf("I scored %d marks in the %s exam!", exam, marks);`,
   },
   {
     question:
-      "Working with Java Data Types: Given the following class, which statements can be inserted at line 1 without causing the code to fail compilation? (Choose 4 answers)",
+      "Given the following class, which statements can be inserted at line 1 without causing the code to fail compilation? <br><br>(Choose 4 answers)",
     code: `public class TestClass {
   int a;
   int b = 0;
@@ -6695,7 +6695,7 @@ System.out.printf("I scored %d marks in the %s exam!", exam, marks);`,
   },
   {
     question:
-      "Which of the following statements are used to implement a boolean conditional statement in Java? (Choose 3 answers)",
+      "Which of the following statements are used to implement a boolean conditional statement in Java? <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       { text: "if", correct: true },
@@ -6710,7 +6710,7 @@ System.out.printf("I scored %d marks in the %s exam!", exam, marks);`,
   },
   {
     question:
-      "Java Methods: Which of the following statements are true? (Choose 2 answers)",
+      "Java Methods: Which of the following statements are true? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -6739,7 +6739,7 @@ System.out.printf("I scored %d marks in the %s exam!", exam, marks);`,
   },
   {
     question:
-      "Arrays and ArrayLists: What will the following code snippet print? (Choose 1 answer)",
+      "What will the following code snippet print? <br><br>(Choose 1 answer)",
     code: `int index = 1;
 String[] strArr = new String[5];
 String myStr = strArr[index];
@@ -6759,7 +6759,7 @@ System.out.println(myStr);`,
   },
   {
     question:
-      "Using Decision Statements: Which line, if any, will give a compile time error? (Choose 1 answer)",
+      "Using Decision Statements: Which line, if any, will give a compile time error? <br><br>(Choose 1 answer)",
     code: `void test(byte x) {
   switch (x) {
   case 'a':
@@ -6792,7 +6792,7 @@ System.out.println(myStr);`,
   },
   {
     question:
-      "Java Methods: Consider the following code. Which of the following lines can be added independently to the above class so that it will run without any errors or exceptions? (Choose 2 answers)",
+      "Java Methods: Consider the following code. Which of the following lines can be added independently to the above class so that it will run without any errors or exceptions? <br><br>(Choose 2 answers)",
     code: `public class Varargs {
   public void test() {
     test1(10); //1
@@ -6817,7 +6817,7 @@ System.out.println(myStr);`,
   },
   {
     question:
-      "Working with the Random and Math Classes: Which package contains Random class? (Choose 1 answer)",
+      "Working with the Random and Math Classes: Which package contains Random class? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "java.lang", correct: false },
@@ -6829,7 +6829,7 @@ System.out.println(myStr);`,
   },
   {
     question:
-      "Given the class, now consider the following 3 options for running the program. Which of the following statements are true? (Choose 2 answers)",
+      "Given the class, now consider the following 3 options for running the program. Which of the following statements are true? <br><br>(Choose 2 answers)",
     code: `// Filename: Test.java
 public class Test {
   public static void main(String args[]) {
@@ -6859,7 +6859,7 @@ public class Test {
   },
   {
     question:
-      "Working with Java Data Types: Given the following LOCs, which of the following will put correct integer value of the char variable ch into the int variable i? (Choose 3 answers)",
+      "Given the following LOCs, which of the following will put correct integer value of the char variable ch into the int variable i? <br><br>(Choose 3 answers)",
     code: `
   int i = 0;
   char ch = 'a';
@@ -6877,7 +6877,7 @@ public class Test {
   },
   {
     question:
-      "Working with Java Data Types: Which of the lines will cause a compile time error in the following program? (Choose 1 answer)",
+      "Which of the lines will cause a compile time error in the following program? <br><br>(Choose 1 answer)",
     code: `public class MyClass {
   public static void main(String args[]) {
     char c;
@@ -6901,7 +6901,7 @@ public class Test {
   },
   {
     question:
-      "Arrays and ArrayLists: Which of the following classes are from java.util package? (Choose 3 answers)",
+      "Which of the following classes are from java.util package? <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       { text: "String", correct: false },
@@ -6915,7 +6915,7 @@ public class Test {
   },
   {
     question:
-      "Working with Java Operators: What will be the result of attempting to compile and run the following code? (Choose 1 answer)",
+      "What will be the result of attempting to compile and run the following code? <br><br>(Choose 1 answer)",
     code: `class SwitchTest {
   public static void main(String args[]) {
     for (int i = 0; i < 3; i++) {
@@ -6939,7 +6939,7 @@ public class Test {
   },
   {
     question:
-      "Working with Java Data Types: Which of the following statements correctly use the float data type? (Choose 1 answer)",
+      "Which of the following statements correctly use the float data type? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "var float x = 10.0;", correct: false },
@@ -6953,7 +6953,7 @@ public class Test {
   },
   {
     question:
-      "Working with Java Data Types: What will the following program print? (Choose 1 answer)",
+      "What will the following program print? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String[] args) {
     String str = "111";
@@ -6977,7 +6977,7 @@ public class Test {
   },
   {
     question:
-      "Debugging and Exception Handling: Given the code, what is the result? (Choose 1 answer)",
+      "Given the code, what is the result? <br><br>(Choose 1 answer)",
     code: `class Node {
   int id;
   Node node;
@@ -6988,9 +6988,6 @@ public class Test {
   }
 }`,
     answers: [
-      { text: "0", correct: false },
-      { text: "0", correct: false },
-      { text: "0", correct: false },
       { text: "null", correct: false },
       { text: "0", correct: false },
       { text: "exception at runtime", correct: true },
@@ -7001,7 +6998,7 @@ public class Test {
   },
   {
     question:
-      "Basic Java Elements: Consider the following two java files. What should be inserted at //1 so that TestClass will compile and run? (Choose 2 answers)",
+      "Consider the following two java files. What should be inserted at //1 so that TestClass will compile and run? <br><br>(Choose 2 answers)",
     code: `//in file SM.java
 package x.y;
 public class SM {
@@ -7027,7 +7024,7 @@ public class TestClass {
   },
   {
     question:
-      "Which of the given options can be successfully inserted at line 1? (Choose 3 answers)",
+      "Which of the given options can be successfully inserted at line 1? <br><br>(Choose 3 answers)",
     code: `
   //line 1
   public class A {
@@ -7044,7 +7041,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Looping Statements: What can be inserted in the following code so that it will print exactly 2345 when compiled and run? (Choose 2 answers)",
+      "Using Looping Statements: What can be inserted in the following code so that it will print exactly 2345 when compiled and run? <br><br>(Choose 2 answers)",
     code: `public class FlowTest {
   static int[] data = { 1, 2, 3, 4, 5 };
   public static void main(String[] args) {
@@ -7071,7 +7068,7 @@ public class TestClass {
   },
   {
     question:
-      "Classes and Constructors: Given the following code, which statements can be placed at the indicated position without causing compile and run time errors? (Choose 2 answers)",
+      "Classes and Constructors: Given the following code, which statements can be placed at the indicated position without causing compile and run time errors? <br><br>(Choose 2 answers)",
     code: `public class Test {
   int i1;
   static int i2;
@@ -7092,7 +7089,7 @@ public class TestClass {
   },
   {
     question:
-      "Which of the following are benefits of polymorphism? (Choose 2 answers)",
+      "Which of the following are benefits of polymorphism? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "It makes the code more reusable.", correct: true },
@@ -7105,7 +7102,7 @@ public class TestClass {
   },
   {
     question:
-      "Working with the Random and Math Classes: What can you do to make the following code print a number between 0 and 10? (Choose 3 answers)",
+      "Working with the Random and Math Classes: What can you do to make the following code print a number between 0 and 10? <br><br>(Choose 3 answers)",
     code: `
   int x = 10;
   //insert code here
@@ -7139,7 +7136,7 @@ public class TestClass {
   },
   {
     question:
-      "Classes and Constructors: What will happen when the following code is compiled? (Choose 1 answer)",
+      "Classes and Constructors: What will happen when the following code is compiled? <br><br>(Choose 1 answer)",
     code: `public class FooBar {
   private int FooBar; //1
   public FooBar(int FooBar) {
@@ -7158,7 +7155,7 @@ public class TestClass {
   },
   {
     question:
-      "Working with Java Data Types: Which of the following statements declares a valid null reference? (Choose 1 answer)",
+      "Which of the following statements declares a valid null reference? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "String str : null;", correct: false },
@@ -7171,7 +7168,7 @@ public class TestClass {
   },
   {
     question:
-      "Classes and Constructors: Under what situations does a class get a default constructor? (Choose 1 answer)",
+      "Classes and Constructors: Under what situations does a class get a default constructor? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -7197,7 +7194,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Looping Statements: What will be the output if you run the following program? (Choose 1 answer)",
+      "Using Looping Statements: What will be the output if you run the following program? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String args[]) {
     int i;
@@ -7220,7 +7217,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Looping Statements: What will be the result of attempting to compile and run the following program? (Choose 1 answer)",
+      "Using Looping Statements: What will be the result of attempting to compile and run the following program? <br><br>(Choose 1 answer)",
     code: `class TestClass {
   public static void main(String args[]) {
     int i = 0;
@@ -7256,7 +7253,7 @@ public class TestClass {
   },
   {
     question:
-      "Basic Java Elements: Which of the following comments are valid? (Choose 4 answers)",
+      "Which of the following comments are valid? <br><br>(Choose 4 answers)",
     code: ``,
     answers: [
       { text: "// /* ..... */", correct: true },
@@ -7270,7 +7267,7 @@ public class TestClass {
   },
   {
     question:
-      "Arrays and ArrayLists: Which of the following are benefits of an array over an ArrayList? (Choose 2 answers)",
+      "Which of the following are benefits of an array over an ArrayList? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       { text: "It consumes less memory.", correct: true },
@@ -7289,7 +7286,7 @@ public class TestClass {
   },
   {
     question:
-      "Java Methods: How can you declare a method someMethod() such that an instance of the class is not needed to access it and all the members of the same package have access to it? (Choose 3 answers)",
+      "Java Methods: How can you declare a method someMethod() such that an instance of the class is not needed to access it and all the members of the same package have access to it? <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       { text: "public static void someMethod()", correct: true },
@@ -7304,7 +7301,7 @@ public class TestClass {
   },
   {
     question:
-      "What will the following code print when run? (Choose 1 answer)",
+      "What will the following code print when run? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static long main(String[] args) {
     System.out.println("Hello");
@@ -7323,7 +7320,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Looping Statements: Which of the following statements regarding 'break' and 'continue' are true? (Choose 1 answer)",
+      "Using Looping Statements: Which of the following statements regarding 'break' and 'continue' are true? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -7343,7 +7340,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Looping Statements: Given the following code fragment, which of the following lines would be a part of the output? (Choose 3 answers)",
+      "Using Looping Statements: Given the following code fragment, which of the following lines would be a part of the output? <br><br>(Choose 3 answers)",
     code: `outer: for (int i = 0; i < 3; i++) {
   for (int j = 0; j < 2; j++) {
     if (i == j) {
@@ -7365,7 +7362,7 @@ public class TestClass {
   },
   {
     question:
-      "Working with Java Data Types: Which integral type in Java has a range from -2^31 to 2^31-1? (Choose 1 answer)",
+      "Which integral type in Java has a range from -2^31 to 2^31-1? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "char", correct: false },
@@ -7378,7 +7375,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Decision Statements: What will it print when the following code compiled and run? (Choose 1 answer)",
+      "Using Decision Statements: What will it print when the following code compiled and run? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static int switchTest(int k) {
     int j = 1;
@@ -7414,7 +7411,7 @@ public class TestClass {
   },
   {
     question:
-      "Which of the following are true about accessor methods? (Choose 1 answer)",
+      "Which of the following are true about accessor methods? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -7430,7 +7427,7 @@ public class TestClass {
   },
   {
     question:
-      "Classes and Constructors: What would be the result of trying to compile and run the following program? (Choose 1 answer)",
+      "Classes and Constructors: What would be the result of trying to compile and run the following program? <br><br>(Choose 1 answer)",
     code: `public class Test {
   int[] ia = new int[1];
   Object oA[] = new Object[1];
@@ -7461,7 +7458,7 @@ public class TestClass {
   },
   {
     question:
-      "Java Methods: Given the following pairs of method declarations, which of the statements are true? (Choose 2 answers)",
+      "Java Methods: Given the following pairs of method declarations, which of the statements are true? <br><br>(Choose 2 answers)",
     code: `1.
 void perform_work(int time) {}
 int perform_work(int time, int speed) {
@@ -7504,7 +7501,7 @@ void Perform_work(int time) {}`,
   },
   {
     question:
-      "Arrays and ArrayLists: Is it possible to create arrays of length zero? (Choose 1 answer)",
+      "Is it possible to create arrays of length zero? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -7526,7 +7523,7 @@ void Perform_work(int time) {}`,
   },
   {
     question:
-      "Debugging and Exception Handling: What will be the result of compiling and running the following program? (Choose 1 answer)",
+      "What will be the result of compiling and running the following program? <br><br>(Choose 1 answer)",
     code: `public class ExceptionTest {
   public static void main(String[] args) throws Exception {
     try {
@@ -7564,7 +7561,7 @@ void Perform_work(int time) {}`,
       "The code will not compile because the catch block is incorrectly placed after the finally block.",
   },
   {
-    question: "What is meant by 'encapsulation'? (Choose 1 answer)",
+    question: "What is meant by 'encapsulation'? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "There is no way to access member variables.", correct: false },
@@ -7583,7 +7580,7 @@ void Perform_work(int time) {}`,
   },
   {
     question:
-      "Arrays and ArrayLists: What will the following code print when compiled and run? (Choose 1 answer)",
+      "What will the following code print when compiled and run? <br><br>(Choose 1 answer)",
     code: `public class Account {
   double balance;
   public void update(int[] balances2) {
@@ -7616,7 +7613,7 @@ void Perform_work(int time) {}`,
   },
   {
     question:
-      "Working with Java Data Types: What will be the result of attempting to compile and run the following code? (Choose 1 answer)",
+      "What will be the result of attempting to compile and run the following code? <br><br>(Choose 1 answer)",
     code: `public class PromotionTest {
   public static void main(String args[]) {
     int i = 5;
@@ -7639,7 +7636,7 @@ void Perform_work(int time) {}`,
       "The condition 'i == f' is false, so c is not incremented. The second condition is true, so c is incremented by 2, resulting in 'b'.",
   },
   {
-    question: "What is meant by 'encapsulation'? (Choose 1 answer)",
+    question: "What is meant by 'encapsulation'? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "There is no way to access member variable.", correct: false },
@@ -7658,7 +7655,7 @@ void Perform_work(int time) {}`,
   },
   {
     question:
-      "Assuming that the following are the complete contents of TestClass.java file, what will be result of attempting to compile this file? (Choose 1 answer)",
+      "Assuming that the following are the complete contents of TestClass.java file, what will be result of attempting to compile this file? <br><br>(Choose 1 answer)",
     code: `import java.util. * ;
 package test;
 public class TestClass {
@@ -7685,7 +7682,7 @@ class OtherClass {
   },
   {
     question:
-      "Working with Java Data Types: In which of these variable declarations, will the variable remain uninitialized unless explicitly initialized? (Choose 1 answer)",
+      "In which of these variable declarations, will the variable remain uninitialized unless explicitly initialized? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -7711,7 +7708,7 @@ class OtherClass {
   },
   {
     question:
-      "Using Looping Statements: You have been given an array of objects and you need to process this array as follows - 1. Call a method on each object from first to last one by one. 2. Call a method on each object from last to first one by one. 3. Call a method on only those objects at even index (0, 2, 4, 6, etc.) Which of the following are correct? (Choose 1 answer)",
+      "Using Looping Statements: You have been given an array of objects and you need to process this array as follows - 1. Call a method on each object from first to last one by one. 2. Call a method on each object from last to first one by one. 3. Call a method on only those objects at even index (0, 2, 4, 6, etc.) Which of the following are correct? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       {
@@ -7740,7 +7737,7 @@ class OtherClass {
   },
   {
     question:
-      "Using Decision Statements: Which of the following will not give any error at compile time and run time? (Choose 4 answers)",
+      "Using Decision Statements: Which of the following will not give any error at compile time and run time? <br><br>(Choose 4 answers)",
     code: ``,
     answers: [
       { text: "if (8 == 81) {}", correct: true },
@@ -7763,7 +7760,7 @@ class OtherClass {
   },
   {
     question:
-      "Using Decision Statements: What will happen if you try to compile and run the following program? (Choose 2 answers)",
+      "Using Decision Statements: What will happen if you try to compile and run the following program? <br><br>(Choose 2 answers)",
     code: `public class TestClass {
   public static void main(String[] args) {
     calculate(2);
@@ -7798,7 +7795,7 @@ class OtherClass {
   },
   {
     question:
-      "Consider the following TestClass.java file in the current directory: package a.a.a; public class TestClass { public static void main(String[] args) { System.out.println('Good!!!'); } } Which of the following command lines should be used for compiling if the generated class file is to be executed using the following command line: java -classpath . a.a.a.TestClass (Choose 1 answer)",
+      "Consider the following TestClass.java file in the current directory: package a.a.a; public class TestClass { public static void main(String[] args) { System.out.println('Good!!!'); } } Which of the following command lines should be used for compiling if the generated class file is to be executed using the following command line: java -classpath . a.a.a.TestClass <br><br>(Choose 1 answer)",
     code: `package a.a.a;
 public class TestClass {
   public static void main(String[] args) {
@@ -7817,7 +7814,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Looping Statements: What will the following code print? (Choose 1 answer)",
+      "Using Looping Statements: What will the following code print? <br><br>(Choose 1 answer)",
     code: `void crazyLoop() {
   int c = 0;
   JACK: while (c < 8) {
@@ -7838,7 +7835,7 @@ public class TestClass {
   },
   {
     question:
-      "Working with Java Data Types: Which of the following are char literals? (Choose 3 answers)",
+      "Which of the following are char literals? <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       { text: "'a'", correct: true },
@@ -7852,7 +7849,7 @@ public class TestClass {
   },
   {
     question:
-      "Using Looping Statements: What will the following program snippet print? (Choose 1 answer)",
+      "Using Looping Statements: What will the following program snippet print? <br><br>(Choose 1 answer)",
     code: `int i = 0,
 j = 11;
 do {
@@ -7874,7 +7871,7 @@ System.out.println(i + "  " + j);`,
   },
   {
     question:
-      "Using Decision Statements: Consider the following method... Which of the following statements are correct? (Choose 3 answers)",
+      "Using Decision Statements: Consider the following method... Which of the following statements are correct? <br><br>(Choose 3 answers)",
     code: `public void ifTest(boolean flag)
 {
    if (flag)   //1
@@ -7906,7 +7903,7 @@ System.out.println(i + "  " + j);`,
   },
   {
     question:
-      "Working with Java Operators: Given: int a = 5,  b = 2, c = 30; System.out.println( (a + b)-- * c  ); What is the result? (Choose 1 answer)",
+      "What is the result of the following code snippet? <br><br>(Choose 1 answer)",
     code: `int a = 5,  b = 2, c = 30;
   System.out.println( (a + b)-- * c  );`,
     answers: [
