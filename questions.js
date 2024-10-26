@@ -635,7 +635,7 @@ boolean b = true;`,
       { text: "System.out.println( !b == y>z );", correct: false },
     ],
     explanation:
-      "The first and second statements evaluate to true because 'b' is true. The third statement is false because 'b' is not equal to 'y>z'.",
+      "Statement A, which checks x == y || b, evaluates to false || true since x is not equal to y but b is true. Therefore, this statement will print true.<br><br>Statement B checks ! (x < z) || b. Since x < z (5 < 12) is true, ! (x < z) becomes false, leading to false || true, which evaluates to true. Thus, this statement will also print true.<br><br></br>In contrast, Statement C compares b == y > z. Here, y > z (9 > 12) is false, making the expression evaluate to false, so this statement will print false.<br><br></br>Statement D evaluates b && y > z || z < x. Since b is true and y > z is false, it simplifies to true && false, which is false, leading to a final result of false as well.<br><br>Lastly, Statement E, which checks !b == y > z, translates to comparing false == (y > z). Since y > z is false, this part would seem to evaluate to true, but due to operator precedence, it ultimately evaluates to false.",
   },
   {
     question:
@@ -778,19 +778,6 @@ public class Base {
     ],
     explanation:
       "The array 'da' is initialized with default values of 0.0, not null. The correct loop will print 0.0 three times.",
-  },
-  {
-    question: "Which of these for statements are valid? <br><br>(Choose 1 answer)",
-    code: ``,
-    answers: [
-      { text: "1, 2", correct: false },
-      { text: "3, 4", correct: false },
-      { text: "1, 5", correct: false },
-      { text: "4, 5", correct: true },
-      { text: "5", correct: false },
-    ],
-    explanation:
-      "Statements 4 and 5 are valid. Statement 1 has an invalid condition, and statement 2 has a syntax error in the initialization.",
   },
   {
     question:
@@ -1136,7 +1123,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "Which of the following code snippets will compile without any errors? <br><br>(Choose 4 answers)",
+      "Which of the following code snippets will compile without any errors? <br><br>(Choose 4 answers lol)",
     code: ``,
     answers: [
       { text: "while (false) { x=3; }", correct: true },
@@ -1245,13 +1232,14 @@ System.out.println(sum);`,
 }`,
     answers: [
       { text: "It will print 5, 5.", correct: false },
-      { text: "It will print 10, 5.", correct: false },
+      { text: "It will print 10, 5.", correct: true },
       { text: "It will print 5, 10.", correct: false },
-      { text: "It will print 10, 10.", correct: true },
+      { text: "It will print 10, 10.", correct: false },
       { text: "None of these.", correct: false },
     ],
     explanation:
-      "The method setIt() sets y.link to x, so b.link points to a. Therefore, both a.link.value and b.link.value are 10.",
+      `When the program is compiled and run, it creates two instances of the Holder class: a with a value of 5 and b with a value of 10. It links a to b and then calls the method setIt, which links b back to a. <br><br>Consequently, when the program prints a.link.value (which refers to b.value) and b.link.value (which refers to a.value), the output will be "10, 5".
+`,
   },
   {
     question:
@@ -1493,13 +1481,13 @@ if (b2 = b1 != b2) {
 }`,
     answers: [
       { text: "Compile time error.", correct: false },
-      { text: "It will print true;", correct: true },
-      { text: "It will print false;", correct: false },
+      { text: "It will print true;", correct: false },
+      { text: "It will print false;", correct: true },
       { text: "Runtime error.", correct: false },
       { text: "It will print nothing.", correct: false },
     ],
     explanation:
-      "The expression 'b1 != b2' evaluates to true, and 'b2 = true' assigns true to b2, so the if condition is true, printing 'true'.",
+      "The expression 'b1 != b2' evaluates to false, and 'b2 = false' assigns false to b2, so the if condition is false, printing 'false'.",
   },
   {
     question:
@@ -2036,7 +2024,7 @@ if (b2 != b1 = !b2) {
   },
   {
     question:
-      "Working with the Random and Math Classes: What can be inserted at //1 and //2 in the code below so that it will print a number between 0.0 and 1.0? (Assume that no package has been imported in the code.) <br><br>(Choose 2 answers)",
+      "What can be inserted at //1 and //2 in the code below so that it will print a number between 0.0 and 1.0? (Assume that no package has been imported in the code.) <br><br>(Choose 2 answers)",
     code: `//1
 double d = //2
 System.out.println(d);`,
@@ -2312,7 +2300,7 @@ public class TestClass {
   },
   {
     question:
-      "Working with the Random and Math Classes: Identify valid for constructs: <br><br>(Choose 3 answers)",
+      "Identify valid for constructs: <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -2659,14 +2647,14 @@ class B {}`,
       { text: "1 1 1", correct: true },
       { text: "2 1 2", correct: false },
       { text: "1 1 1", correct: false },
-      { text: "3 1 3", correct: false },
+      { text: "3 1 3", correct: true },
       { text: "1 2 1", correct: false },
       { text: "2 3 3", correct: false },
       { text: "1 2 1", correct: false },
-      { text: "3 3 3", correct: true },
+      { text: "3 3 3", correct: false },
     ],
     explanation:
-      "The static variable 'a' is incremented twice, resulting in 3. The instance variable 'b' is incremented twice, resulting in 3. The local variable 'c' is incremented twice, resulting in 3.",
+      `The code initializes a static variable a and an instance variable b. In the first call to incr(), c is assigned the value of a, which is 0, and then a increments to 1. The instance variable b increments to 1, and c increments to 1. Thus, the output for this call is "1 1 1".<br><br>After this, a increments to 2. When a new instance of Test is created and incr() is called again, c is assigned the value of a, now 2, and then a increments to 3. The new instance's b increments to 1, and c increments to 3. Therefore, the output for the second call is "3 1 3".`,
   },
   {
     question: "The JRE contains: <br><br>(Choose 2 answers)",
@@ -3282,8 +3270,8 @@ System.out.println(s);`,
   }
 }`,
     answers: [
-      { text: "It will print j = 1;", correct: true },
-      { text: "It will print j = 2;", correct: false },
+      { text: "It will print j = 1", correct: true },
+      { text: "It will print j = 2", correct: false },
       { text: "The value of j cannot be determined.", correct: false },
       { text: "It will not compile.", correct: false },
       { text: "None of the above.", correct: false },
@@ -4911,7 +4899,7 @@ boolean b = true;`,
       { text: "System.out.println( !b == y>z );", correct: false },
     ],
     explanation:
-      "The first and second statements evaluate to true because 'b' is true. The third statement is false because 'b' is not equal to 'y>z'.",
+      "Statement A, which checks x == y || b, evaluates to false || true since x is not equal to y but b is true. Therefore, this statement will print true.<br><br>Statement B checks ! (x < z) || b. Since x < z (5 < 12) is true, ! (x < z) becomes false, leading to false || true, which evaluates to true. Thus, this statement will also print true.<br><br></br>In contrast, Statement C compares b == y > z. Here, y > z (9 > 12) is false, making the expression evaluate to false, so this statement will print false.<br><br></br>Statement D evaluates b && y > z || z < x. Since b is true and y > z is false, it simplifies to true && false, which is false, leading to a final result of false as well.<br><br>Lastly, Statement E, which checks !b == y > z, translates to comparing false == (y > z). Since y > z is false, this part would seem to evaluate to true, but due to operator precedence, it ultimately evaluates to false.",
   },
   {
     question:
@@ -5054,19 +5042,6 @@ public class Base {
     ],
     explanation:
       "The array 'da' is initialized with default values of 0.0, not null. The correct loop will print 0.0 three times.",
-  },
-  {
-    question: "Which of these for statements are valid? <br><br>(Choose 1 answer)",
-    code: ``,
-    answers: [
-      { text: "1, 2", correct: false },
-      { text: "3, 4", correct: false },
-      { text: "1, 5", correct: false },
-      { text: "4, 5", correct: true },
-      { text: "5", correct: false },
-    ],
-    explanation:
-      "Statements 4 and 5 are valid. Statement 1 has an invalid condition, and statement 2 has a syntax error in the initialization.",
   },
   {
     question:
@@ -5412,7 +5387,7 @@ System.out.println(sum);`,
   },
   {
     question:
-      "Which of the following code snippets will compile without any errors? <br><br>(Choose 4 answers)",
+      "Which of the following code snippets will compile without any errors? <br><br>(Choose 4 answers lol)",
     code: ``,
     answers: [
       { text: "while (false) { x=3; }", correct: true },
@@ -5521,13 +5496,14 @@ System.out.println(sum);`,
 }`,
     answers: [
       { text: "It will print 5, 5.", correct: false },
-      { text: "It will print 10, 5.", correct: false },
+      { text: "It will print 10, 5.", correct: true },
       { text: "It will print 5, 10.", correct: false },
-      { text: "It will print 10, 10.", correct: true },
+      { text: "It will print 10, 10.", correct: false },
       { text: "None of these.", correct: false },
     ],
     explanation:
-      "The method setIt() sets y.link to x, so b.link points to a. Therefore, both a.link.value and b.link.value are 10.",
+      `When the program is compiled and run, it creates two instances of the Holder class: a with a value of 5 and b with a value of 10. It links a to b and then calls the method setIt, which links b back to a. <br><br>Consequently, when the program prints a.link.value (which refers to b.value) and b.link.value (which refers to a.value), the output will be "10, 5".
+`,
   },
   {
     question:
@@ -5700,26 +5676,6 @@ System.out.println(s2.equals(s3)); //4`,
     ],
     explanation:
       "The method doB() calls doA(), which throws an exception. The main method must declare 'throws Exception' to handle this.",
-  },
-  {
-    question:
-      "What is the result of executing the following fragment of code? <br><br>(Choose 1 answer)",
-    code: `boolean b1 = false;
-boolean b2 = false;
-if (b2 = b1 != b2) {
-  System.out.println("true");
-} else {
-  System.out.println("false");
-}`,
-    answers: [
-      { text: "Compile time error.", correct: false },
-      { text: "It will print true;", correct: true },
-      { text: "It will print false;", correct: false },
-      { text: "Runtime error.", correct: false },
-      { text: "It will print nothing.", correct: false },
-    ],
-    explanation:
-      "The expression 'b1 != b2' evaluates to true, and 'b2 = true' assigns true to b2, so the if condition is true, printing 'true'.",
   },
   {
     question:
@@ -6546,7 +6502,7 @@ case 3:
   },
   {
     question:
-      "Which of the following features are provided by the JDK? <br><br>(Choose 4 answers)",
+      "Which of the following features are provided by the JDK? <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       { text: "A Java Runtime Environment (JRE).", correct: true },
@@ -6817,7 +6773,7 @@ System.out.println(myStr);`,
   },
   {
     question:
-      "Working with the Random and Math Classes: Which package contains Random class? <br><br>(Choose 1 answer)",
+      "Which package contains Random class? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "java.lang", correct: false },
@@ -7041,7 +6997,7 @@ public class TestClass {
   },
   {
     question:
-      "What can be inserted in the following code so that it will print exactly 2345 when compiled and run? <br><br>(Choose 2 answers)",
+      "What can be inserted in the following code so that it will print exactly 2345 when compiled and run? <br><br>(Choose 1 answer1)",
     code: `public class FlowTest {
   static int[] data = { 1, 2, 3, 4, 5 };
   public static void main(String[] args) {
@@ -7102,7 +7058,7 @@ public class TestClass {
   },
   {
     question:
-      "Working with the Random and Math Classes: What can you do to make the following code print a number between 0 and 10? <br><br>(Choose 3 answers)",
+      "What can you do to make the following code print a number between 0 and 10? <br><br>(Choose 3 answers)",
     code: `
   int x = 10;
   //insert code here
@@ -7253,7 +7209,7 @@ public class TestClass {
   },
   {
     question:
-      "Which of the following comments are valid? <br><br>(Choose 4 answers)",
+      "Which of the following comments are valid? <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       { text: "// /* ..... */", correct: true },
