@@ -215,7 +215,7 @@ public class Test {
   },
   {
     question:
-      "Identify the valid for loop constructs assuming the following declarations: Object o = null; ArrayList c = //valid ArrayList object. int[] ia = //valid array. <br><br>(Choose 2 answers)",
+      "Identify the valid for loop constructs assuming the following declarations.<br><br>(Choose 2 answers)",
     code: `Object o = null;
 ArrayList c = //valid ArrayList object;
 int[] ia = //valid array;`,
@@ -6492,10 +6492,10 @@ case 3:
     code: ``,
     answers: [
       { text: "1, 3", correct: false },
-      { text: "1, 2, 3", correct: false },
-      { text: "All are valid.", correct: true },
+      { text: "1, 2, 3", correct: false },      
       { text: "3, 4", correct: false },
       { text: "1, 2, 4.", correct: false },
+      { text: "All are valid.", correct: true },
     ],
     explanation:
       "All the switch constructs are valid, even if they do not contain any case labels.",
