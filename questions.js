@@ -1,6 +1,7 @@
 export const questions = [
   {
-    question: "What is the result of the following code? <br><br>(Choose 1 answer)",
+    question:
+      "What is the result of the following code? <br><br>(Choose 1 answer)",
     code: `public class Test {
     public static void main(String[] args) {
         System.out.println(10 + 20 + "Java");
@@ -34,7 +35,8 @@ export const questions = [
       "The code uses the prefix increment operator (++x), which increments the value of x by one before printing it, resulting in 6.",
   },
   {
-    question: "What is the result of the following code snippet? <br><br>(Choose 1 answer)",
+    question:
+      "What is the result of the following code snippet? <br><br>(Choose 1 answer)",
     code: `public class Test {
     public static void main(String[] args) {
         int x = 10;
@@ -541,7 +543,8 @@ public class Y {
       "To access the static field LOGICID from class X, you need to import it using 'import static com.foo.X.*;' or directly use 'com.foo.X.LOGICID'.",
   },
   {
-    question: "Which of the following are features of Java? <br><br>(Choose 2 answers)",
+    question:
+      "Which of the following are features of Java? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -593,7 +596,8 @@ public class Y {
       "The program will throw an ArrayIndexOutOfBoundsException because it tries to access args[1] when only one argument is provided.",
   },
   {
-    question: "What will the following code print when run? <br><br>(Choose 4 answers)",
+    question:
+      "What will the following code print when run? <br><br>(Choose 4 answers)",
     code: `public class TestClass {
   public static void main(String[] args) throws Exception {
     String[] sa = {
@@ -971,7 +975,8 @@ public class TestClass {
       "'default', 'throws', 'long', and 'strictfp' are Java keywords. 'null' is a literal, and 'String' is a class.",
   },
   {
-    question: "What letters will be printed by this program? <br><br>(Choose 3 answers)",
+    question:
+      "What letters will be printed by this program? <br><br>(Choose 3 answers)",
     code: `public class ForSwitch {
   public static void main(String args[]) {
     char i;
@@ -1004,8 +1009,7 @@ public class TestClass {
       { text: "E", correct: true },
       { text: "F", correct: true },
     ],
-    explanation:
-      `In the first iteration, i starts at 0. The switch statement evaluates i++, which checks the value of i as 0 before incrementing it to 1. Since none of the cases match, it continues to the next iteration.<br><br>In the second iteration, i is now 1. The switch evaluates i++ again, matching case 1, which prints "B." However, because there is no break statement after this case, the execution continues to case 2, which then prints "C" before breaking out of that case.<br><br>In the third iteration, i becomes 3. The switch checks the value, matches case 3, and prints "D," but again, since there is no further break, it moves to case 4. In this case, it prints "E," and since there is still no break, it falls through to case 'E', printing "F."<br><br>Thus, the final output of the program is "C," "E," and "F," as the fall-through behavior in the switch statement allows the code to execute multiple cases without breaking out immediately.`,
+    explanation: `In the first iteration, i starts at 0. The switch statement evaluates i++, which checks the value of i as 0 before incrementing it to 1. Since none of the cases match, it continues to the next iteration.<br><br>In the second iteration, i is now 1. The switch evaluates i++ again, matching case 1, which prints "B." However, because there is no break statement after this case, the execution continues to case 2, which then prints "C" before breaking out of that case.<br><br>In the third iteration, i becomes 3. The switch checks the value, matches case 3, and prints "D," but again, since there is no further break, it moves to case 4. In this case, it prints "E," and since there is still no break, it falls through to case 'E', printing "F."<br><br>Thus, the final output of the program is "C," "E," and "F," as the fall-through behavior in the switch statement allows the code to execute multiple cases without breaking out immediately.`,
   },
   {
     question:
@@ -1022,7 +1026,8 @@ public class TestClass {
       "The '+' and '+=' operators can be used for string concatenation, and the '.' operator is used to call methods on a String object.",
   },
   {
-    question: "What will the following code snippet print? <br><br>(Choose 1 answer)",
+    question:
+      "What will the following code snippet print? <br><br>(Choose 1 answer)",
     code: `int count = 0,
 sum = 0;
 do {
@@ -1136,7 +1141,8 @@ System.out.println(sum);`,
       "All the code snippets will compile without errors. The while and if statements with 'false' will not execute their blocks, but they are syntactically correct.",
   },
   {
-    question: "What will the following program print? <br><br>(Choose 1 answer)",
+    question:
+      "What will the following program print? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   static int someInt = 10;
   public static void changeIt(int a) {
@@ -1238,8 +1244,7 @@ System.out.println(sum);`,
       { text: "It will print 10, 10.", correct: false },
       { text: "None of these.", correct: false },
     ],
-    explanation:
-      `When the program is compiled and run, it creates two instances of the Holder class: a with a value of 5 and b with a value of 10. It links a to b and then calls the method setIt, which links b back to a. <br><br>Consequently, when the program prints a.link.value (which refers to b.value) and b.link.value (which refers to a.value), the output will be "10, 5".
+    explanation: `When the program is compiled and run, it creates two instances of the Holder class: a with a value of 5 and b with a value of 10. It links a to b and then calls the method setIt, which links b back to a. <br><br>Consequently, when the program prints a.link.value (which refers to b.value) and b.link.value (which refers to a.value), the output will be "10, 5".
 `,
   },
   {
@@ -1406,7 +1411,8 @@ System.out.println(s2.equals(s3)); //4`,
       "When you do new String[2], you create a String array of two elements. arr is therefore not null. But each element of the array is not given any value and is therefore null. When you call a method on that element (i.e. str.concat(str+' '+ind); in initData), it will generate a NullPointerException, which is a RuntimeException.",
   },
   {
-    question: "What will the following program print? <br><br>(Choose 1 answer)",
+    question:
+      "What will the following program print? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String[] args) {
     int x = 1;
@@ -1516,7 +1522,8 @@ if (b2 = b1 != b2) {
       "The second statement prints YES because 'a.substring(1,2)' is 'A' and 'b.substring(2)' is 'BB', forming 'ABB'. The third statement prints YES because both strings have the same length.",
   },
   {
-    question: "Which of the following statements are true? <br><br>(Choose 2 answers)",
+    question:
+      "Which of the following statements are true? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -1540,7 +1547,8 @@ if (b2 = b1 != b2) {
       "The modulus operator can be used with both integral and floating-point operands. The && operator only works with boolean operands. The operators *, /, and % have the same precedence level, and the += operator can be used with both integral and String operands.",
   },
   {
-    question: "What will the following program print? <br><br>(Choose 1 answer)",
+    question:
+      "What will the following program print? <br><br>(Choose 1 answer)",
     code: `class LoopTest {
   public static void main(String args[]) {
     int counter = 0;
@@ -1651,8 +1659,7 @@ c = a + b;`,
       "The correct method declaration is 'int sum(int array[]) { // code here }'. The other options have incorrect syntax.",
   },
   {
-    question:
-      "What will the following code print? <br><br>(Choose 1 answer)",
+    question: "What will the following code print? <br><br>(Choose 1 answer)",
     code: `List s1 = new ArrayList();
 s1.add("a");
 s1.add("b");
@@ -1884,8 +1891,7 @@ if (b2 != b1 = !b2) {
       "The main method must be public, static, and void. The order of modifiers does not matter, so 'final public static' is valid.",
   },
   {
-    question:
-      "What will the following code print? <br><br>(Choose 1 answer)",
+    question: "What will the following code print? <br><br>(Choose 1 answer)",
     code: `class Test {
   public static void main(String args[]) {
     int c = 0;
@@ -2189,7 +2195,10 @@ XXX amount = 1 - rate / 100 * 1 - rate / 100;`,
 }`,
     answers: [
       { text: "The program will print 5.", correct: false },
-      { text: "The program will print 1 and 4, in that order.", correct: false },
+      {
+        text: "The program will print 1 and 4, in that order.",
+        correct: false,
+      },
       {
         text: "The program will print 1, 2 and 4, in that order.",
         correct: false,
@@ -2300,8 +2309,7 @@ public class TestClass {
       "The code will not compile because the 'continue' statement skips the increment of 'counter', leading to an infinite loop.",
   },
   {
-    question:
-      "Identify valid for constructs: <br><br>(Choose 2 answers)",
+    question: "Identify valid for constructs: <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -2336,8 +2344,7 @@ public class TestClass {
       "The method declaration 'void method2( ) { }' is valid. The others have syntax errors or invalid parameter lists.",
   },
   {
-    question:
-      "What is the result? <br><br>(Choose 1 answer)",
+    question: "What is the result? <br><br>(Choose 1 answer)",
     code: `int a = 5, b = 2, c = 30;
 System.out.println(a + ++b * c);`,
     answers: [
@@ -2625,7 +2632,8 @@ class B {}`,
       "The nested if-else structure will execute the else block, printing 'True True'.",
   },
   {
-    question: "What will be the output of the following code? <br><br>(Choose 2 answers)",
+    question:
+      "What will be the output of the following code? <br><br>(Choose 2 answers)",
     code: `public class Test {
   static int a;
   int b;
@@ -2654,8 +2662,7 @@ class B {}`,
       { text: "1 2 1", correct: false },
       { text: "3 3 3", correct: false },
     ],
-    explanation:
-      `The code initializes a static variable a and an instance variable b. In the first call to incr(), c is assigned the value of a, which is 0, and then a increments to 1. The instance variable b increments to 1, and c increments to 1. Thus, the output for this call is "1 1 1".<br><br>After this, a increments to 2. When a new instance of Test is created and incr() is called again, c is assigned the value of a, now 2, and then a increments to 3. The new instance's b increments to 1, and c increments to 3. Therefore, the output for the second call is "3 1 3".`,
+    explanation: `The code initializes a static variable a and an instance variable b. In the first call to incr(), c is assigned the value of a, which is 0, and then a increments to 1. The instance variable b increments to 1, and c increments to 1. Thus, the output for this call is "1 1 1".<br><br>After this, a increments to 2. When a new instance of Test is created and incr() is called again, c is assigned the value of a, now 2, and then a increments to 3. The new instance's b increments to 1, and c increments to 3. Therefore, the output for the second call is "3 1 3".`,
   },
   {
     question: "The JRE contains: <br><br>(Choose 2 answers)",
@@ -2711,8 +2718,7 @@ class B {}`,
       "The main method is missing the String[] args parameter, resulting in a runtime error.",
   },
   {
-    question:
-      "What will the following code print? <br><br>(Choose 1 answer)",
+    question: "What will the following code print? <br><br>(Choose 1 answer)",
     code: `String abc = "";
 abc.concat("abc");
 abc.concat("def");
@@ -2782,8 +2788,7 @@ System.out.println(i < 20 ? out1() : out2());`,
       "Java Web Start is a technology that allows Java applications to be launched directly from the internet.",
   },
   {
-    question:
-      "Which of the following are literals? <br><br>(Choose 3 answers)",
+    question: "Which of the following are literals? <br><br>(Choose 3 answers)",
     code: ``,
     answers: [
       { text: "goto", correct: false },
@@ -2797,8 +2802,7 @@ System.out.println(i < 20 ? out1() : out2());`,
     explanation: "The literals in Java are true, false, and null.",
   },
   {
-    question:
-      "What is the output? <br><br>(Choose 1 answer)",
+    question: "What is the output? <br><br>(Choose 1 answer)",
     code: `public class Test {
   public int div(int a, int b) throws Exception {
     try {
@@ -2825,8 +2829,7 @@ System.out.println(i < 20 ? out1() : out2());`,
       { text: "exception in div" + "\n" + "0", correct: true },
       { text: "Compilation failure", correct: false },
     ],
-    explanation:
-      `The div method attempts to divide a by b. When div(5, 0) is called, an ArithmeticException is thrown due to division by zero. The catch block in div catches this exception, prints "exception in div," and returns 0. The main method then prints this returned value.`,
+    explanation: `The div method attempts to divide a by b. When div(5, 0) is called, an ArithmeticException is thrown due to division by zero. The catch block in div catches this exception, prints "exception in div," and returns 0. The main method then prints this returned value.`,
   },
   {
     question:
@@ -2967,8 +2970,7 @@ System.out.println(s1.size() + " " + s1.indexOf("ann"));`,
       { text: "userName.trim().length == 0", correct: false },
       { text: 'userName.trim().equals("")', correct: true },
     ],
-    explanation:
-      `The method userName.trim().equals("") checks if the trimmed version of userName is equal to an empty string, effectively determining if it is empty or consists only of spaces.`,
+    explanation: `The method userName.trim().equals("") checks if the trimmed version of userName is equal to an empty string, effectively determining if it is empty or consists only of spaces.`,
   },
   {
     question:
@@ -3040,8 +3042,7 @@ System.out.println(flag);`,
       "The contains method checks if the list contains the specified element, returning true if it does.",
   },
   {
-    question:
-      "What will the following code print? <br><br>(Choose 1 answer)",
+    question: "What will the following code print? <br><br>(Choose 1 answer)",
     code: `int x = 1;
 int y = 2;
 int z = x++;
@@ -3103,8 +3104,7 @@ System.out.println(answ);`,
       "A constructor must have the same name as the class and cannot have a return type. 'Test(Test b) { }' is a valid constructor.",
   },
   {
-    question:
-      "What will the following code print? <br><br>(Choose 1 answer)",
+    question: "What will the following code print? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   int x = 5;
   int getX() {
@@ -3180,7 +3180,7 @@ System.out.println(s);`,
   },
   {
     question:
-      'What what will the following statement return? <br><br>(Choose 1 answer)',
+      "What what will the following statement return? <br><br>(Choose 1 answer)",
     code: `"    hello java guru   ".trim();`,
     answers: [
       { text: "The line of code will not Compile.", correct: false },
@@ -3281,8 +3281,7 @@ System.out.println(s);`,
       "The exception is thrown before the assignment 'j = 2' is executed, so 'j' remains 1.",
   },
   {
-    question:
-      "Which of the following is illegal? <br><br>(Choose 1 answer)",
+    question: "Which of the following is illegal? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "char c = 320;", correct: false },
@@ -3649,8 +3648,7 @@ for (String dataElement: dataList) {
       { text: "Bill Steve Larry class java.lang.Exception", correct: false },
       { text: "null Bill Steve Larry", correct: true },
     ],
-    explanation:
-      `An array called dataArr is initialized with a size of four, where all elements are initially set to null. The code assigns "Bill" to dataArr[1], "Steve" to dataArr[2], and "Larry" to dataArr[3], while dataArr[0] remains null.<br><br>As the for-each loop iterates over the array, it prints each element in order. The first element prints null, followed by "Bill", "Steve", and "Larry". Since there are no exceptions, the catch block is never executed, resulting in the output being a single line with each value separated by a space.`,
+    explanation: `An array called dataArr is initialized with a size of four, where all elements are initially set to null. The code assigns "Bill" to dataArr[1], "Steve" to dataArr[2], and "Larry" to dataArr[3], while dataArr[0] remains null.<br><br>As the for-each loop iterates over the array, it prints each element in order. The first element prints null, followed by "Bill", "Steve", and "Larry". Since there are no exceptions, the catch block is never executed, resulting in the output being a single line with each value separated by a space.`,
   },
   {
     question:
@@ -3896,8 +3894,7 @@ public class StaticImports {
       "The substring method extracts characters from index 3 to 5 (inclusive), resulting in 'ing '.",
   },
   {
-    question:
-      "What will the following code print? <br><br>(Choose 1 answer)",
+    question: "What will the following code print? <br><br>(Choose 1 answer)",
     code: `void crazyLoop() {
   int c = 0;
   JACK: while (c < 8) {
@@ -4270,7 +4267,8 @@ String s2 = "World";
       "'goto' and 'package' are reserved words in Java. 'goto' is reserved but not used.",
   },
   {
-    question: "What is the result of the following code? <br><br>(Choose 1 answer)",
+    question:
+      "What is the result of the following code? <br><br>(Choose 1 answer)",
     code: `public class Test {
   public static void main(String[] args) {
     System.out.println(10 + 20 + "Java");
@@ -4832,7 +4830,8 @@ public class Y {
       "To access the static field LOGICID from class X, you need to import it using 'import static com.foo.X.*;' or directly use 'com.foo.X.LOGICID'.",
   },
   {
-    question: "Which of the following are features of Java? <br><br>(Choose 2 answers)",
+    question:
+      "Which of the following are features of Java? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -4882,7 +4881,8 @@ public class Y {
       "The program will throw an ArrayIndexOutOfBoundsException because it tries to access args[1] when only one argument is provided.",
   },
   {
-    question: "What will the following code print when run? <br><br>(Choose 4 answers)",
+    question:
+      "What will the following code print when run? <br><br>(Choose 4 answers)",
     code: `public class TestClass {
   public static void main(String[] args) throws Exception {
     String[] sa = { "a", "b", "c" };
@@ -5256,7 +5256,8 @@ public class TestClass {
       "'default', 'throws', 'long', and 'strictfp' are Java keywords. 'null' is a literal, and 'String' is a class.",
   },
   {
-    question: "What letters will be printed by this program? <br><br>(Choose 3 answers)",
+    question:
+      "What letters will be printed by this program? <br><br>(Choose 3 answers)",
     code: `public class ForSwitch {
   public static void main(String args[]) {
     char i;
@@ -5289,8 +5290,7 @@ public class TestClass {
       { text: "E", correct: true },
       { text: "F", correct: true },
     ],
-    explanation:
-      `In the first iteration, i starts at 0. The switch statement evaluates i++, which checks the value of i as 0 before incrementing it to 1. Since none of the cases match, it continues to the next iteration.<br><br>In the second iteration, i is now 1. The switch evaluates i++ again, matching case 1, which prints "B." However, because there is no break statement after this case, the execution continues to case 2, which then prints "C" before breaking out of that case.<br><br>In the third iteration, i becomes 3. The switch checks the value, matches case 3, and prints "D," but again, since there is no further break, it moves to case 4. In this case, it prints "E," and since there is still no break, it falls through to case 'E', printing "F."<br><br>Thus, the final output of the program is "C," "E," and "F," as the fall-through behavior in the switch statement allows the code to execute multiple cases without breaking out immediately.`,
+    explanation: `In the first iteration, i starts at 0. The switch statement evaluates i++, which checks the value of i as 0 before incrementing it to 1. Since none of the cases match, it continues to the next iteration.<br><br>In the second iteration, i is now 1. The switch evaluates i++ again, matching case 1, which prints "B." However, because there is no break statement after this case, the execution continues to case 2, which then prints "C" before breaking out of that case.<br><br>In the third iteration, i becomes 3. The switch checks the value, matches case 3, and prints "D," but again, since there is no further break, it moves to case 4. In this case, it prints "E," and since there is still no break, it falls through to case 'E', printing "F."<br><br>Thus, the final output of the program is "C," "E," and "F," as the fall-through behavior in the switch statement allows the code to execute multiple cases without breaking out immediately.`,
   },
   {
     question:
@@ -5307,7 +5307,8 @@ public class TestClass {
       "The '+' and '+=' operators can be used for string concatenation, and the '.' operator is used to call methods on a String object.",
   },
   {
-    question: "What will the following code snippet print? <br><br>(Choose 1 answer)",
+    question:
+      "What will the following code snippet print? <br><br>(Choose 1 answer)",
     code: `int count = 0,
 sum = 0;
 do {
@@ -5421,7 +5422,8 @@ System.out.println(sum);`,
       "All the code snippets will compile without errors. The while and if statements with 'false' will not execute their blocks, but they are syntactically correct.",
   },
   {
-    question: "What will the following program print? <br><br>(Choose 1 answer)",
+    question:
+      "What will the following program print? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   static int someInt = 10;
   public static void changeIt(int a) {
@@ -5523,8 +5525,7 @@ System.out.println(sum);`,
       { text: "It will print 10, 10.", correct: false },
       { text: "None of these.", correct: false },
     ],
-    explanation:
-      `When the program is compiled and run, it creates two instances of the Holder class: a with a value of 5 and b with a value of 10. It links a to b and then calls the method setIt, which links b back to a. <br><br>Consequently, when the program prints a.link.value (which refers to b.value) and b.link.value (which refers to a.value), the output will be "10, 5".
+    explanation: `When the program is compiled and run, it creates two instances of the Holder class: a with a value of 5 and b with a value of 10. It links a to b and then calls the method setIt, which links b back to a. <br><br>Consequently, when the program prints a.link.value (which refers to b.value) and b.link.value (which refers to a.value), the output will be "10, 5".
 `,
   },
   {
@@ -5635,7 +5636,8 @@ System.out.println(s2.equals(s3)); //4`,
       "A float literal must have an 'f' or 'F' suffix unless it is a whole number or in scientific notation. '43e1' and '-1' are valid float declarations.",
   },
   {
-    question: "What will the following program print? <br><br>(Choose 1 answer)",
+    question:
+      "What will the following program print? <br><br>(Choose 1 answer)",
     code: `public class TestClass {
   public static void main(String[] args) {
     int x = 1;
@@ -5725,7 +5727,8 @@ System.out.println(s2.equals(s3)); //4`,
       "The second statement prints YES because 'a.substring(1,2)' is 'A' and 'b.substring(2)' is 'BB', forming 'ABB'. The third statement prints YES because both strings have the same length.",
   },
   {
-    question: "Which of the following statements are true? <br><br>(Choose 2 answers)",
+    question:
+      "Which of the following statements are true? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -5749,7 +5752,8 @@ System.out.println(s2.equals(s3)); //4`,
       "The modulus operator can be used with both integral and floating-point operands. The && operator only works with boolean operands. The operators *, /, and % have the same precedence level, and the += operator can be used with both integral and String operands.",
   },
   {
-    question: "What will the following program print? <br><br>(Choose 1 answer)",
+    question:
+      "What will the following program print? <br><br>(Choose 1 answer)",
     code: `class LoopTest {
   public static void main(String args[]) {
     int counter = 0;
@@ -5970,8 +5974,7 @@ System.out.print(balances1.length + " " + balances2.length);`,
       "The reference type is List, and the object type is ArrayList, as indicated by the instantiation.",
   },
   {
-    question:
-      "What will the following code print? <br><br>(Choose 1 answer)",
+    question: "What will the following code print? <br><br>(Choose 1 answer)",
     code: `int i = 0;
 int j = 1;
 if ((i++==0) && (j++==2)) {
@@ -6200,8 +6203,7 @@ System.out.println(i + " " + j);`,
       "The first, second, third, and fifth expressions evaluate to true. The fourth expression is false because 'compareTo' is case-sensitive.",
   },
   {
-    question:
-      "Given the code, what is the result? <br><br>(Choose 1 answer)",
+    question: "Given the code, what is the result? <br><br>(Choose 1 answer)",
     code: `
   int a = 5, b = 2, c = 30;
   System.out.println(a-- * c / b);
@@ -6231,8 +6233,7 @@ System.out.println(i + " " + j);`,
       "Instance variables are used to store values that are specific to an instance of a class, such as 'm' and 'c' in this case.",
   },
   {
-    question:
-      "What will the following code print? <br><br>(Choose 1 answer)",
+    question: "What will the following code print? <br><br>(Choose 1 answer)",
     code: `public class BreakTest {
   public static void main(String[] args) {
     int i = 0,
@@ -6613,8 +6614,7 @@ System.out.printf("I scored %d marks in the %s exam!", exam, marks);`,
       "The method checkIt() will throw a NullPointerException when trying to call length() on a null reference.",
   },
   {
-    question:
-      "Which of these statements are true? <br><br>(Choose 2 answers)",
+    question: "Which of these statements are true? <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
@@ -6794,8 +6794,7 @@ System.out.println(myStr);`,
       "The first and second options correctly define methods that match the calls in the test method.",
   },
   {
-    question:
-      "Which package contains Random class? <br><br>(Choose 1 answer)",
+    question: "Which package contains Random class? <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "java.lang", correct: false },
@@ -6924,8 +6923,7 @@ System.out.println(myStr);`,
       "The boolean array 'bA' is initialized with false values, so the if condition is false, and '111' is printed.",
   },
   {
-    question:
-      "Given the code, what is the result? <br><br>(Choose 1 answer)",
+    question: "Given the code, what is the result? <br><br>(Choose 1 answer)",
     code: `class Node {
   int id;
   Node node;
@@ -7761,8 +7759,7 @@ public class TestClass {
       "The '-d .' option specifies the root directory for the package structure, allowing the class to be executed with the specified command.",
   },
   {
-    question:
-      "What will the following code print? <br><br>(Choose 1 answer)",
+    question: "What will the following code print? <br><br>(Choose 1 answer)",
     code: `void crazyLoop() {
   int c = 0;
   JACK: while (c < 8) {
@@ -7863,4 +7860,1247 @@ System.out.println(i + "  " + j);`,
     explanation:
       "The code will not compile because the post-decrement operator '--' cannot be applied to the result of an expression.",
   },
+  {
+    question: "What happens when calling the following method with a non?null and non?empty array? <br><br>(Choose 1 answer)",
+    code: `public static void addStationName(String[] names) {
+    names[names.length] = "Times Square";
+}`,
+    answers: [
+      { text: "It adds an element to the array the value of which is Times Square.", correct: false },
+      { text: "It replaces the last element in the array with the value Times Square.", correct: false },
+      { text: "It does not compile.", correct: false },
+      { text: "It throws an exception.", correct: true },
+      { text: "None of the above.", correct: false },
+    ],
+    explanation: "The code snippet you provided will throw an ArrayIndexOutOfBoundsException. This happens because the array names has a fixed size determined when it was created, and you are trying to access an index that is outside of its bounds.",
+  },
+  {
+    question: "Which is not a true statement about an array? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "An array expands automatically when it is full.", correct: true },
+      { text: "An array is allowed to contain duplicate values.", correct: false },
+      { text: "An array understands the concept of ordered elements.", correct: false },
+      { text: "An array uses a zero index to reference the first element.", correct: false },
+      { text: "None of the above", correct: false },
+      { text: "All of the above", correct: false },
+    ],
+    explanation: "",
+  },
+  {
+    question: "How many lines does the following code output? <br><br>(Choose 1 answer)",
+    code: `var days = new String[] { "Sunday", "Monday", "Tuesday",
+        "Wednesday", "Thursday", "Friday", "Saturday" };
+for (int 1 = 1; 1 <= days.length; 1++)
+        System.out.println(days[i]);`,
+    answers: [
+      { text: "Six", correct: false },
+      { text: "Seven", correct: false },
+      { text: "The code does not compile", correct: false },
+      { text: "The code compiles but throws an exception at runtime.", correct: true },
+      { text: "None of the above", correct: false },
+    ],
+    explanation: "If the loop condition is set to i <= days.length, it will throw an ArrayIndexOutOfBoundsException at runtime when i equals the length of the array, as that index is out of bounds.",
+  },
+  {
+    question: "What is the output of the following when run as FirstName Wolfie? <br><br>(Choose 2 answers)",
+    code: `public class FirstName {
+    public static void main(String[] names) {
+        System.out.println(names[8]);
+        System.out.println(names[1]);
+
+    }
+}`,
+    answers: [
+      { text: "FirstName", correct: false },
+      { text: "Wolfie", correct: true },
+      { text: "The code throws an ArraylndexOutOfBoundsException", correct: true },
+      { text: "The code throws a NullPointerException", correct: false },
+      { text: "None", correct: false },
+    ],
+    explanation: `The names array will only contain one element: names[0], which is "Wolfie". Since there are no elements at indices 1 or 8, the program will throw an ArrayIndexOutOfBoundsException when trying to access names[8]. The output will indicate that index 8 is out of bounds, and the program will terminate before reaching the second print statement.`,
+  },
+  {
+    question: "What will be the output of the following program? <br><br>(Choose 1 answer)",
+    code: `public class Test {
+    public static void main(String[] args) {
+        int val = 10;
+        System.out.printf("%d", (val << 2));
+    }
+}`,
+    answers: [
+      { text: "32", correct: false },
+      { text: "40", correct: true },
+      { text: "8", correct: false },
+      { text: "45", correct: false },
+      { text: "Syntax Error", correct: false },
+    ],
+    explanation: `The code defines a variable val with a value of 10 and uses the left shift operator (<<) to shift its bits two places to the left. This operation multiplies val by 2^2, resulting in 10*4, which equals 40. The program then prints this result, so the output will be "40".`,
+  },
+  {
+    question: "What are the various methods provided by the String class? <br><br>(Choose all that apply)",
+    code: ``,
+    answers: [
+      { text: "join", correct: true },
+      { text: "split", correct: true },
+      { text: "length", correct: true },
+      { text: "intern", correct: true },
+      { text: "substring", correct: true },
+    ],
+    explanation: "The Join() method in the String class is used to concatenate multiple strings into a single string, using a specified delimiter. It is a useful method for combining string values In Java.<br><br>The split() method in the String class is used to split a string into an array of substrings based on a specified delimiter. It is commonly used for parsing and processing string data in Java.<br><br>The length() method in the String class is used to return the length of the string, which is the number of characters it contains. It is a fundamental method for obtaining information about the size of a string in Java.<br><br>The intern() method in the String class is used to return the canonical representation of the string object. It is typically used for string pooling and memory optimization in Java applications.<br><br>The substring() method in the String class is used to extract a substring from a given string, based on specified starting and ending indexes. It is commonly used for manipulating and extracting portions of string data in Java.",
+  },
+  {
+    question: "What will be the output of the following program? <br><br>(Choose 1 answer)",
+    code: `public class Test {
+    public static void main(String[] args) {
+        int val = 10;
+        for (; val > 0; val--) {
+            if(val == 1){
+                val = 10;
+                System.out.println("10 ");
+            }
+        }
+        System.out.println("Value is 10");
+    }
+}`,
+    answers: [
+      { text: "Value is 10", correct: false },
+      { text: "10", correct: false },
+      { text: "infinite loop", correct: true },
+      { text: "compile-time error", correct: false },
+      { text: "run-time error", correct: false },
+      { text: "0", correct: false },
+    ],
+    explanation: `The code initializes val to 10 and enters a loop that continues while val is greater than 0. When val reaches 1, it resets to 10 and prints "10 ". This creates an infinite loop, so the program will continuously print "10 " without ever terminating or reaching the line that prints "Value is 10."`,
+  },
+  {
+    question: "What will be returned by the following method? <br><br>(Choose 1 answer)",
+    code: `String joinStr(){
+    String str = "";
+    int index = 0;
+    ArrayList<Character> arrayList = new ArrayList<>(Arrays.asList('h', 'e', 'l', 'l', 'o'));
+
+    for (char ele: arrayList) {
+        if(index %2 == 0) {
+            str += ele;
+        }
+        index++;
+    }
+    return str;
+}`,
+    answers: [
+      { text: "olh", correct: false },
+      { text: "olleh", correct: false },
+      { text: "el", correct: false },
+      { text: "heo", correct: false },
+      { text: "hello", correct: false },
+      { text: "hlo", correct: true },
+    ],
+    explanation: `The method joinStr initializes an empty string str and an index variable set to 0. It creates an ArrayList with the characters 'h', 'e', 'l', 'l', and 'o'. As it iterates through the list, it appends characters to str only when the index is even. This results in the inclusion of 'h', 'l', and 'o', while 'e' and the second 'l' are excluded. Therefore, the method returns the string "hlo".`,
+  },
+  {
+    question: "Which of the following methods is not part of the Math class? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "exp()", correct: false },
+      { text: "cosh()", correct: false },
+      { text: "signum()", correct: false },
+      { text: "calculate()", correct: true },
+      { text: "negateExact()", correct: false },
+      { text: "hypot()", correct: false },
+    ],
+    explanation: "",
+  },
+  {
+    question: "Which of them is not a primitive data type in Java? <br><br>(Choose 2 answers)",
+    code: ``,
+    answers: [
+      { text: "Integer", correct: false },
+      { text: "Strings", correct: true },
+      { text: "Float", correct: false },
+      { text: "Character", correct: false },
+      { text: "Boolean", correct: false },
+      { text: "Arrays", correct: true },
+    ],
+    explanation: "",
+  },
+  {
+    question: "What will be the output of the following program? <br><br>(Choose 1 answer)",
+    code: `public class Test{
+    public static void  main(String[] args) {
+        int a = 1;
+        if (a++ == 1) {
+            a -= 1;
+        }
+        System.out.println(a);
+    }
+}`,
+    answers: [
+      { text: "0", correct: false },
+      { text: "1", correct: true },
+      { text: "2", correct: false },
+      { text: "-1", correct: false },
+      { text: "-2", correct: false },
+      { text: "11", correct: false },
+    ],
+    explanation: `In this code, the variable a is initialized to 1. The condition in the if statement checks a++ == 1, which evaluates to true because a is 1 before it increments. As a result, the code inside the if block executes, decrementing a back to 1. Therefore, when the program prints the value of a, the output will be "1".`,
+  },
+  {
+    question: "Static methods can be overridden.",
+    code: ``,
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+    explanation: "Static methods cannot be overridden in Java. They belong to the class itself rather than to instances, so they can only be hidden if a subclass defines a static method with the same name and signature. This is different from overriding, which applies to instance methods. When calling a static method, the version that executes is determined by the reference type, not the object type.",
+  },
+  {
+    question: "What are the different types of typecasting available in Java? <br><br>(Choose 2 answers)",
+    code: ``,
+    answers: [
+      { text: "linear", correct: false },
+      { text: "implicit", correct: true },
+      { text: "ordered", correct: false },
+      { text: "unordered", correct: false },
+      { text: "binary", correct: false },
+      { text: "explicit", correct: true },
+    ],
+    explanation: "In Java, there are two types of typecasting for primitive types. The first is widening casting, also known as implicit casting, which occurs when converting a smaller primitive type to a larger one, such as converting an int to a long or a float to a double. This process happens automatically without the need for explicit casting, as there is no risk of data loss.<br><br>The second type is narrowing casting, or explicit casting, which involves converting a larger primitive type to a smaller one, such as converting a double to an int or a long to a short. This type of casting requires explicit notation to indicate the desired target type, as it may result in data loss.",
+  },
+  {
+    question: "Private access modifier is applicable only within a same class.",
+    code: ``,
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+    ],
+    explanation: "The private access modifier in Java restricts access to the members (fields, methods, and constructors) of a class so that they can only be accessed within that same class. This means that private members are not accessible from outside the class, including from subclasses or other classes in the same package. This encapsulation helps to protect the internal state of an object and ensures that the implementation details are hidden from other classes.",
+  },
+  {
+    question: "What will be the output of the following code? <br><br>(Choose 1 answer)",
+    code: `public class Test {
+
+    public static void main(String[] args) {
+        String[] arr = {"Abc", "e", "fhl", "mnop"};
+        String str = "";
+
+        for(int i = 0; i < arr.length; i++){
+            if (i/2 == 0){
+                str = str + " ";
+            }
+            else {
+                str = str + arr[i];
+            }
+        }
+        System.out.println(str.charAt(5));
+    }
+}`,
+    answers: [
+      { text: "blank space", correct: false },
+      { text: "A", correct: false },
+      { text: "f", correct: false },
+      { text: "p", correct: false },
+      { text: "e", correct: false },
+      { text: "m", correct: true },
+    ],
+    explanation: `The code initializes an array arr with the values {"Abc", "e", "fhl", "mnop"} and creates an empty string str. It iterates through the array, appending a space for index 0 and adding elements for indices 1, 2, and 3.<br><br>By the end of the loop, str contains " efhlmnop". The program then prints the character at index 5, which is 'm'. Thus, the output of the program will be "m".`,
+  },
+  {
+    question: "What will be the output of the following code? <br><br>(Choose 1 answer)",
+    code: `public class Test {
+
+    public static void main(String[] args) {
+        String str1 = "mnop";
+        String str2 = "mop";
+
+        for(int i = 0; i < str1.length() - 1; i++){
+            if (str1.charAt(i) != str2.charAt(i)) {
+                System.out.print(str1.charAt(i));
+            }
+        }
+    }
+}`,
+    answers: [
+      { text: "no", correct: true },
+      { text: "mn", correct: false },
+      { text: "op", correct: false },
+      { text: "mop", correct: false },
+      { text: "mo", correct: false },
+      { text: "mp", correct: false },
+    ],
+    explanation: `The code initializes two strings, str1 with the value "mnop" and str2 with the value "mop". It then uses a for loop to iterate over the indices of str1 up to its length minus one.<br><br>During the iteration, at index 0, the characters from both strings are 'm', so nothing is printed. At index 1, the characters are 'n' from str1 and 'o' from str2, which are not equal, leading to the printing of 'n'. At index 2, the characters are 'o' from str1 and 'p' from str2, which are also not equal, resulting in the printing of 'o'.<br><br>Consequently, the characters printed are 'n' and 'o', and the output of the program will be "no".`,
+  },
+  {
+    question: "Which of the following data structure is used to store data in key-value format? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "Trees", correct: false },
+      { text: "Graphs", correct: false },
+      { text: "Hashmap", correct: true },
+      { text: "LinkedList", correct: false },
+      { text: "Queue", correct: false },
+      { text: "Stack", correct: false },
+    ],
+    explanation: "A HashMap allows you to associate unique keys with values, enabling efficient retrieval of values based on their corresponding keys. The other options listed—Trees, Graphs, LinkedList, Queue, and Stack—do not store data in a key-value format.",
+  },
+  {
+    question: "What will be the output of the following code? <br><br>(Choose 1 answer)",
+    code: `public class Test {
+
+    public static void main(String[] args) {
+
+        int b = 5;
+        final int a = --b + b--;
+        b--;
+        System.out.println(a);
+    }
+}`,
+    answers: [
+      { text: "6", correct: false },
+      { text: "2", correct: false },
+      { text: "7", correct: false },
+      { text: "5", correct: false },
+      { text: "0", correct: false },
+      { text: "8", correct: true },
+    ],
+    explanation: "In the code, the variable b is initialized to 5. The expression --b + b-- is evaluated, where --b decrements b to 4 and evaluates to 4, while b-- evaluates to 4 before decrementing b to 3. This results in the expression equaling 8, which is assigned to the final variable a. After this, b is decremented to 2, but this does not affect a. <br><br>Therefore, the program prints the value of a, which is 8.",
+  },
+  {
+    question: "The final keyword in Java can be used with which of the following in Java?",
+    code: ``,
+    answers: [
+      { text: "variables", correct: false },
+      { text: "objects", correct: false },
+      { text: "methods", correct: false },
+      { text: "classes", correct: false },
+      { text: "All of the above", correct: true },
+      { text: "None of the above", correct: false },
+    ],
+    explanation: "The final keyword in Java can be used with all of the above options: variables, objects, methods, and classes.<br><br>When a variable is declared as final, it cannot be reassigned after initialization. Although you cannot make an object itself final, you can declare a reference to an object as final, meaning that reference cannot point to a different object. Additionally, a final method cannot be overridden by subclasses, and a final class cannot be subclassed. Therefore, the final keyword serves multiple purposes in Java.",
+  },
+  {
+    question: "What will be the outpouf tth e following code? <br><br>(Choose 1 answer)",
+    code: `import java.util.Arrays;
+
+public class Test {
+    public static void main(String[] args){
+
+        int[] arr = {5, 6, 5, 20, 50, 23, 45};
+        Arrays.fill(arr, 2);
+
+        System.out.print(arr[4]);
+    }
+}`,
+    answers: [
+      { text: "23", correct: false },
+      { text: "6", correct: false },
+      { text: "50", correct: false },
+      { text: "2", correct: true },
+      { text: "3", correct: false },
+      { text: "20", correct: false },
+    ],
+    explanation: `In this code, an integer array arr is initialized with the values {5, 6, 5, 20, 50, 23, 45}. The Arrays.fill(arr, 2); method fills the entire array with the value 2, resulting in {2, 2, 2, 2, 2, 2, 2}. The code then prints the value at index 4, which is 2. <br><br>Therefore, the output of the program will be "2".`,
+  },
+  {
+    question: "Which of these are features of Java? <br><br>(Choose 3 answers)",
+    code: ``,
+    answers: [
+      { text: "Object Oriented", correct: true },
+      { text: "Platform Independent", correct: true },
+      { text: "Context Independent", correct: false },
+      { text: "Single Threaded", correct: false },
+      { text: "Multi Threaded", correct: true },
+    ],
+    explanation: "Object Oriented: Java is designed to support object-oriented programming principles such as encapsulation, inheritance, and polymorphism.<br><br>Platform Independent: Java is platform-independent at the bytecode level, meaning that Java programs can run on any platform that has a Java Virtual Machine (JVM).<br><br>Multi Threaded: Java supports multi-threading, allowing concurrent execution of two or more threads, which helps in efficient use of resources.",
+  },
+  {
+    question: "In Object-Oriented Programming, what is the blueprint, or prototype of from which objects are created? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "Class", correct: true },
+      { text: "Instance", correct: false },
+      { text: "Struct", correct: false },
+      { text: "Type", correct: false },
+      { text: "Variable", correct: false },
+    ],
+    explanation: "A class defines the properties and behaviors (methods) that the objects instantiated from it will have. Instances of the class represent specific objects created based on that blueprint.",
+  },
+  {
+    question: "Consider the following code snippet.Which Object-Oriented Programming concept is this an example of? <br><br>(Choose 1 answer)",
+    code: `class MountainBike extends Bicycle {
+}`,
+    answers: [
+      { text: "Composition", correct: false },
+      { text: "Encapsulation", correct: false },
+      { text: "Idempotency", correct: false },
+      { text: "Inheritance", correct: true },
+    ],
+    explanation: "The provided code snippet is an example of inheritance in Object-Oriented Programming (OOP). In this case, MountainBike is a subclass (or derived class) that inherits properties and behaviors from the Bicycle superclass (or base class). This allows MountainBike to reuse and extend the functionality of Bicycle.",
+  },
+  {
+    question: "Fill in the blank:<br><br>A ______ is a namespace for organizing classes an CORRECT interfaces in a logical manner. <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "Container", correct: false },
+      { text: "Dependency", correct: false },
+      { text: "JAR File", correct: false },
+      { text: "Package", correct: true },
+    ],
+    explanation: "A package in programming serves as a namespace that organizes related classes and interfaces in a logical manner. By grouping them into packages, it helps avoid naming conflicts and improves code modularity and readability. <br><br>For example, in Java, packages can contain multiple classes and interfaces, making it easier to manage large codebases. This concept is fundamental in structuring software projects efficiently.",
+  },
+  {
+    question: "You have created a simple Java program in a file called hellojava With the following code. Which command can be used to compile this program, converting it into bytecodes, which are platformindependent instructions for the Java VM? <br><br>(Choose 1 answer)",
+    code: `class ExamPrep {
+    public static void main(String[] args){
+        System.out.println("Hello Java");
+    }
+}`,
+    answers: [
+      { text: "java hello.java", correct: false },
+      { text: "java -c hello.java", correct: false },
+      { text: "java -jar hello.java", correct: false },
+      { text: "javac hello.java", correct: true },
+    ],
+    explanation: "This command uses the Java compiler (javac) to compile the Java source code in hello.java into bytecode, which can then be executed by the Java Virtual Machine (JVM).",
+  },
+  {
+    question: "Following the Java naming conventions, which of the following should begin with an upper case letter? <br><br>(Choose 2 answers)",
+    code: ``,
+    answers: [
+      { text: "classes", correct: true },
+      { text: "interfaces", correct: true },
+      { text: "local variables", correct: false },
+      { text: "packages", correct: false },
+      { text: "private methods", correct: false },
+      { text: "public methods", correct: false },
+    ],
+    explanation: "Classes and interfaces are typically named using CamelCase, starting with an uppercase letter. Local variables, packages, private methods, and public methods usually start with a lowercase letter.",
+  },
+  {
+    question: "Which of these is NOT a Java reserved word? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "default", correct: false },
+      { text: "object", correct: true },
+      { text: "import", correct: false },
+      { text: "new", correct: false },
+      { text: "All of these are Java reserved words", correct: false },
+    ],
+    explanation: `In Java, "default," "import," and "new" are all reserved words (keywords) with specific meanings in the language, while "object" is not a reserved word in Java.`,
+  },
+  {
+    question: "Which of the following statements are TRUE about the javalang package? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "It provides classes that are fundamental to the design of the Java programming language, like Object, Class, and primitive wrapper classes like Boolean, Integer, and Float.", correct: true },
+      { text: "It provides classes that enable Java programs to provide localization of text for multi-language support", correct: false },
+      { text: "It provides classes that allow Java to call functions exported by programs written in other languages and provides the capability to export Java program functions for use by programs written in other programming languages.", correct: false },
+      { text: "None of these statements are true", correct: false },
+    ],
+    explanation: "The other options refer to functionalities provided by different packages, such as java.util for localization or JNI for calling functions from other languages.",
+  },
+  {
+    question: "You are writing a Java program and need to declare a variable called 'myvar' that can store an integer value, and you also want to assign to it the value of '5'. Which line of code should you use? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "int myvar = 5;", correct: true },
+      { text: "integer myvar = 5;", correct: false },
+      { text: "myvar int = 5;", correct: false },
+      { text: "myvar integer = 5;", correct: false },
+    ],
+    explanation: "",
+  },
+  {
+    question: "You are working on a Java project and see the following line of code within a function:<br><br>final int rate = 5;<br><br>What does the keyword 'final' do? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "A compile-time error will occur if another line of code attempts to assign a value to the rate variable.", correct: true },
+      { text: "A compile-time warning will occur if another line of code attempts to assign a value to the rate variable.", correct: false },
+      { text: "A runtime error will occur if another line of code attempts to assign a value to the rate variable.", correct: false },
+      { text: "A runtime warning will occur if another line of code attempts to assign a value to the rate variable.", correct: false },
+    ],
+    explanation: "When a variable is declared as final, it means that its value cannot be changed after it has been initialized. Any attempt to reassign a value to that variable will result in a compile-time error.",
+  },
+  {
+    question: "Which of the following are primitive datatypes in Java? <br><br>(Choose 5 answers)",
+    code: ``,
+    answers: [
+      { text: "bool", correct: false },
+      { text: "boolean", correct: true },
+      { text: "byte", correct: true },
+      { text: "char", correct: true },
+      { text: "date", correct: false },
+      { text: "double", correct: true },
+      { text: "int", correct: true },
+    ],
+    explanation: "",
+  },
+  {
+    question: "Which of the following lists arrange data types from smallest capacity to largest capacity? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "short, byte, int, long", correct: false },
+      { text: "byte, short, long, int", correct: false },
+      { text: "byte, int, short, long", correct: false },
+      { text: "byte, short, int, long", correct: true },
+    ],
+    explanation: "This arrangement correctly reflects the increasing capacity of these data types in Java, where:<br><br>byte: 8 bits<br><br>short: 16 bits<br><br>int: 32 bits<br><br>long: 64 bits",
+  },
+  {
+    question: "You need to store the value of 128 in a variable. Which data type can be used? <br><br>(Choose 3 answers)",
+    code: ``,
+    answers: [
+      { text: "boolean", correct: false },
+      { text: "byte", correct: false },
+      { text: "short", correct: true },
+      { text: "int", correct: true },
+      { text: "long", correct: true },
+    ],
+    explanation: "boolean can only store true or false<br><br>byte has a minimum value of -128 and a maximum value of 127 (inclusive)<br><br>short has a minimum value of -32,768 and a maximum value of 32,767 (inclusive)<br><br>int has a minimum value of -2^31 and a maximum value of 2^31 - 1<br><br>long can hold values from -2^63 to 2^63 - 1.",
+  },
+  {
+    question: "You are writing a Java function that has the following code:<br><br>short a = 1;<br>short b = 2;<br>// Line 3<br><br>What can you put at //Line 3 to add the two variables a and b and store the result in another variable c? <br><br>(Choose 2 answers)",
+    code: ``,
+    answers: [
+      { text: "A) short c = a + b;", correct: false },
+      { text: "B) int c = a + b;", correct: true },
+      { text: "C) short c = (short)(a + b);", correct: true },
+      { text: "D) short c = (short)a + (short)b;", correct: false },
+    ],
+    explanation: "B) uses an int for c, which can hold the result without any issues, as the addition of two short values is promoted to int.<br><br>C) explicitly casts the result of the addition back to short, which is safe because the sum of 1 and 2 will not exceed the range of a short",
+  },
+  {
+    question: "What will be the output of the following Java program? <br><br>(Choose 1 answer)",
+    code: `class ExamPrep {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = a++;
+        System.out.println(b);
+    }
+}`,
+    answers: [
+      { text: "4", correct: false },
+      { text: "5", correct: true },
+      { text: "6", correct: false },
+      { text: "This programm will not compile", correct: false },
+      { text: "This program will fail witha runtime error", correct: false },
+    ],
+    explanation: "In the code, the variable a is initialized with the value 5. When the statement int b = a++; is executed, the post-increment operator (++) is used. This means that the current value of a (which is 5) is assigned to the variable b first. After this assignment, the value of a is then incremented by 1, resulting in a becoming 6.<br><br>As a result, when the program executes the line System.out.println(b);, it prints the value of b, which is 5.",
+  },
+  {
+    question: "What will be the output of the following Java program? <br><br>(Choose 2 answers)",
+    code: `class ExamPrep {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = ++a;
+        System.out.println(b);
+    }
+}`,
+    answers: [
+      { text: "4", correct: false },
+      { text: "5", correct: true },
+      { text: "6", correct: true },
+      { text: "This programm will not compile", correct: false },
+      { text: "This program will fail witha runtime error", correct: false },
+    ],
+    explanation: "In the code, the variable a is initialized with the value 5. When the statement int b = ++a; is executed, the pre-increment operator (++) is used. This means that a is incremented by 1 before its value is assigned to b. As a result, a becomes 6, and then this value is assigned to b.<br><br>Therefore, when the program reaches the line System.out.println(b);, it prints the value of b, which is 6.",
+  },
+  {
+    question: "Which code block will print ves if the value of a and v are equal? <br><br>(Choose 1 answer)",
+    code: `A)
+if (a=b){
+    System.out.println("Yes");
+}
+
+B)
+if (a==b){
+    System.out.println("Yes");
+}
+
+C)
+if (a===b){
+    System.out.println("Yes");
+}
+
+D)
+if (a instanceof b){
+    System.out.println("Yes");
+}`,
+    answers: [
+      { text: "A", correct: false },
+      { text: "B", correct: true },
+      { text: "C", correct: false },
+      { text: "D", correct: false },
+    ],
+    explanation: `Code block B uses the double equals sign (==) to compare the values of a and b. If they are equal, it will print "Yes".<br><br>The other options are incorrect because they either use an assignment operator, a non-existent comparison operator, or check types instead of values.`,
+  },
+  {
+    question: "You have a variable : defined like this:<br><br>int a = 5;<br><br>Which lines of code can you use to decrement a by 1? <br><br>(Choose all that apply)",
+    code: ``,
+    answers: [
+      { text: "--a;", correct: true },
+      { text: "a--;", correct: true },
+      { text: "a -= 1;", correct: true },
+      { text: "a =- 1;", correct: false },
+      { text: "a = a - 1", correct: true },
+    ],
+    explanation: "",
+  },
+  {
+    question: "What is the output of the following program? <br><br>(Choose 1 answer)",
+    code: `class ExamPrep {
+    public static void main(String[] args){
+        int a = 4;
+        int b = 3;
+        int result = a < b ? 1 : 2;
+        System.out.println(result);
+    }
+}`,
+    answers: [
+      { text: "1", correct: false },
+      { text: "2", correct: true },
+      { text: "3", correct: false },
+      { text: "4", correct: false },
+      { text: "This code will not compile", correct: false },
+      { text: "This code will fail with an exception at runtime", correct: false },
+    ],
+    explanation: "In this code, the variables a and b are initialized with the values 4 and 3, respectively. The expression a < b ? 1 : 2 is a ternary conditional operator that evaluates whether a is less than b. Since 4 is not less than 3, the condition evaluates to false, and the expression returns 2.",
+  },
+  {
+    question: "What is the output of the following program? <br><br>(Choose 1 answer)",
+    code: `class ExamPrep {
+    public static void main(String[] args){
+        int a = 1;
+        int b = 2;
+        int c = 3;
+        boolean result = a < b && b > c;
+        System.out.println(result);
+    }
+}`,
+    answers: [
+      { text: "true", correct: false },
+      { text: "false", correct: true },
+      { text: "This code will not compile", correct: false },
+      { text: "This code will fail with an exception at runtime", correct: false },
+    ],
+    explanation: "In the code, a is 1, b is 2, and c is 3. The expression a < b && b > c evaluates two conditions: a < b is true, but b > c is false. Since both conditions must be true for the entire expression to be true, the result is false.",
+  },
+  {
+    question: "What is the output of the following program? <br><br>(Choose 1 answer)",
+    code: `class ExamPrep {
+    public static void main(String[] args){
+        int a = 1;
+        int b = 2;
+        int c = 3;
+        boolean result = a < b || b > c;
+        System.out.println(result);
+    }
+}`,
+    answers: [
+      { text: "true", correct: true },
+      { text: "false", correct: false },
+      { text: "This code will not compile", correct: false },
+      { text: "This code will fail with an exception at runtime", correct: false },
+    ],
+    explanation: "In this code, the variables are initialized as follows: a is 1, b is 2, and c is 3. The expression a < b || b > c uses the logical OR operator (||).<br><br>The first condition, a < b, evaluates to true because 1 is less than 2. The second condition, b > c, evaluates to false because 2 is not greater than 3. Since the logical OR operator only requires one of the conditions to be true for the entire expression to be true, the result is true",
+  },
+  {
+    question: "What can you put at line 4 so that the output of the program will be 10? <br><br>(Choose 1 answer)",
+    code: `class ExamPrep {
+    public static void main(String[] args){
+        int a = 3;
+        // LINE 4
+        System.out.println(result);
+    }
+}`,
+    answers: [
+      { text: "A) int result = a + 2 * a - 1;", correct: false },
+      { text: "B) int result = (a + 2) * (a - 1);", correct: true },
+      { text: "C) int result = (a + 2 * a) - 1;", correct: false },
+      { text: "D) int result = a + (2 * a - 1);", correct: false },
+    ],
+    explanation: "To ensure that the output of the program is 10, you can use B) as the code at line 4. The expression (a + 2) * (a - 1) evaluates to (3 + 2) * (3 - 1) = 10. Therefore, the output of the program will be 10.",
+  },
+  {
+    question: "What can you put at line 4 so that the output of the program will be 'v'? <br><br>(Choose 1 answer)",
+    code: `class ExamPrep {
+    public static void main(String[] args){
+        String s = "Java";
+        //LINE 4
+        System.out.println(result);
+    }
+}`,
+    answers: [
+      { text: "char result = s[2];", correct: false },
+      { text: "char result = s[3];", correct: false },
+      { text: "char result = s.charAt(2);", correct: true },
+      { text: "char result = s.charAt(3);", correct: false },
+    ],
+    explanation: `In the string s, which is initialized as "Java", the characters are indexed as follows: s.charAt(0) is 'J', s.charAt(1) is 'a', s.charAt(2) is 'v', and s.charAt(3) is 'a'. By using s.charAt(2), you correctly retrieve the character 'v'.`,
+  },
+  {
+    question: "What can you put at line 4 so that the output of the program will be 'av'? <br><br>(Choose 1 answer)",
+    code: `class ExamPrep {
+    public static void main(String[] args){
+        String s = "Java";
+        //LINE 4
+        System.out.println(result);
+    }
+}`,
+    answers: [
+      { text: "String result = s.split(1, 2);", correct: false },
+      { text: "String result = s.split(1, 3);", correct: false },
+      { text: "String result = s.substring(1, 2);", correct: false },
+      { text: "String result = s.substring(1, 3);", correct: true },
+    ],
+    explanation: "This line uses the substring method, where the starting index 1 corresponds to the character 'a', and the ending index 3 corresponds to the character after 'v'. As a result, it retrieves the characters 'a' and 'v', producing the output 'av'.",
+  },
+  {
+    question: "What is the output of the following program?  <br><br>(Choose 1 answer)",
+    code: `class ExamPrep {
+    public static void main(String[] args){
+        String s = "Java";
+        int result = s.indexOf("a");
+        System.out.println(result);
+    }
+}`,
+    answers: [
+      { text: "-1", correct: false },
+      { text: "0", correct: false },
+      { text: "1", correct: true },
+      { text: "2", correct: false },
+      { text: "3", correct: false },
+      { text: "4", correct: false },
+      { text: "This program will not compile", correct: false },
+      { text: "This program will fail with an exception at runtime", correct: false },
+    ],
+    explanation: `In this code, the string s is initialized as "Java". The method s.indexOf("a") searches for the first occurrence of the character 'a' in the string. Since the character 'a' is located at index 1, the indexOf method returns 1.`,
+  },
+  {
+    question: "What is the output of the following program?  <br><br>(Choose 1 answer)",
+    code: `class ExamPrep {
+    public static void main(String[] args){
+        String s = "Java";
+        int result = s.indexOf("x");
+        System.out.println(result);
+    }
+}`,
+    answers: [
+      { text: "-1", correct: true },
+      { text: "0", correct: false },
+      { text: "1", correct: false },
+      { text: "2", correct: false },
+      { text: "3", correct: false },
+      { text: "4", correct: false },
+      { text: "This program will not compile", correct: false },
+      { text: "This program will fail with an exception at runtime", correct: false },
+    ],
+    explanation: `In this code, the string s is initialized as "Java". The method s.indexOf("x") searches for the character 'x' in the string. Since 'x' is not present in "Java", the indexOf method returns -1 to indicate that the character was not found.`,
+  },
+  {
+    question: "What is the output of the following program?  <br><br>(Choose 1 answer)",
+    code: `class ExamPrep {
+    public static void main(String[] args){
+        String s = "Java";
+        int result = s.lastIndexOf("a");
+        System.out.println(result);
+    }
+}`,
+    answers: [
+      { text: "-1", correct: false },
+      { text: "0", correct: false },
+      { text: "1", correct: false },
+      { text: "2", correct: false },
+      { text: "3", correct: true },
+      { text: "4", correct: false },
+      { text: "This program will not compile", correct: false },
+      { text: "This program will fail with an exception at runtime", correct: false },
+    ],
+    explanation: `In the string s, which is initialized as "Java", the last occurrence of the character 'a' is indeed at index 3. The lastIndexOf("a") method correctly identifies this position.`,
+  },
+  {
+    question: "What is the output of the following program?  <br><br>(Choose 1 answer)",
+    code: `class ExamPrep {
+    public static void main(String[] args) {
+        String s = "Java Exam Prep";
+        boolean result = s.contains("exam");
+        System.out.println(result);
+    }
+}`,
+    answers: [
+      { text: "true", correct: false },
+      { text: "false", correct: true },
+      { text: "-1", correct: false },
+      { text: "4", correct: false },
+      { text: "This program will not compile", correct: false },
+      { text: "This program will fail with an exception at runtime", correct: false },
+    ],
+    explanation: `In this code, the string s is initialized as "Java Exam Prep". The method s.contains("exam") checks if the string contains the substring "exam". Since the substring is case-sensitive and "exam" does not match the uppercase "Exam" in the string, the method returns false.`,
+  },
+  {
+    question: "Which method of the string class returns a copy of the string converted to lowercase? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "toLower()", correct: false },
+      { text: "toLowerCase()", correct: true },
+      { text: "asLower()", correct: false },
+      { text: "asLowerCase()", correct: false },
+      { text: "lower()", correct: false },
+    ],
+    explanation: "The correct answer is toLowerCase(). This method is commonly used in languages like Java and JavaScript to convert a string to lowercase.",
+  },
+  {
+    question: "Which method of the string class returns a copy of the string with leading and trailing white space removed? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "removeSpace()", correct: false },
+      { text: "removeWhiteSpace()", correct: false },
+      { text: "split()", correct: false },
+      { text: "trim()", correct: true },
+      { text: "withoutSpace()", correct: false },
+    ],
+    explanation: "",
+  },
+  {
+    question: "What can you add at LINE 5 to make the program print 'JavaExam'? <br><br>(Choose 2 answers)",
+    code: `class ExamPrep {
+    public static void main(String[] args){
+        String a = "Java";
+        String b = "Exam";
+        //LINE 5
+        System.out.println(result);
+    }
+}`,
+    answers: [
+      { text: "String result = a + b;", correct: true },
+      { text: "String result = a & b;", correct: false },
+      { text: "String result = a.concat(b);", correct: true },
+      { text: "String result = b.concat(a);", correct: false },
+      { text: "String result = String.concat(a, b);", correct: false },
+    ],
+    explanation: "",
+  },
+  {
+    question: "What can you add at LINE 4 to make the program print Percent Complete = 56,797? <br><br>(Choose 1 answer)",
+    code: `class ExamPrep {
+    public static void main(String[] args){
+        double a = 56.785;
+        //LINE 4
+        System.out.println(result);
+    }
+}`,
+    answers: [
+      { text: `String result = String.format("Percent Complete = %d", a);`, correct: false },
+      { text: `String result = String.format("Percent Complete = %.2d", a);`, correct: false },
+      { text: `String result = String.format("Percent Complete = %f", a);`, correct: false },
+      { text: `String result = String.format("Percent Complete = %.2f", a);`, correct: true },
+      { text: `String result = String.format("Percent Complete = %s", a);`, correct: false },
+      { text: `String result = String.format("Percent Complete = %.2s", a);`, correct: false },
+    ],
+    explanation: "",
+  },
+  {
+    question: "What can you add at LINE 6 to print the values of a, b, and c on separate lines, using the newline character that is appropriate for the platform that is running the application? <br><br>(Choose 1 answer)",
+    code: `class ExamPrep {
+    public static void main(String[] args){
+        int a = 1;
+        int b = 2;
+        int c = 3;
+        //LINE 6
+        System.out.println(result);
+    }
+}`,
+    answers: [
+      { text: `String result = String.format("%d%n%d%n%d%n", a, b, c);`, correct: true },
+      { text: `String result = String.format("%d\n%d\n%d\n", a, b, c);`, correct: false },
+      { text: `String result = String.concat("%d\r\n%d\r\n%d\r\n", a, b, c);`, correct: false },
+      { text: `String result = String.concat(a, b, c).split();`, correct: false },
+    ],
+    explanation: "The %n format specifier in Java's String.format will automatically use the correct newline character for the operating system.",
+  },
+  {
+    question: "What can you add at LINE 6 so that the program will print 'Java Exam Prep'? <br><br>(Choose 1 answer)",
+    code: `class ExamPrep {
+    public static void main(String[] args){
+        String a = "Java";
+        String b = "Exam";
+        String c = "Prep";
+        //LINE 6
+        System.out.println(result);
+    }
+}`,
+    answers: [
+      { text: `String result = String.format("%d %d %d", a, b, c);`, correct: false },
+      { text: `String result = String.format("%s %s %s", a, b, c);`, correct: true },
+      { text: `String result = String.format("%n %n %n", a, b, c);`, correct: false },
+      { text: `String result = String.format("%a %b %c", a, b, c);`, correct: false },
+    ],
+    explanation: "This line uses the String.format method, where %s serves as a placeholder for string values. By passing a, b, and c as arguments, the method replaces each placeholder with the corresponding string. The spaces between the placeholders ensure that the words are separated correctly in the final output.",
+  },
+  {
+    question: "You run the following program: The output is 27,48,83. What will the output be if you run it again? <br><br>(Choose 1 answer)",
+    code: `import java.util. Random;
+
+class ExamPrep {
+    public static void main(String[] args){
+        
+        Random r = new Random(23);
+        int a = r.nextInt(100);
+        int b = r.nextInt(100);
+        int c = r.nextInt(100);
+        
+        System.out.printf("%d,%d,%d%n", a, b, c);
+    }
+}`,
+    answers: [
+      { text: "27,48,83", correct: true },
+      { text: "A different set of three random numbers between 0 (inclusive) and 100 (exclusive)", correct: false },
+      { text: "This code will not compile", correct: false },
+      { text: "This code will fail with an exception at runtime", correct: false },
+    ],
+    explanation: "This is because the Random class is initialized with a fixed seed value of 23. Using the same seed ensures that the sequence of random numbers generated will be identical every time the program is executed.",
+  },
+  {
+    question: "You run the following program: The output is 27,48,83. What will the output be if you run it again? <br><br>(Choose 1 answer)",
+    code: `import java.util. Random;
+
+class ExamPrep {
+    public static void main(String[] args){
+
+        Random r = new Random();
+        int a = r.nextInt(100);
+        int b = r.nextInt(100);
+        int c = r.nextInt(100);
+
+        System.out.printf("%d,%d,%d%n", a, b, c);
+    }
+}`,
+    answers: [
+      { text: "27,48,83", correct: false },
+      { text: "A different set of three random numbers between 0 (inclusive) and 100 (exclusive)", correct: true },
+      { text: "This code will not compile", correct: false },
+      { text: "This code will fail with an exception at runtime", correct: false },
+    ],
+    explanation: "If you run the program again, the output will be different each time.<br><br>This is because the Random class is initialized without a seed (new Random()), which means it uses the current time or system state to generate random numbers. As a result, each execution of the program will produce a different sequence of random values for a, b, and c",
+  },
+  {
+    question: "Which of the following lines of code will get the absolute value of a variable a? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "A) int result = java.lang.Math.abs(x);", correct: true },
+      { text: "B) int result = abs(x);", correct: false },
+      { text: "C) int result = java.lang.Math.absoluteValue(x);", correct: false },
+      { text: "D) int result = absoluteValue(x);", correct: false },
+      { text: "E) int result = !x;", correct: false },
+    ],
+    explanation: "A) uses the Math.abs() method from the java.lang package, which correctly returns the absolute value of a number.",
+  },
+  {
+    question: "You have the following Java program: What can you put at LINE 5 to get the result of a raised to the power of b? <br><br>(Choose 1 answer)",
+    code: `class ExamPrep {
+    public static void main(String[] args){
+        double a = 5.0;
+        double b = 2.0;
+        // LINE 5
+        System.out.println(result);
+    }
+}`,
+    answers: [
+      { text: "A) double result = a ^ b;", correct: false },
+      { text: "B) double result = b ^ a;", correct: false },
+      { text: "C) double result = java.lang.Math.exp(a, b);", correct: false },
+      { text: "D) double result = java.lang.Math.exp(b, a);", correct: false },
+      { text: "E) double result = java.lang.Math.pow(a, b);", correct: true },
+    ],
+    explanation: "E) correctly computes a^b (5.0 raised to the power of 2.0) and will give you the expected result.",
+  },
+  {
+    question: "Which static function On javalang Math can you use to return the smaller of two values?",
+    code: ``,
+    answers: [
+      { text: "floor", correct: false },
+      { text: "lessThan", correct: false },
+      { text: "min", correct: true },
+      { text: "smallerOf", correct: false },
+    ],
+    explanation: "",
+  },
+  {
+    question: "TRUE or FALSE: The random() method of java.lang.Math returns an integer value between 0 (inclusive) and 100 (exclusive)?",
+    code: ``,
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+    explanation: "'java.lang.Math.random()' returns a double between 0.0 (inclusive) and 1.0 (exclusive). The first time it is called, it creates a new pseudorandom-number generator, using 'new java.util.Random()' and each subsequent call uses this instance of the 'Random' class internally.",
+  },
+  {
+    question: "You have written the following Java program: What is the output? <br><br>(Choose 1 answer)",
+    code: `class ExamPrep {
+    public static void main(String[] args){
+        printColor(2);
+    }
+    private static void printColor(int x) {
+        switch (x) {
+            case 1:
+                System.out.println("red");
+            case 2:
+                System.out.println("blue");
+            case 3:
+                System.out.println("green");
+            default:
+                System.out.println("something else");
+        }
+    }
+}`,
+    answers: [
+      { text: "red", correct: false },
+      { text: "blue", correct: false },
+      { text: "green", correct: false },
+      { text: "something else", correct: false },
+      { text: "blue" + "\n" + "green" + "\n" + "something else", correct: true },
+    ],
+    explanation: "You need to use the break keyword within each case if you want to prevent fall-through and resume execution outside of the switch statement.",
+  },
+  {
+    question: "What is the output of the following program? <br><br>(Choose 1 answer)",
+    code: `class ExamPrep {
+    public static void main(String[] args){
+        String a = new String("Java");
+        String b = new String("Java");
+        if(a==b){
+            System.out.println("They are equal");
+        }else {
+            System.out.println("They are not equal");
+        }
+    }
+}`,
+    answers: [
+      { text: "They are equal", correct: false },
+      { text: "They are not equal", correct: true },
+      { text: "This program will not compile", correct: false },
+      { text: "This program will fail with an exception at runtime", correct: false },
+    ],
+    explanation: `This is because the == operator checks for reference equality, meaning it checks if a and b point to the same object in memory. Even though both strings contain the same value ("Java"), they are two distinct String objects created with new String(), so their references are different.<br><br>If you want to check for value equality (i.e., whether the contents of the strings are the same), you should use the .equals() method.`,
+  },
+  {
+    question: `The following lines are part of the code in your program:<br><br>String a = new String("Java!");<br>String b = new String("Exam.");<br>int result = a.compareTo(b);<br><br>You have determined that the value of result is 5. What does this mean? <br><br>(Choose 1 answer)`,
+    code: ``,
+    answers: [
+      { text: "The String value stored in a is 5 characters different than the String value stored in b.", correct: false },
+      { text: "The String value stored in a is lexicographically less than the String value stored in b.", correct: false },
+      { text: "The String value stored in a is lexicographically greater than the String value stored in b.", correct: true },
+      { text: "Nothing. The compareTo() method does not apply to strings and the return value is inconsistent.", correct: false },
+    ],
+    explanation: "The compareTo method returns a positive integer when the first string (a) is greater than the second string (b) in lexicographical order. A positive value indicates that a comes after b based on the Unicode values of the characters in the strings. In this case, a result of 5 suggests that the first differing character in a is greater than the corresponding character in b.",
+  },
+  {
+    question: "Which of the following code snippets will print the numbers 1 through 10? <br><br>(Choose 1 answer)",
+    code: `A)
+for(int i = 0; i < 10; ++i) {
+    System.out.println(i);
+}
+
+B)
+for(int i = 0; i < 11; ++i) {
+    System.out.println(i);
+}
+
+C)
+for(int i = 1; i < 10; i++) {
+    System.out.println(i);
+}
+
+D)
+for(int i = 1; i < 11; i++) {
+    System.out.println(i);
+}`,
+    answers: [
+      { text: "A", correct: false },
+      { text: "B", correct: false },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
+    ],
+    explanation: "D) starts at 1 and continues until it reaches 10 (it stops when i is 11), thus printing the numbers 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10.",
+  },
+  {
+    question: "Which of the following code snippets will print the numbers 1 through 10? <br><br>(Choose 1 answer)",
+    code: `A)
+int i = 0;
+while(i <= 10) {
+    System.out.println(i);
+    i++;
+}
+
+B)
+int i = 1;
+while(i <= 10) {
+    System.out.println(i);
+    i++;
+}
+
+C)
+int i = 0;
+while(i < 10) {
+    System.out.println(i);
+}
+
+D)
+int i = 1;
+while(i < 11) {
+    System.out.println(i);
+}`,
+    answers: [
+      { text: "A", correct: false },
+      { text: "B", correct: true },
+      { text: "C", correct: false },
+      { text: "D", correct: false },
+    ],
+    explanation: "Option B is correct for printing the numbers 1 through 10 because it initializes the variable i to 1. The while loop checks the condition i <= 10, ensuring it runs as long as i is less than or equal to 10. Inside the loop, System.out.println(i); prints the current value of i, and i++ increments it by 1 after each print. <br><br>This process continues until i becomes 11, at which point the loop terminates. ",
+  },
+  {
+    question: "Which of the following code snippets will print the numbers 1 through 10? <br><br>(Choose 1 answer)",
+    code: `A)
+int i = 0;
+do {
+    System.out.println(i);
+    i++;
+} until (i == 10);
+
+B)
+int i = 1;
+do {
+    System.out.println(i);
+    i++;
+} until (i == 10);
+
+C)
+int i = 0;
+do {
+    System.out.println(i);
+    i++;
+} while (i < 11);
+
+D)
+int i = 1;
+do {
+    System.out.println(i);
+    i++;
+} while (i < 11);`,
+    answers: [
+      { text: "A", correct: false },
+      { text: "B", correct: false },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
+    ],
+    explanation: "Snippet D) initializes the variable i to 1 and uses a do-while loop. In this loop, the value of i is printed and then incremented by 1. The loop continues as long as i is less than 11, allowing it to print the numbers from 1 to 10.",
+  },
+  {
+    question: "You are working on a project that has an existing function called getNextid() which returns an int. Which of the following statements are TRUE about this code? <br><br>(Choose 1 answer)",
+    code: `while (true) {
+    int id = getNextId();
+    
+    if (id == -1) {
+        break;
+    }
+    
+    System.out.println(id);
+}
+
+System.out.println("Done");
+`,
+    answers: [
+      { text: "There is no way the code will exit from the loop, and Done will never be printed because the condition is while(true) ", correct: false },
+      { text: `If getNextid() returns -1, it will exit the loop (or "break" out of the loop) and print Done`, correct: true },
+      { text: "If getNext1id() returns -1, it will throw an exception on the line that says break and Done will not be printed.", correct: false },
+      { text: "This code will not compile because of the infinite loop", correct: false },
+    ],
+    explanation: `If getNextId() returns -1, the break statement will be executed, causing the loop to terminate and allowing the program to print "Done."`,
+  },
+  {
+    question: "You are working on a project that has an existing function called getNextid) which returns an int. Which of the following statements are TRUE about this code? <br><br>(Choose 1 answer)",
+    code: `while (true) {
+    int id = getNextId();
+    
+    if (id == -1) {
+        break;
+    }
+    
+    if (id % 2 == 0) {
+        continue;
+    }
+    
+    System.out.println(id);
+}
+
+System.out.println("Done");
+`,
+    answers: [
+      { text: "The code will only print odd numbers", correct: true },
+      { text: "The code will only print even numbers", correct: false },
+      { text: "The code will print all numbers except -1", correct: false },
+      { text: `If id is an odd number, the execution will exit the loop (or "continue" out of the loop) and print Done.`, correct: false },
+      { text: `If id is an even number, the execution will exit the loop (or "continue" out of the loop) and print Done.`, correct: false },
+    ],
+    explanation: `The code continuously retrieves IDs, exiting when it gets -1. It prints only the odd IDs and skips printing even ones. Finally, it outputs "Done" after exiting the loop.`,
+  },/*
+  {
+    question: "",
+    code: ``,
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+    explanation: "",
+  },
+  {
+    question: "",
+    code: ``,
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+    explanation: "",
+  },
+  {
+    question: "",
+    code: ``,
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+    explanation: "",
+  },
+  {
+    question: "",
+    code: ``,
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+    explanation: "",
+  },
+  {
+    question: "",
+    code: ``,
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+    explanation: "",
+  },
+
+  */
+  
+
 ];
