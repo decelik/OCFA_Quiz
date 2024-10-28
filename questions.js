@@ -6555,15 +6555,15 @@ case 3:
     question:
       "What will the following statement print? <br><br>(Choose 1 answer)",
     code: `int marks = 90;
-String exam = "OCJA";
+String exam = "OCFA";
 System.out.printf("I scored %d marks in the %s exam!", exam, marks);`,
     answers: [
       {
-        text: "I scored 90 marks in the Java Foundations exam!",
+        text: "I scored 90 marks in the OCFA exam!",
         correct: false,
       },
-      { text: "I scored OCAJF marks in the 90 exam!", correct: false },
-      { text: "Exception will be thrown at run time.", correct: true },
+      { text: "I scored OCFA marks in the 90 exam!", correct: false },
+      { text: "An exception will be thrown at run time.", correct: true },
       { text: "Compilation error", correct: false },
     ],
     explanation:
