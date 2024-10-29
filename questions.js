@@ -1601,8 +1601,8 @@ b = a;
 c = a + b;`,
     answers: [
       { text: "1", correct: false },
-      { text: "2", correct: false },
-      { text: "3", correct: true },
+      { text: "2", correct: true },
+      { text: "3", correct: false },
       { text: "4", correct: false },
       { text: "5", correct: false },
     ],
@@ -5806,8 +5806,8 @@ b = a;
 c = a + b;`,
     answers: [
       { text: "1", correct: false },
-      { text: "2", correct: false },
-      { text: "3", correct: true },
+      { text: "2", correct: true },
+      { text: "3", correct: false },
       { text: "4", correct: false },
       { text: "5", correct: false },
     ],
@@ -6236,8 +6236,7 @@ System.out.println(i + " " + j);`,
     question: "What will the following code print? <br><br>(Choose 1 answer)",
     code: `public class BreakTest {
   public static void main(String[] args) {
-    int i = 0,
-    j = 5;
+    int i = 0, j = 5;
     lab1: for (;; i++) {
       for (;; --j) if (i > j) break lab1;
     }
@@ -6245,10 +6244,10 @@ System.out.println(i + " " + j);`,
   }
 }`,
     answers: [
-      { text: "i = 1, j = -1", correct: true },
+      { text: "i = 1, j = -1", correct: false },
       { text: "i = 1, j = 4", correct: false },
       { text: "i = 0, j = 4", correct: false },
-      { text: "i = 0, j = -1", correct: false },
+      { text: "i = 0, j = -1", correct: true },
       { text: "It will not compile.", correct: false },
     ],
     explanation:
@@ -9043,6 +9042,583 @@ System.out.println("Done");
       { text: `If id is an even number, the execution will exit the loop (or "continue" out of the loop) and print Done.`, correct: false },
     ],
     explanation: `The code continuously retrieves IDs, exiting when it gets -1. It prints only the odd IDs and skips printing even ones. Finally, it outputs "Done" after exiting the loop.`,
+  },
+  {
+    question: "You have a class named Customer with the following definition. What will the output be when you run this program? <br><br>(Choose 1 answer)",
+    code: `class Customer {
+    private String region = "east";
+
+    public String getRegion() {
+        return region;
+    }
+
+    public Customer() {
+        region = "west";
+    }
+
+    public Customer(String r) {
+        region = r;
+    }
+}
+
+class ExamPrep {
+    public static void main(String[] args) { 
+        Customer c = new Customer();
+        System.out.println(c.getRegion());
+    }
+}
+`,
+    answers: [
+      { text: "null", correct: false },
+      { text: "east", correct: false },
+      { text: "north", correct: false },
+      { text: "west", correct: true },
+      { text: "The code will not compile because Customer has two constructors", correct: false },
+      { text: "The code will compile, but a runtime error will occur because Customer has two constructors", correct: false },
+    ],
+    explanation: `The Customer class has a default constructor that sets the region variable to "west". In the main method, a new Customer object is created using this default constructor (new Customer()). When the getRegion() method is called on this object, it returns the value of region, which is now "west" after the constructor has executed. <br><br>Consequently, the program prints "west" to the console.`,
+  },
+  {
+    question: "You have a class named Customer with the following definition. What will the output be when you run this program? <br><br>(Choose 1 answer)",
+    code: `class Customer {
+    private String region = "east";
+
+    public String getRegion() {
+        return region;
+    }
+
+    public Customer() {
+        region = "west";
+    }
+
+    public Customer(String r) {
+        region = r;
+    }
+}
+
+class ExamPrep {
+    public static void main(String[] args) {
+        Customer c = new Customer("north");
+        System.out.println(c.getRegion());
+    }
+}
+`,
+    answers: [
+      { text: "null", correct: false },
+      { text: "east", correct: false },
+      { text: "north", correct: true },
+      { text: "west", correct: false },
+      { text: "The code will not compile because Customer has two constructors", correct: false },
+      { text: "The code will compile, but a runtime error will occur because Customer has two constructors", correct: false },
+    ],
+    explanation: `The Customer class has a constructor that takes a String parameter. In the main method, a new Customer object is created using this constructor with the argument "north" (i.e., new Customer("north")). This constructor sets the region variable to the value of the parameter r, which is "north" in this case. <br><br>Therefore, when the getRegion() method is called on the Customer object, it returns "north", and the program prints this value to the console.`,
+  },
+  {
+    question: "You have a class named Customer with the following definition. What will the output be when you run this program? <br><br>(Choose 1 answer)",
+    code: `class Customer {
+    private String region = "east";
+
+    public String getRegion() {
+        return region;
+    }
+
+    public Customer(String r) {
+        region = r;
+    }
+}
+
+class ExamPrep {
+    public static void main(String[] args) {
+        Customer c = new Customer();
+        System.out.println(c.getRegion());
+    }
+}
+`,
+    answers: [
+      { text: "null", correct: false },
+      { text: "east", correct: false },
+      { text: "north", correct: false },
+      { text: "west", correct: false },
+      { text: "The code will not compile because Customer has no constructor that takes zero arguments", correct: true },
+      { text: "The code will compile, but a runtime error will occur because Customer has no constructor that takes zero arguments", correct: false },
+    ],
+    explanation: "It will result in a compilation error.<br><br>The reason for this is that the Customer class does not have a default (no-argument) constructor defined. Instead, it only has a constructor that takes a String parameter (public Customer(String r)). In the main method, when you attempt to create a new Customer object using new Customer(), the compiler cannot find a matching constructor that accepts no arguments. <br><br>Therefore, the program will not compile successfully.",
+  },
+  {
+    question: "Which of the following statements are TRUE about Java methods? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "A method must always return a value", correct: false },
+      { text: "A method must always have one or more parameters", correct: false },
+      { text: "A method must always be defined within a class", correct: true },
+      { text: "All of these are true", correct: false },
+      { text: "None of these are true", correct: false },
+    ],
+    explanation: "In Java, all methods must be defined within a class as part of its structure. Java is an object-oriented programming language, and methods are integral to the behavior of the objects created from classes, meaning they cannot exist independently outside of a class.",
+  },
+  {
+    question: "You have the following Java class. You want to use the object-oriented principle of encapsulation and create an accessor method (or getter) that allows you to read the value of the name field. Which of the following methods can be added to the customer class to allow the value of name to be read? <br><br>(Choose 1 answer)",
+    code: `public class Customer {
+    private String name;
+}
+
+
+
+A)
+public String getName() {
+    return name;
+}
+
+B)
+private String getName() {
+    return Customer.name;
+}
+
+C)
+public static String getName() {
+    return name,;
+}
+
+D)
+private static String getName() {
+    return Customer.name;
+}`,
+    answers: [
+      { text: "A", correct: true },
+      { text: "B", correct: false },
+      { text: "C", correct: false },
+      { text: "D", correct: false },
+    ],
+    explanation: "A is the correct accessor method. It is public, allowing access to the name field from outside the class, and it correctly returns the value of the instance variable name.<br><br>B is incorrect because it tries to access name as a static variable on the class Customer, which is not valid since name is an instance variable.<br><br>C is incorrect for two reasons: it is declared as a static method, which cannot access instance variables directly, and there is a syntax error with the comma.<br><br>D is also incorrect for the same reasons as B; it incorrectly tries to access name as a static variable and cannot access instance variables from a static context.",
+  },
+  {
+    question: "In Java, what does the term overloading methods mean? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "A method can replace the implementation of a method in a base class", correct: false },
+      { text: "The method has too many lines of code and you must break it down in order for the code to compile", correct: false },
+      { text: "Methods within a class can have the same name if they have different return data types", correct: false },
+      { text: "Methods within a class can have the same name if they have different parameter lists", correct: true },
+    ],
+    explanation: "Method overloading in Java allows multiple methods to have the same name within a class as long as they differ in their parameter lists (i.e., the number of parameters, the types of parameters, or the order of parameters). This provides flexibility and allows methods to perform similar functions with different inputs.",
+  },
+  {
+    question: "You are working on a project that has the following class. You want to overload the dosomething method. Which of the following methods can be added to the widget class without causing compilation to fail? <br><br>(Choose 2 answers)",
+    code: `public class Widget {
+    public void doSomething(int i) {
+        // implementation omitted
+    }
+}
+
+
+
+A)
+public void doSomething(double i) {
+    // implementation omitted
+}
+
+B)
+public void doSomething(int j) {
+    // implementation omitted
+}
+
+C)
+public int doSomething(int j) {
+    // implementation omitted
+    return O;
+}
+
+D)
+public void doSomething(int i, int j) {
+    // implementation omitted
+}`,
+    answers: [
+      { text: "A", correct: true },
+      { text: "B", correct: false },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
+    ],
+    explanation: "A is valid because it has a different parameter type (double instead of int), which allows for method overloading.<br><br>B is invalid because it has the same parameter type (int) as the existing method, so it does not qualify as an overload.<br><br>C is invalid because it has the same parameter type (int) as the existing method, and changing the return type alone does not allow for overloading.<br><br>D is valid because it has a different parameter list (two int parameters instead of one), which qualifies as method overloading.",
+  },
+  {
+    question: "Which of the following statements are TRUE about Java static methods? <br><br>(Choose 2 answers)",
+    code: ``,
+    answers: [
+      { text: "Can be invoked using the class name, without having to create an instance of the class", correct: true },
+      { text: "Can call other static methods directly", correct: true },
+      { text: "Can use the this keyword to refer to instance methods and member variables", correct: false },
+      { text: "Must be declared as public", correct: false },
+    ],
+    explanation: "Static methods can be invoked using the class name, allowing you to call them without creating an instance of the class. For example, ClassName.methodName().<br><br>Static methods can call other static methods directly within the same class without needing to create an instance of the class.<br><br>Static methods cannot use the this keyword because this refers to the current instance of the class, and static methods do not belong to any particular instance.<br><br>Static methods do not have to be declared as public. They can have any access modifier (public, private, protected, or package-private).",
+  },
+  {
+    question: "What is the output of the following code? <br><br>(Choose 1 answer)",
+    code: `public class Test {
+    public static void main(String[] args) {
+
+        int x = 5;
+        System.out.println(++x + x++ + --x);
+    }
+}`,
+    answers: [
+      { text: "15", correct: false },
+      { text: "16", correct: false },
+      { text: "17", correct: false },
+      { text: "18", correct: true },
+      { text: "None of the above", correct: false },
+    ],
+    explanation: "The output of the code is 18. This occurs because ++x increments x to 6, x++ evaluates to 6 before incrementing x to 7, and --x then decrements it back to 6. <br><br>When summed together, the values yield 6 + 6 + 6, which equals 18.",
+  },
+  {
+    question: "What is the output of the following code? <br><br>(Choose 1 answer)",
+    code: `class Test {
+    public static void main(String[] args) {
+        
+    int x = 5;
+        System.out.println(++x + ++x + x++ + --x);
+    }
+}`,
+    answers: [
+      { text: "26", correct: false },
+      { text: "23", correct: false },
+      { text: "24", correct: false },
+      { text: "27", correct: true },
+      { text: "None of the above", correct: false },
+    ],
+    explanation: "Initially, x is set to 5. The first ++x increments x to 6, the second ++x raises it to 7, and x++ evaluates to 7 before incrementing x to 8. Finally, --x decrements it back to 7. Adding these values together results in 6 + 7 + 7 + 7, which equals 27.",
+  },
+  {
+    question: "An exception is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions.<br><br>Which of the following statements about Java Exceptions are TRUE? <br><br>(Choose 2 answers)",
+    code: ``,
+    answers: [
+      { text: "A) Exceptions can occur in one function, and caught using a try-catch block in a function that called it or any function higher in the call stack.", correct: true },
+      { text: "B) Exceptions must be caught using a try-catch block in the function where they occur.", correct: false },
+      { text: "C) Creating an exception object and handing it to the runtime system is called raising an exception.", correct: false },
+      { text: "D) Creating an exception object and handing it to the runtime system is called throwing an exception.", correct: true },
+    ],
+    explanation: "A) is true because exceptions can indeed be thrown in one method and caught in a try-catch block in the calling method or any method higher in the call stack, which allows for flexible exception handling.<br><br>B) is false. While exceptions can be caught in the function where they occur, it is not mandatory; they can propagate up the call stack if not caught.<br><br>C) is false as worded. The correct terminology is that creating an exception object and handing it to the runtime system is called throwing an exception, not raising.<br><br>D) is true. Creating an exception object and handing it to the runtime system is correctly referred to as throwing an exception.",
+  },
+  {
+    question: "What will be the output of the following code? <br><br>(Choose 1 answer)",
+    code: `class ExamPrep {
+    public static void main(String[] args) {
+        try {
+            doSomething();
+            System.out.println("Success");
+        } catch (Exception e) {
+            System.err.println("Exception");
+        } finally {
+            System.out.println("Finally");
+        }
+    }
+
+    static void doSomething() throws Exception {
+        throw new Exception("Something unexpected happened");
+    }
+}
+`,
+    answers: [
+      { text: "Sucess" + "\n" + "Exception" + "\n" + "Finally", correct: false },
+      { text: "Sucess" + "\n" + "Finally" + "\n" + "Exception", correct: false },
+      { text: "Exception" + "\n" + "Finally", correct: true },
+      { text: "Finally" + "\n" + "Exception", correct: false },
+      { text: "Exception", correct: false },
+    ],
+    explanation: `The doSomething() method, when called within the try block, throws a new Exception. As a result, the program skips the line that prints "Success" and jumps to the catch block, where it prints "Exception" to the error output stream. After handling the exception, the finally block is executed, which prints "Finally". <br><br>Therefore, the final output consists of the messages "Exception" followed by "Finally".`,
+  },
+  {
+    question: "You have the following code. What can you add at LINE 5 to declare a variable named a which is an ArrayList Of strings? <br><br>(Choose 1 answer)",
+    code: `import java.util.*;
+class ExamPrep {
+    public static void main(String[] args) {
+        //LINE 5
+    }
+}`,
+    answers: [
+      { text: "A) List(String) a = new List(String)();", correct: false },
+      { text: "B) List<String> a = new List<String>();", correct: false },
+      { text: "C) ArrayList(String) a = new ArrayList(String)();", correct: false },
+      { text: "D) ArrayList<String> a = new ArrayList<String>();", correct: true },
+    ],
+    explanation: "A) is incorrect because List is an interface, not a class that can be instantiated directly, and the syntax is incorrect.<br><br>B) is incorrect for the same reason as A; List cannot be instantiated directly.<br><br>C) is incorrect due to the improper syntax; you should use angle brackets (<String>) instead of parentheses.<br><br>D) is correct. It properly declares a as an ArrayList of String objects and instantiates it.",
+  },
+  {
+    question: "What is the correct way to declare a variable named a that is an int array of size 4? <br><br>(Choose 2 answers)",
+    code: ``,
+    answers: [
+      { text: "A) int a[] = new int[4];", correct: true },
+      { text: "B) int[] a = new int[4];", correct: true },
+      { text: "C) int a[] = new int(4);", correct: false },
+      { text: "D) int[] a = new int(4);", correct: false },
+    ],
+    explanation: "A) is a valid declaration. It declares an integer array a and initializes it with a size of 4.<br><br>B) is also a valid declaration. It uses the more common syntax of placing the brackets next to the type, which is perfectly acceptable in Java.<br><br>C) is incorrect because the syntax for initializing an array requires square brackets [] after new int.<br><br>D) is incorrect for the same reason as C; it uses the wrong syntax for array initialization.",
+  },
+  {
+    question: "You have a variable named a that is an int array of size 4, defined like this:<br><br>int a[] = new int[4];<br><br>How can you assign the value 99 to the first element in the array? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "A) a[0] = 99;", correct: true },
+      { text: "B) a[1] = 99;", correct: false },
+      { text: "C) a(0) = 99;", correct: false },
+      { text: "D) a(1) = 99;", correct: false },
+    ],
+    explanation: "The correct way to assign the value 99 to the first element of the int array a, which is defined as int a[] = new int[4];, is to use the statement a[0] = 99;. In Java, array indexing starts at 0, so a[0] refers to the first element of the array. <br><br>The other options either reference the wrong index or use incorrect syntax for accessing array elements, making A the only correct choice.",
+  },
+  {
+    question: "You have a variable named a that is an int array of size 4, defined like this:<br><br>int a[] = {99,98,97,96};<br><br>Which line of code will print 96? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "A) System.out.println(a[3]);", correct: true },
+      { text: "B) System.out.println(a[4]);", correct: false },
+      { text: "C) System.out.println(a[96]);", correct: false },
+      { text: "D) None of these. There is a syntax error in the array declaration.", correct: false },
+    ],
+    explanation: "In the array int a[] = {99, 98, 97, 96};, the elements are indexed starting from 0, so the last element, 96, is located at index 3. <br><br>Therefore, using System.out.println(a[3]); will correctly print 96.",
+  },
+  {
+    question: `You have the following code. What can you add at LINE 6 to add "Java" as the first element in the ArrayList? <br><br>(Choose 1 answer)`,
+    code: `import java.util.*;
+
+class ExamPrep {
+    public static void main(String[] args) {
+        ArrayList<String> a = new ArrayList<String>();
+        // LINE 6
+    }
+}`,
+    answers: [
+      { text: `A) a[0] = "Java";`, correct: false },
+      { text: `B) a[1] = "Java";`, correct: false },
+      { text: `C) a.add("Java");`, correct: true },
+      { text: `D) a.insert("Java");`, correct: false },
+    ],
+    explanation: `To add "Java" as the first element in the ArrayList, you should use the add method, which is the proper way to insert elements into an ArrayList`,
+  },
+  {
+    question: `You have the following code. What can you add at LINE 7 to insert "First" as the first element in the ArrayList? <br><br>(Choose 1 answer)`,
+    code: `import java.util.*;
+
+class ExamPrep {
+    public static void main(String[] args) {
+        ArrayList<String> a = new ArrayList<String>();
+        a.add("Java");
+        // LINE 7
+    }
+}`,
+    answers: [
+      { text: `A) a.add("First");`, correct: false },
+      { text: `B) a.insert("First");`, correct: false },
+      { text: `C) a.add(0, "First");`, correct: true },
+      { text: `D) a.insert(0, "First");`, correct: false },
+    ],
+    explanation: `To insert "First" as the first element in the ArrayList, you can use the add method with an index specified. By using a.add(0, "First");, you are instructing the ArrayList to insert "First" at index 0, which is the first position.`,
+  },
+  {
+    question: `You have the following code. What can you add at LINE 8 to remove "First" from the ArrayList? <br><br>(Choose 2 answers)`,
+    code: `import java.util.*;
+
+class ExamPrep {
+    public static void main(String[] args) {
+        ArrayList<String> a = new ArrayList<String>();
+        a.add("Java");
+        a.add(0, "First");
+        // LINE 8
+    }
+}`,
+    answers: [
+      { text: `A) a.delete("First");`, correct: false },
+      { text: "B) a.delete(0);", correct: false },
+      { text: "C) a.deleteAt(0);", correct: false },
+      { text: `D) a.remove("First");`, correct: true },
+      { text: "E) a.remove(0);", correct: true },
+    ],
+    explanation: `Using D), the method a.remove("First"); will remove the first occurrence of the element "First" from the ArrayList, as this method searches for the element by its value.<br><br>Alternatively, E) uses the method a.remove(0);, which removes the element at index 0. Since "First" was added at that index, this will effectively remove "First" as well.<br><br>The other options are incorrect because there is no delete method in the ArrayList class, making options A), B), and C) invalid.`,
+  },
+  {
+    question: "Which arrayList method returns the number of elements in the list? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "A) capacity()", correct: false },
+      { text: "B) count()", correct: false },
+      { text: "C) length()", correct: false },
+      { text: "D) size()", correct: true },
+    ],
+    explanation: "The correct answer is D) size(), as this method returns the number of elements currently in an ArrayList. In Java, ArrayList uses the size() method to provide this information.<br><br>The other options are incorrect: A) capacity() is associated with the Vector class and does not exist in ArrayList; B) count() is not a method in ArrayList; and C) length() is used for arrays in Java, not for ArrayList. Thus, to determine the number of elements in an ArrayList, you would use the size() method.",
+  },
+  {
+    question: "Which of the following can be defined using the private modifier? <br><br>(Choose all that apply)",
+    code: ``,
+    answers: [
+      { text: "class", correct: true },
+      { text: "method", correct: true },
+      { text: "class variable", correct: true },
+      { text: "instance variable", correct: true },
+      { text: "local variable", correct: false },
+    ],
+    explanation: "In Java, the private modifier can be applied to methods, class variables, instance variables, and nested classes. However, it cannot be used for top-level classes or local variables, as local variables are scoped to the method they are defined in. <br><br>Therefore, while methods and variables can be restricted in access using private, top-level classes and local variables cannot.",
+  },
+  {
+    question: "Which of the following statements are TRUE about Java Arrays and ArrayLists? <br><br>(Choose all that apply)",
+    code: ``,
+    answers: [
+      { text: "A) Arrays can be resized", correct: false },
+      { text: "B) ArrayLists can be resized", correct: true },
+      { text: "C) Arrays can store either primitives or objects", correct: true },
+      { text: "D) ArrayLists can store either primitives or objects", correct: false },
+      { text: "E) ArrayList implements the List interface", correct: true },
+      { text: "F) Array implements the List interface", correct: false },
+    ],
+    explanation: "A) is false. In Java, once an array is created, its size is fixed and cannot be changed. If you need a different size, you would have to create a new array and copy the elements over. <br><br>B) is true because ArrayLists dynamically adjust their size as elements are added or removed.<br><br>C) is also true, as arrays can hold both primitive data types (like int or char) and object references.<br><br>D) While ArrayLists cannot directly store primitives, they can store their corresponding wrapper objects (e.g., Integer for int, Double for double). So, it's more accurate to say that ArrayLists can store objects, including wrapper classes for primitives.<br><br>E) is true, as ArrayList is a part of the Java Collections Framework and implements the List interface.<br><br>F) is false because arrays do not implement the List interface; they are a separate data structure.",
+  },
+  {
+    question: "You are working on a Java project and see the following code. What does the private Modifier do? <br><br>(Choose 1 answer)",
+    code: `class Customer {
+    private int id;
+    private String name;
+}`,
+    answers: [
+      { text: "A) id and name are encrypted.", correct: false },
+      { text: "B) id and name can only be accessed by methods defined inside the customer class.", correct: true },
+      { text: "C) id and name can only be accessed by methods defined inside the customer class or inside any class that inherits from customer.", correct: false },
+      { text: "D) id and name can only be accessed by methods defined inside the customer class or inside any class that is defined within the same package.", correct: false },
+    ],
+    explanation: "The private modifier in Java restricts access to the variables (in this case, id and name) so that they can only be accessed within the class in which they are declared. This means that no other class, including subclasses or classes in the same package, can access these private variables directly.",
+  },
+  {
+    question: "Which type of variable has its value shared by every instance of the class? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "A) class variable", correct: true },
+      { text: "B) instance variable", correct: false },
+      { text: "C) local variable", correct: false },
+      { text: "D) None of these", correct: false },
+    ],
+    explanation: "A class variable, also known as a static variable, is shared by all instances of a class. This means that if one instance modifies the value of a class variable, that change is reflected across all instances of the class.",
+  },
+  {
+    question: "Which type of variable is defined using the static keyword? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "A) class variable", correct: true },
+      { text: "B) instance variable", correct: false },
+      { text: "C) local variable", correct: false },
+      { text: "D) None of these", correct: false },
+    ],
+    explanation: "A class variable, also known as a static variable, is defined using the static keyword in Java. This type of variable is shared among all instances of a class, meaning that it has a single copy that all instances can access. <br><br>In contrast, instance variables are specific to each object instance, and local variables are defined within a method and are not accessible outside of it.",
+  },
+  {
+    question: "Which type of variable has its value stored separately by each instance of the class? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "A) class variable", correct: false },
+      { text: "B) instance variable", correct: true },
+      { text: "C) local variable", correct: false },
+      { text: "D) None of these", correct: false },
+    ],
+    explanation: "An instance variable is a type of variable that has its value stored separately for each instance of a class. This means that each object created from the class has its own copy of the instance variable, allowing it to maintain its own state. <br><br>In contrast, class variables (static variables) are shared among all instances, and local variables exist only within the scope of a method.",
+  },
+  {
+    question: "Which type of variable is defined inside of a method? <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "A) class variable", correct: false },
+      { text: "B) instance variable", correct: false },
+      { text: "C) local variable", correct: true },
+      { text: "D) None of these", correct: false },
+    ],
+    explanation: "A local variable is defined inside of a method and is only accessible within that method's scope. Local variables are created when the method is called and destroyed when the method completes. In contrast, class variables (static variables) are defined at the class level and shared among all instances, while instance variables are associated with individual instances of a class.",
+  },
+  {
+    question: "TRUE or FALSE: A Java class can have only one constructor. <br><br>(Choose 1 answer)",
+    code: ``,
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+    ],
+    explanation: "A Java class can have multiple constructors, a feature known as constructor overloading. This allows a class to have more than one constructor with different parameter lists, enabling the creation of objects in various ways. Each constructor can initialize the object's fields differently based on the parameters provided.",
+  },
+  {
+    question: "What is the expected output when you run this program? <br><br>(Choose 1 answer)",
+    code: `public class ExamPrep {
+    public static void main(String[] args) {
+        String[] flowers = {"lotus","lilly","rose","jasmine"};
+        for (String c: flowers) {
+            if (c.length() < 4) {
+                continue;
+            }
+            System.out.print(c + " ");
+            if (c.length() == 4) {
+                break;
+            }
+        }
+    }
+}`,
+    answers: [
+      { text: "lotus jasmine", correct: false },
+      { text: "lotus", correct: false },
+      { text: "A compilation error occurs", correct: false },
+      { text: "lotus lilly rose", correct: true },
+    ],
+    explanation: `The output of the provided code is "lotus lilly rose ". The program defines an array called flowers containing four flower names. As it iterates through the array, it checks the length of each flower name. When it encounters "lotus" (5 characters), it prints it, followed by "lilly" (5 characters), which is also printed. Upon reaching "rose" (4 characters), it prints this name and then exits the loop due to the break statement. The flower "jasmine" is never reached because the loop terminates after printing "rose." <br><br>Thus, the final output consists of the names "lotus," "lilly," and "rose," each followed by a space.`,
+  },
+  {
+    question: "Given the code fragment below, what is the output? <br><br>(Choose 1 answer)",
+    code: `int a = 3;
+a = ++a + a++;
+a = --a - a--;
+
+System.out.println(a);`,
+    answers: [
+      { text: "8", correct: false },
+      { text: "3", correct: false },
+      { text: "0", correct: true },
+      { text: "A compilation error occurs", correct: false },
+    ],
+    explanation: "The output of the code fragment is 0. Initially, a is set to 3. In the first operation, a = ++a + a++, the pre-increment ++a raises a to 4, and then a++ uses the value 4 before incrementing a to 5. This results in a being assigned the value 8. In the second operation, a = --a - a--, the pre-decrement --a decreases a to 7, while a-- uses the value 7 before decrementing it to 6. <br><br>Consequently, the expression evaluates to a = 7 - 7, which sets a to 0.",
+  },
+  {
+    question: "Given the code fragment below, what is the output?",
+    code: `int value = 10;
+int a = ++value;
+int b = value;
+int c = value++;
+
+if (a <= b && a <= c) {
+    if (b <= c) {
+        a = ++b;
+    } else {
+        a = ++c;
+    }
+}
+
+System.out.println(a);
+`,
+    answers: [
+      { text: "10", correct: false },
+      { text: "11", correct: false },
+      { text: "12", correct: true },
+      { text: "13", correct: false },
+    ],
+    explanation: "The output of the given code fragment is 12. Initially, value is set to 10, and a is assigned the incremented value of value, making both value and a equal to 11. The variable b is then set to the current value of value, which is 11, and c is assigned the current value of value before it increments to 12, so c remains 11. <br><br>The condition checks confirm that a is less than or equal to both b and c, leading to the nested condition where b is also less than or equal to c. <br><br>This results in b being incremented to 12, which is then assigned to a.",
+  },
+  {
+    question: "Given the code fragment below, what is the output? <br><br>(Choose 1 answer)",
+    code: `int num = 100;
+int count = 0;
+
+do {
+    num--;
+    count++;
+} while (count > 1);
+
+System.out.println("num = " + num);
+`,
+    answers: [
+      { text: "num = 100", correct: false },
+      { text: "num = 99", correct: true },
+      { text: "num = 0", correct: false },
+      { text: "The program executes indefinitely", correct: false },
+    ],
+    explanation: `The output of the given code fragment is num = 99. The variable num starts at 100, and count is initialized to 0. In the do loop, num is decremented by 1 to 99, and count is incremented to 1. After the first iteration, the condition while (count > 1) is checked, and since count is now 1, the loop exits. Consequently, when System.out.println("num = " + num); is executed, it prints num = 99.`,
   },/*
   {
     question: "",
@@ -9099,8 +9675,50 @@ System.out.println("Done");
     ],
     explanation: "",
   },
-
+  {
+    question: "",
+    code: ``,
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+    explanation: "",
+  },
+  {
+    question: "",
+    code: ``,
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+    explanation: "",
+  },
+  {
+    question: "",
+    code: ``,
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+    explanation: "",
+  },
+  {
+    question: "",
+    code: ``,
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+    explanation: "",
+  },
   */
-  
 
 ];
