@@ -1335,7 +1335,7 @@ t3 = new TestClass();`,
       { text: "The program will compile and print 4.", correct: false },
     ],
     explanation:
-      "The program will not compile because methodA is declared twice with the same parameter list, which is not allowed.",
+      "In the provided code, both methods methodA have the same name but different return types. However, in Java, method overloading requires a change in the parameter list, not just the return type. Since both methods have the same parameter type (int a), this leads to a compile-time error due to the duplicate method definition. <br><br>Therefore, the program will not compile, and you will receive an error indicating that methodA is already defined.",
   },
   {
     question: "Which lines will print true? <br><br>(Choose 2 answers)",
@@ -2313,21 +2313,21 @@ public class TestClass {
     code: ``,
     answers: [
       {
-        text: 'for(;Math.random()<0.5;) { System.out.println("true"); }',
+        text: 'A) for(;Math.random()<0.5;) { System.out.println("true"); }',
         correct: true,
       },
       {
-        text: 'for(;;Math.random()<0.5) { System.out.println("true"); }',
+        text: 'B) for(;;Math.random()<0.5) { System.out.println("true"); }',
         correct: false,
       },
       {
-        text: 'for(;;Math.random()) { System.out.println("true"); }',
+        text: 'C) for(;;Math.random()) { System.out.println("true"); }',
         correct: false,
       },
-      { text: "for(;;) { if(Math.random()<.05) break; }", correct: true },
+      { text: "D) for(;;) { if(Math.random()<.05) break; }", correct: true },
     ],
     explanation:
-      "The first and last constructs are valid. The second and third constructs have invalid conditions in the increment section.",
+      `In option A), for(;Math.random()<0.5;) { System.out.println("true"); } is valid because it includes a condition (Math.random() < 0.5) while omitting the initialization and update expressions. This loop will continue executing as long as the condition evaluates to true. Option D), for(;;) { if(Math.random()<.05) break; }, is also valid as it creates an infinite loop that can be exited with a break statement if the condition inside the loop is met.<br><br>On the other hand, option B), for(;;Math.random()<0.5) { System.out.println("true"); }, is invalid because it improperly uses a condition as an update expression, which leads to a compilation error. Similarly, option C), for(;;Math.random()) { System.out.println("true"); }, is also invalid for the same reason, as the update expression does not conform to the expected syntax.`,
   },
   {
     question:
@@ -6251,7 +6251,7 @@ System.out.println(i + " " + j);`,
       { text: "It will not compile.", correct: false },
     ],
     explanation:
-      "The outer loop increments 'i' and the inner loop decrements 'j' until 'i > j', resulting in 'i = 1, j = -1'.",
+      `The output of the given code will be "i = 6 , j = -1". The outer loop increments i indefinitely, while the inner loop decrements j from 5 down to -1. When i reaches 6, it becomes greater than j, which triggers the break statement to exit the outer loop. As a result, the program prints the final values of i and j, leading to the output "i = 6 , j = -1".`,
   },
   {
     question:
