@@ -4907,20 +4907,20 @@ public class Y {
   },
   {
     question:
-      "Which of the following statements will print true? <br><br>(Choose 2 answers)",
+      "Which of the following statements will print true? <br><br>(Choose 3 answers)",
     code: `int x = 5;
 int y = 9;
 int z = 12;
 boolean b = true;`,
     answers: [
-      { text: "System.out.println( x==y || b );", correct: true },
-      { text: "System.out.println( ! (x<z) || b );", correct: true },
-      { text: "System.out.println( b == y>z );", correct: false },
-      { text: "System.out.println( b && y>z || z<x );", correct: false },
-      { text: "System.out.println( !b == y>z );", correct: false },
+      { text: "A) System.out.println( x==y || b );", correct: true },
+      { text: "B) System.out.println( ! (x<z) || b );", correct: true },
+      { text: "C) System.out.println( b == y>z );", correct: false },
+      { text: "D) System.out.println( b && y>z || z<x );", correct: false },
+      { text: "E) System.out.println( !b == y>z );", correct: true },
     ],
     explanation:
-      "Statement A, which checks x == y || b, evaluates to false || true since x is not equal to y but b is true. Therefore, this statement will print true.<br><br>Statement B checks ! (x < z) || b. Since x < z (5 < 12) is true, ! (x < z) becomes false, leading to false || true, which evaluates to true. Thus, this statement will also print true.<br><br></br>In contrast, Statement C compares b == y > z. Here, y > z (9 > 12) is false, making the expression evaluate to false, so this statement will print false.<br><br></br>Statement D evaluates b && y > z || z < x. Since b is true and y > z is false, it simplifies to true && false, which is false, leading to a final result of false as well.<br><br>Lastly, Statement E, which checks !b == y > z, translates to comparing false == (y > z). Since y > z is false, this part would seem to evaluate to true, but due to operator precedence, it ultimately evaluates to false.",
+      "In A), x == y is false (5 is not equal to 9), but b is true, so the expression evaluates to true and will print true.<br><br>In B), x < z is true, making !true equal to false. With b as true, the expression evaluates to true, so it will print true.<br><br>In C), y > z is false, and since b is true, the expression evaluates to false, so it does not print true.<br><br>In D), b && y > z is false, and z < x is also false, leading to false || false, which does not print true.<br><br>In E), !b is false and y > z is false, so false == false is true, meaning it will print true.",
   },
   {
     question:
@@ -4941,7 +4941,7 @@ boolean b = true;`,
       { text: "None of these.", correct: false },
     ],
     explanation:
-      "The loop increments 'i' and decrements 'j' until 'i' is no longer less than 5. The final values are 'i=5' and 'j=6'.",
+      `When the provided code is executed, it initializes i to 1 and j to 10. In the first iteration of the do-while loop, i increments to 2 and j decrements to 9, but since 1 is not greater than 9, it continues to the next iteration. <br><br>This process repeats, with i incrementing and j decrementing in each iteration, until i becomes 5 and j becomes 6. The loop then exits because the condition i < 5 is no longer true. <br><br>Finally, the program prints the values of i and j, resulting in the output: "i=5 j=6".`,
   },
   {
     question:
@@ -5010,7 +5010,7 @@ public class Base {
       { text: "Line // 5", correct: true },
     ],
     explanation:
-      "Lines 1, 4, and 5 are valid constructors. Line 2 is a method, not a constructor, and line 3 is missing a body.",
+      "Line // 1 contains a valid constructor because it correctly defines a constructor with two parameters.<br><br>Line // 2 is not a valid constructor because it has a return type (void), which disqualifies it from being a constructor.<br><br>Line // 3 declares a constructor but is missing an implementation; it only has a semicolon, making it an invalid constructor.<br><br> Line // 4 is a valid constructor, as it correctly defines a constructor with two parameters and is marked private.<br><br>Line // 5 is also a valid constructor, as it defines a constructor with two string parameters.",
   },
   {
     question:
@@ -5040,29 +5040,29 @@ public class Base {
       "A Java source file can have zero or one package statement and zero or more import statements. Classes in the same package are not automatically imported.",
   },
   {
-    question: "Identify correct statements. <br><br>(Choose 1 answer)",
+    question: "Identify correct statements for the following code snippet: <br><br>(Choose 1 answer)",
     code: `double da[] = new double[3];`,
     answers: [
       {
-        text: "for(double d : da) System.out.println(d); will print null null null",
+        text: "A) for(double d : da) System.out.println(d); will print null null null",
         correct: false,
       },
       {
-        text: "for(int i=1; i<=da.length; i++ ) System.out.println(da[i]); will print null null null",
+        text: "B) for(int i=1; i<=da.length; i++ ) System.out.println(da[i]); will print 0.0 0.0 0.0",
         correct: false,
       },
       {
-        text: "for(int i=0; i<=da.length; i++ ) System.out.println(da[i]); will print null null null",
+        text: "C) for(int i=0; i<=da.length; i++ ) System.out.println(da[i]); will print null null null",
         correct: false,
       },
       {
-        text: "for(int i=0; i<da.length; i++ ) System.out.println(da[i]); will print null null null",
-        correct: false,
+        text: "D) for(int i=0; i<da.length; i++ ) System.out.println(da[i]); will print 0.0 0.0 0.0",
+        correct: true,
       },
-      { text: "None of the above.", correct: true },
+      { text: "E) None of the above.", correct: false },
     ],
     explanation:
-      "The array 'da' is initialized with default values of 0.0, not null. The correct loop will print 0.0 three times.",
+      "A) will print 0.0 three times, not null. Therefore, this statement is incorrect.<br><br>B) will cause an ArrayIndexOutOfBoundsException because it tries to access da[3] when i is 3. Thus, this statement is incorrect.<br><br>C) will also cause an ArrayIndexOutOfBoundsException when i is 3. Therefore, this statement is incorrect.<br><br>D) will print 0.0 three times, as it correctly iterates over valid indices (0, 1, and 2). This statement is correct.<br><br>E) is incorrect since statement D) is correct.",
   },
   {
     question:
@@ -5089,7 +5089,7 @@ public class Base {
       { text: "Compile time error.", correct: false },
     ],
     explanation:
-      "The method m1() throws an exception, so 'A' is not printed. The finally block executes, printing 'B', and then the exception is thrown.",
+      `When the provided program is compiled and run, it first executes the main method, which calls the m1() method. The m1() method throws an Exception, causing control to transfer to the finally block associated with the try statement. <br><br>In this finally block, "B" is printed to the console. After the finally block executes, the program does not reach the line that prints "C" because the exception remains unhandled in the main method, resulting in program termination. <br><br>Therefore, the only output from the program will be "B".`,
   },
   {
     question:
@@ -5123,49 +5123,49 @@ public class Base {
       "The code is syntactically correct. A switch statement does not require break statements or a specific order for case labels.",
   },
   {
-    question: "Identify correct statements. <br><br>(Choose 2 answers)",
+    question: "Identify correct statements: <br><br>(Choose 2 answers)",
     code: ``,
     answers: [
       {
-        text: "1 + Math.random()*9 will return a random number between 1 and 10.",
+        text: "A) 1 + Math.random()*9 will return a random number between 1 and 10.",
         correct: true,
       },
       {
-        text: "Math.random()*10 will return a random number between 1 and 10.",
+        text: "B) Math.random()*10 will return a random number between 1 and 10.",
         correct: false,
       },
       {
-        text: "Math.round(Math.random()*9) will return a random number between 1 and 10.",
+        text: "C) Math.round(Math.random()*9) will return a random number between 1 and 10.",
         correct: false,
       },
       {
-        text: "1 + Math.round(Math.random()*9) will return a random number between 1 and 10.",
+        text: "D) 1 + Math.round(Math.random()*9) will return a random number between 1 and 10.",
         correct: true,
       },
       {
-        text: "Math.round(Math.random()*10) will return a random number between 1 and 10.",
+        text: "E) Math.round(Math.random()*10) will return a random number between 1 and 10.",
         correct: false,
       },
     ],
     explanation:
-      "The expression '1 + Math.random()*9' generates a number between 1 (inclusive) and 10 (exclusive). '1 + Math.round(Math.random()*9)' generates an integer between 1 and 10.",
+      "A) is correct. Math.random() generates a random number between 0.0 (inclusive) and 1.0 (exclusive). Multiplying by 9 gives a range from 0.0 to just under 9.0, and adding 1 shifts the range to between 1.0 and just under 10.0.<br><br>B) is incorrect. Math.random()*10 produces a number between 0.0 and just under 10.0, not between 1 and 10.<br><br>C) is incorrect. Math.random()*9 generates a number from 0.0 to just under 9.0, and when rounded, it can return values from 0 to 9. Therefore, it does not guarantee a return value between 1 and 10.<br><br>D) is correct. The expression Math.round(Math.random()*9) can return values from 0 to 9, and adding 1 shifts the range to 1 through 10.<br><br>E) is incorrect. Math.round(Math.random()*10) can return values from 0 to 10, so it does not ensure a return value strictly between 1 and 10.",
   },
   {
     question:
-      "Which of the following statements will print true? <br><br>(Choose 2 answers)",
+      "Considering the following code snippet, which of the following statements will print true? <br><br>(Choose 2 answers)",
     code: `int a = 10, b = 20, c = 30, d = 40;
 boolean t = true;`,
     answers: [
-      { text: "System.out.println( (a > b) && t);", correct: false },
-      { text: "System.out.println( (a > b || b < c) && t);", correct: true },
-      { text: "System.out.println( (a < d && b < c) || t);", correct: true },
+      { text: "A) System.out.println( (a > b) && t);", correct: false },
+      { text: "B) System.out.println( (a > b || b < c) && t);", correct: true },
+      { text: "C) System.out.println( (a < d && b < c) || t);", correct: true },
       {
-        text: "System.out.println( (a > b || t) && (b>c && c>d));",
+        text: "D) System.out.println( (a > b || t) && (b>c && c>d));",
         correct: false,
       },
     ],
     explanation:
-      "The second and third statements evaluate to true. The first statement is false because 'a > b' is false, and the fourth statement is false because '(b>c && c>d)' is false.",
+      "A) evaluates to (10 > 20) && true, which is false && true, resulting in false.<br><br>B) evaluates to (10 > 20 || 20 < 30) && true, which is false || true, resulting in true && true, hence it prints true.<br><br>C) evaluates to (10 < 40 && 20 < 30) || true, which is true && false, resulting in false || true, hence it prints true.<br><br>D) evaluates to (10 > 20 || true) && (20 > 30 && 30 > 40), which simplifies to true && false, resulting in false.",
   },
   {
     question: "What is the result? <br><br>(Choose 1 answer)",
@@ -5183,7 +5183,7 @@ System.out.println(str.length);`,
   },
   {
     question:
-      "A try statement must always have a ............. associated with it. <br><br>(Choose 1 answer)",
+      "A try statement must always have a ..... associated with it. <br><br>(Choose 1 answer)",
     code: ``,
     answers: [
       { text: "catch", correct: false },
@@ -5217,7 +5217,7 @@ public class ListTest {
       { text: "None of the above.", correct: false },
     ],
     explanation:
-      "The subList(1, 1) call returns an empty list, so nothing is added to s1. The final list is ['a', 'c', 'b'].",
+      `The program starts by creating an ArrayList named s1 and adds the elements "a" and "b", resulting in s1 being ["a", "b"]. Then, it adds "c" at index 1, changing s1 to ["a", "c", "b"]. <br><br>Next, it creates an empty ArrayList named s2 using s1.subList(1, 1). The addAll method is called with s2, but since s2 is empty, no elements are added to s1. <br><br>Finally, when the program prints s1, it outputs ["a", "c", "b"]. <br><br>Thus, the printed sequence is a, c, b.`,
   },
   {
     question:
