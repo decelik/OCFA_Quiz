@@ -2002,12 +2002,12 @@ if (b2 != b1 = !b2) {
     answers: [
       { text: "3", correct: false },
       { text: "4", correct: false },
-      { text: "5", correct: true },
-      { text: "6", correct: false },
+      { text: "5", correct: false },
+      { text: "6", correct: true },
       { text: "7", correct: false },
     ],
     explanation:
-      "The while loop increments 'c' until 'c > 5', at which point 'flag' is set to false, and the loop exits. The final value of 'c' is 5.",
+      "The while loop increments 'c' until 'c > 5', at which point 'flag' is set to false, and the loop exits. The final value of 'c' is 6 because the loop stops when 'c' becomes 6, and no further increments occur.",
   },
   {
     question:
