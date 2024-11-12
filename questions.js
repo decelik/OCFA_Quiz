@@ -3682,13 +3682,13 @@ else if (ch == 'f') str = str.replace('s', 'x');
 System.out.println(str);`,
     answers: [
       { text: "asdfasdf", correct: false },
-      { text: "axdfaxdf", correct: false },
+      { text: "axdfaxdf", correct: true },
       { text: "axdfasdf", correct: false },
-      { text: "xsdfxsdf", correct: true },
+      { text: "xsdfxsdf", correct: false },
       { text: "xsdfasdf", correct: false },
     ],
     explanation:
-      "The character at index 3 is 'f', so the else-if block executes, replacing 's' with 'x', resulting in 'xsdfxsdf'.",
+      "The character at index 3 is 'f', so the else-if block executes, replacing all occurrences of 's' with 'x', resulting in 'axdfaxdf'.",
   },
   {
     question:
